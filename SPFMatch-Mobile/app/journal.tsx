@@ -11,7 +11,10 @@ import {
 } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { QuestionCard } from '../components/journal/QuestionCard'
+import { CheckboxCard } from '../components/journal/CheckboxCard'
 import { ResultsSummary } from '../components/journal/ResultsSummary'
+import { BottomNav } from '../components/home/BottomNav'
+import { NAV_TABS } from '../components/home/constants'
 import { QUIZ_QUESTIONS } from '../constants/quiz'
 import { calculateFitzpatrickType, getSkinType } from '../utils/fitzpatrick'
 import type { QuizAnswers } from '../types/index'
@@ -30,10 +33,40 @@ export default function JournalScreen() {
     }))
   }
 
+  const handleToggleCheckbox = (questionId: string, option: string) => {
+    setAnswers((prev) => {
+      const current = (prev[questionId] as string[]) || []
+
+      if (option === 'Anything is fine') {
+        // Toggle "Anything is fine" exclusively
+        return {
+          ...prev,
+          [questionId]: current.includes('Anything is fine') ? [] : ['Anything is fine'],
+        }
+      }
+
+      // Remove "Anything is fine" when picking a real option
+      const withoutAnything = current.filter((v) => v !== 'Anything is fine')
+      return {
+        ...prev,
+        [questionId]: withoutAnything.includes(option)
+          ? withoutAnything.filter((v) => v !== option)
+          : [...withoutAnything, option],
+      }
+    })
+  }
+
   const handleGetMatch = () => {
-    // Check if all questions are answered
-    const allAnswered = QUIZ_QUESTIONS.every((q) => answers[q.id])
-    if (allAnswered) {
+    // All radio questions (non-multiselect) must be answered
+    const radioQuestions = QUIZ_QUESTIONS.filter((q) => !q.isMultiSelect)
+    const allRadioAnswered = radioQuestions.every((q) => answers[q.id])
+    // Multi-select preference questions require at least one selection
+    const multiQuestions = QUIZ_QUESTIONS.filter((q) => q.isMultiSelect)
+    const allMultiAnswered = multiQuestions.every((q) => {
+      const val = answers[q.id] as string[] | undefined
+      return val && val.length > 0
+    })
+    if (allRadioAnswered && allMultiAnswered) {
       setShowResults(true)
     }
   }
@@ -43,7 +76,17 @@ export default function JournalScreen() {
     setShowResults(false)
   }
 
-  const answeredCount = Object.keys(answers).length
+  const answeredCount = (() => {
+    const radioAnswered = QUIZ_QUESTIONS.filter(
+      (q) => !q.isMultiSelect && answers[q.id]
+    ).length
+    const multiAnswered = QUIZ_QUESTIONS.filter((q) => {
+      if (!q.isMultiSelect) return false
+      const val = answers[q.id] as string[] | undefined
+      return val && val.length > 0
+    }).length
+    return radioAnswered + multiAnswered
+  })()
   const totalQuestions = QUIZ_QUESTIONS.length
 
   if (showResults) {
@@ -64,25 +107,19 @@ export default function JournalScreen() {
           <ResultsSummary
             fitzpatrickType={fitzpatrickType}
             skinType={skinType}
+            answers={answers}
+            onRetake={handleRestart}
+            bottomInset={insets.bottom}
           />
 
-          <View style={[styles.bottomActions, { paddingBottom: insets.bottom + 12 }]}>
-            <TouchableOpacity
-              activeOpacity={0.8}
-              style={styles.secondaryButton}
-              onPress={handleRestart}
-            >
-              <Text style={styles.secondaryButtonText}>Retake Quiz</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity
-              activeOpacity={0.8}
-              style={styles.primaryButton}
-              onPress={() => router.replace('/')}
-            >
-              <Text style={styles.primaryButtonText}>Back to Home</Text>
-            </TouchableOpacity>
-          </View>
+          <BottomNav
+            tabs={NAV_TABS}
+            activeTab="journal"
+            bottomInset={insets.bottom}
+            onSelect={(id) => {
+              if (id === 'home') router.replace('/')
+            }}
+          />
         </LinearGradient>
       </>
     )
@@ -116,7 +153,7 @@ export default function JournalScreen() {
           <Text style={styles.kicker}>Questionnaire</Text>
           <Text style={styles.title}>Find Your SPF Match</Text>
           <Text style={styles.subtitle}>
-            Answer all {totalQuestions} questions to get personalized sunscreen recommendations based on your Fitzpatrick skin type and skin condition.
+            Answer all {totalQuestions} questions to get personalized sunscreen recommendations based on your Fitzpatrick skin type, skin condition, and preferences.
           </Text>
 
           <View style={styles.progressBar}>
@@ -131,22 +168,26 @@ export default function JournalScreen() {
             {answeredCount} of {totalQuestions} answered
           </Text>
 
-          {QUIZ_QUESTIONS.map((question) => (
-            <QuestionCard
-              key={question.id}
-              title={question.question}
-              options={question.options}
-              selectedOption={(answers[question.id] as string) || null}
-              onSelectOption={(option) =>
-                handleSelectOption(question.id, option)
-              }
-            />
-          ))}
+          {QUIZ_QUESTIONS.map((question) =>
+            question.isMultiSelect ? (
+              <CheckboxCard
+                key={question.id}
+                title={question.question}
+                options={question.options}
+                selectedOptions={(answers[question.id] as string[]) || []}
+                onToggleOption={(option) => handleToggleCheckbox(question.id, option)}
+              />
+            ) : (
+              <QuestionCard
+                key={question.id}
+                title={question.question}
+                options={question.options}
+                selectedOption={(answers[question.id] as string) || null}
+                onSelectOption={(option) => handleSelectOption(question.id, option)}
+              />
+            )
+          )}
 
-          <View style={{ height: 20 }} />
-        </ScrollView>
-
-        <View style={[styles.bottomActions, { paddingBottom: insets.bottom + 12 }]}>
           <TouchableOpacity
             activeOpacity={0.8}
             style={[
@@ -165,7 +206,18 @@ export default function JournalScreen() {
               Get My SPF Match
             </Text>
           </TouchableOpacity>
-        </View>
+
+          <View style={{ height: 20 }} />
+        </ScrollView>
+
+        <BottomNav
+          tabs={NAV_TABS}
+          activeTab="journal"
+          bottomInset={insets.bottom}
+          onSelect={(id) => {
+            if (id === 'home') router.replace('/')
+          }}
+        />
       </LinearGradient>
     </>
   )
@@ -177,7 +229,7 @@ const styles = StyleSheet.create({
   },
   content: {
     paddingHorizontal: 18,
-    paddingBottom: 100,
+    paddingBottom: 120,
     gap: 12,
   },
   backButton: {
@@ -229,13 +281,7 @@ const styles = StyleSheet.create({
     color: 'rgba(255,255,255,0.7)',
     fontWeight: '500',
   },
-  bottomActions: {
-    position: 'absolute',
-    bottom: 0,
-    left: 18,
-    right: 18,
-    gap: 10,
-  },
+
   primaryButton: {
     borderRadius: 14,
     paddingVertical: 14,

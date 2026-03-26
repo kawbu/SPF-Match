@@ -4,6 +4,7 @@ export interface QuizQuestion {
   options: string[]
   scores?: number[]
   types?: string[]
+  isMultiSelect?: boolean
 }
 
 export const QUIZ_QUESTIONS: QuizQuestion[] = [
@@ -142,6 +143,39 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
       'combination',
       'sensitive',
     ],
+  },
+  {
+    id: 'filterType',
+    question: 'Which sunscreen filter type would you like?',
+    options: [
+      'Physical/mineral',
+      'Chemical',
+      'Mixture',
+      'Anything is fine',
+    ],
+    isMultiSelect: true,
+  },
+  {
+    id: 'tint',
+    question: 'Which sunscreen tint would you like?',
+    options: [
+      'Skin-colored',
+      'Transparent',
+      'No tint',
+      'Anything is fine',
+    ],
+    isMultiSelect: true,
+  },
+  {
+    id: 'vehicle',
+    question: 'Which form of sunscreen would you like?',
+    options: [
+      'Cream/lotion',
+      'Spray',
+      'Powder',
+      'Anything is fine',
+    ],
+    isMultiSelect: true,
   },
 ]
 

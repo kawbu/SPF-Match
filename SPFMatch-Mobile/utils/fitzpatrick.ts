@@ -1,5 +1,5 @@
 import { QUIZ_QUESTIONS, FITZPATRICK_THRESHOLDS } from '../constants/quiz'
-import type { QuizAnswers, FitzpatrickType, SkinType } from '../types/index'
+import type { QuizAnswers, FitzpatrickType, SkinType, SunscreenProduct } from '../types/index'
 
 /**
  * Calculate Fitzpatrick skin type based on quiz answers
@@ -53,4 +53,61 @@ export function getSkinType(answers: QuizAnswers): SkinType {
   }
 
   return 'normal'
+}
+
+/**
+ * Normalize quiz preference answers to match database values
+ */
+export function normalizePreferences(
+  values: string | string[],
+  type: 'filterType' | 'tint' | 'vehicle'
+): string[] {
+  const arr = Array.isArray(values) ? values : []
+  const filtered = arr.filter((v) => v !== 'Anything is fine')
+
+  if (filtered.length === 0) return []
+
+  if (type === 'tint') {
+    return filtered.map((v) => {
+      if (v === 'Skin-colored') return 'Tinted'
+      if (v === 'Transparent' || v === 'No tint') return 'Untinted'
+      return v
+    })
+  }
+
+  if (type === 'filterType') {
+    return filtered.map((v) => {
+      if (v === 'Physical/mineral') return 'Physical'
+      return v
+    })
+  }
+
+  return filtered
+}
+
+/**
+ * Filter sunscreen products by user preferences
+ */
+export function filterByPreferences(
+  products: SunscreenProduct[],
+  prefs: { filterType: string[]; tint: string[]; vehicle: string[] }
+): SunscreenProduct[] {
+  if (
+    prefs.filterType.length === 0 &&
+    prefs.tint.length === 0 &&
+    prefs.vehicle.length === 0
+  ) {
+    return products
+  }
+
+  return products.filter((product) => {
+    const matchesFilterType =
+      prefs.filterType.length === 0 || prefs.filterType.includes(product.filterType)
+    const matchesTint =
+      prefs.tint.length === 0 || prefs.tint.includes(product.tint)
+    const matchesVehicle =
+      prefs.vehicle.length === 0 || prefs.vehicle.includes(product.vehicle)
+
+    return matchesFilterType && matchesTint && matchesVehicle
+  })
 }
