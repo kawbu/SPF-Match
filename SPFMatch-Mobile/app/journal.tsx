@@ -1,6 +1,7 @@
 import { LinearGradient } from 'expo-linear-gradient'
 import { Stack, useRouter } from 'expo-router'
-import React, { useState } from 'react'
+import AsyncStorage from '@react-native-async-storage/async-storage'
+import React, { useEffect, useState } from 'react'
 import {
   ScrollView,
   StatusBar,
@@ -19,12 +20,56 @@ import { QUIZ_QUESTIONS } from '../constants/quiz'
 import { calculateFitzpatrickType, getSkinType } from '../utils/fitzpatrick'
 import type { QuizAnswers } from '../types/index'
 
+const QUIZ_STATE_STORAGE_KEY = 'spfmatch-mobile:journal-quiz-state:v1'
+
+type PersistedQuizState = {
+  answers: QuizAnswers
+  showResults: boolean
+}
+
 export default function JournalScreen() {
   const insets = useSafeAreaInsets()
   const router = useRouter()
 
   const [answers, setAnswers] = useState<QuizAnswers>({})
   const [showResults, setShowResults] = useState(false)
+  const [isHydrated, setIsHydrated] = useState(false)
+
+  useEffect(() => {
+    async function hydrateQuizState() {
+      try {
+        const rawState = await AsyncStorage.getItem(QUIZ_STATE_STORAGE_KEY)
+        if (!rawState) {
+          return
+        }
+
+        const parsed = JSON.parse(rawState) as PersistedQuizState
+        if (parsed?.answers && typeof parsed.showResults === 'boolean') {
+          setAnswers(parsed.answers)
+          setShowResults(parsed.showResults)
+        }
+      } catch {
+        // Ignore corrupted/local storage errors and continue with fresh state
+      } finally {
+        setIsHydrated(true)
+      }
+    }
+
+    hydrateQuizState()
+  }, [])
+
+  useEffect(() => {
+    if (!isHydrated) return
+
+    const stateToPersist: PersistedQuizState = {
+      answers,
+      showResults,
+    }
+
+    AsyncStorage.setItem(QUIZ_STATE_STORAGE_KEY, JSON.stringify(stateToPersist)).catch(() => {
+      // Ignore write failures
+    })
+  }, [answers, showResults, isHydrated])
 
   const handleSelectOption = (questionId: string, option: string) => {
     setAnswers((prev) => ({
@@ -88,6 +133,23 @@ export default function JournalScreen() {
     return radioAnswered + multiAnswered
   })()
   const totalQuestions = QUIZ_QUESTIONS.length
+
+  if (!isHydrated) {
+    return (
+      <>
+        <Stack.Screen options={{ headerShown: false }} />
+        <StatusBar translucent barStyle="light-content" backgroundColor="transparent" />
+        <LinearGradient
+          colors={['#8A2A1F', '#CF6A28', '#B3352B']}
+          start={{ x: 0.08, y: 0 }}
+          end={{ x: 0.95, y: 1 }}
+          style={[styles.container, styles.loadingContainer]}
+        >
+          <Text style={styles.loadingText}>Loading saved quiz state...</Text>
+        </LinearGradient>
+      </>
+    )
+  }
 
   if (showResults) {
     const fitzpatrickType = calculateFitzpatrickType(answers)
@@ -312,6 +374,15 @@ const styles = StyleSheet.create({
   secondaryButtonText: {
     color: '#FFFFFF',
     fontSize: 14,
+    fontWeight: '600',
+  },
+  loadingContainer: {
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  loadingText: {
+    color: '#FFFFFF',
+    fontSize: 15,
     fontWeight: '600',
   },
 })
