@@ -7,6 +7,7 @@ import { calculateFitzpatrickType } from "./utils/fitzpatrick";
 import { ResultsPage } from "./components/ResultsPage";
 import { ResourcesPage } from "./components/ResourcesPage";
 import { ReminderPage } from "./components/ReminderPage";
+import { UsageDashboard } from "./components/UsageDashboard";
 
 function AppContent() {
   const navigate = useNavigate();
@@ -21,7 +22,8 @@ function AppContent() {
       "/quiz": "Quiz",
       "/results": "Results",
       "/resources": "Resources",
-      "/reminder": "Reminder"
+      "/reminder": "Reminder",
+      "/stats": "Stats"
     };
     const title = pathToTitle[routerLocation.pathname] || "Home";
     document.title = `${title} | SPFMatch`;
@@ -140,6 +142,7 @@ function AppContent() {
             />
           }
         />
+        <Route path="/stats" element={<UsageDashboard />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </div>

@@ -29,6 +29,7 @@ export function Navigation({
     { id: "quiz", label: "Quiz" },
     { id: "resources", label: "Resources" },
     { id: "reminder", label: "Reminder" },
+    { id: "stats", label: "Stats" },
   ];
 
   const handleNavigate = (page: string) => {

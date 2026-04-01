@@ -1,0 +1,4007 @@
+{
+  "1-normal": [
+    {
+      "name": "Drunk Elephant Umbra Sheer Physical Daily Defense SPF 30",
+      "filterType": "Physical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 34,
+      "size": 3,
+      "description": "SPF 30 Physical sunscreen",
+      "link": "https://www.drunkelephant.com/collections/sun-protection/umbra-sheer-mineral-cream-spf-30pa-812343032804.html",
+      "unitPrice": 11.333333333333334,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://www.drunkelephant.com/dw/image/v2/BBSK_PRD/on/demandware.static/-/Sites-itemmaster_drunkelephant/default/dwd771b27e/products/images/2024/June/UmbraMineralSheer/Umbra-Sheer-Reform_PDP_1.jpg"
+    },
+    {
+      "name": "EltaMD UV Moisturizing Facial Sunscreen SPF 30",
+      "filterType": "Mixture",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 30,
+      "size": 4,
+      "description": "SPF 30 Mixture sunscreen",
+      "link": "https://www.amazon.com/Sunscreen-Broad-Spectrum-Moisturizing-Dermatologist-Recommended-Mineral-Based/dp/B000PHRIYE",
+      "unitPrice": 7.5,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://m.media-amazon.com/images/I/41zbU5YYpSL._SX522_.jpg"
+    },
+    {
+      "name": "Aveeno Protect + Hydrate Lotion Sunscreen SPF 30",
+      "filterType": "Chemical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 12.49,
+      "size": 3,
+      "description": "SPF 30 Chemical sunscreen",
+      "link": "https://www.aveeno.com/products/protect-hydrate-body-lotion-sunscreen-spf-30",
+      "unitPrice": 4.163333333333333,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://images.ctfassets.net/mgaihfszrtka/2Ny78fcbtm40EhazUHLjJP/c790c1ec603a28e887ce8449c7937134/ave_381371194612_us_p_h_sunscreen_spf30_body_ltn_3oz_00000-en-us"
+    },
+    {
+      "name": "Hawaiian Tropic Antioxidant Sunscreen Lotion 50",
+      "filterType": "Chemical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 11.99,
+      "size": 6,
+      "description": "SPF 50 Chemical sunscreen",
+      "link": "https://www.walmart.com/ip/Hawaiian-Tropic-Skin-Defense-Sunscreen-Lotion-SPF-50-6oz/549118419",
+      "unitPrice": 1.9983333333333333,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://i5.walmartimages.com/seo/Hawaiian-Tropic-Skin-Defense-Sunscreen-Lotion-SPF-50-6oz_f26492aa-683c-408a-93d7-bce42dd56a9d.43bdf5448f03e6a49335cbe07164425f.jpeg"
+    },
+    {
+      "name": "MDSolarSciences Mineral Moisture Defense SPF 50",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 39,
+      "size": 4,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://mdsolarsciences.com/products/mineral-moisture-defense-spf-50",
+      "unitPrice": 9.75,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "normal",
+        "sensitive",
+        "dry"
+      ],
+      "image": "https://mdsolarsciences.com/cdn/shop/files/MineralMoistureDefense3.5.png"
+    },
+    {
+      "name": "La Roche Posay Anthelios Melt-In-Sunscreen Milk SPF 60",
+      "filterType": "Chemical",
+      "spf": 60,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 35.99,
+      "size": 5,
+      "description": "SPF 60 Chemical sunscreen",
+      "link": "https://www.laroche-posay.us/our-products/sun/body-sunscreen/anthelios-melt-in-milk-sunscreen-spf-60-antheliosmeltinmilk.html",
+      "unitPrice": 7.198,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dw6a5a552e/img/antheliosmeltinmilk/ANTHMIM_1500x1500.jpg"
+    },
+    {
+      "name": "La Roche-Posay Anthelios Ultra-Light Mineral SPF 50",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 50,
+      "size": 1.7,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.target.com/p/la-roche-posay-anthelios-sunscreen-ultra-light-fluid-face-sunscreen-oxybenzone-free-sunscreen-lotion-spf-60-1-7-fl-oz/-/A-14225600",
+      "unitPrice": 29.411764705882355,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "normal",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://target.scene7.com/is/image/Target/GUEST_c24c8064-d5e4-44e7-b047-5de75b15d472"
+    }
+  ],
+  "1-oily": [
+    {
+      "name": "Colorescience Sunforgettable Brush-On Sunscreen SPF 30",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Powder",
+      "tint": "Tinted",
+      "price": 65,
+      "size": 0.21,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.colorescience.com/products/sunforgettable-total-protection-sheer-matte-spf-30-sunscreen-brush",
+      "unitPrice": 309.5238095238095,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.colorescience.com/cdn/shop/files/3wY6pJ4k.png"
+    },
+    {
+      "name": "La Roche-Posay Anthelios Clear Skin Sunscreen",
+      "filterType": "Chemical",
+      "spf": 60,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 19.99,
+      "size": 1.7,
+      "description": "SPF 60 Chemical sunscreen",
+      "link": "https://www.laroche-posay.us/our-products/sun/face-sunscreen/anthelios-clear-skin-oil-free-sunscreen-spf-60-antheliosclearskin.html",
+      "unitPrice": 11.758823529411764,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dwc9800d72/product/March%202023%20packshot%20updates/3606000430488-1_Anthelios60_Clear-Skin_50ml.jpg"
+    },
+    {
+      "name": "Neutrogena Ultra Sheer Dry-Touch SPF 100+",
+      "filterType": "Chemical",
+      "spf": 100,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 8.99,
+      "size": 3,
+      "description": "SPF 100 Chemical sunscreen",
+      "link": "https://www.neutrogena.com/products/sun/ultra-sheer-dry-touch-sunscreen-broad-spectrum-spf-100/6887310",
+      "unitPrice": 2.9966666666666666,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "oily",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://images.ctfassets.net/bcjr30vxh6td/66RaZiM5TvEMWybwg8qpK0/cacb6d52bbb0563483acc2774f13a811/6811276_MAIN.avif"
+    },
+    {
+      "name": "EltaMD UV Clear Broad-Spectrum SPF 46 Facial Sunscreen",
+      "filterType": "Mixture",
+      "spf": 46,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 35,
+      "size": 1.7,
+      "description": "SPF 46 Mixture sunscreen",
+      "link": "https://eltamd.com/products/uv-clear-broad-spectrum-spf-46",
+      "unitPrice": 20.58823529411765,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://eltamd.com/cdn/shop/files/UV_Clear_SPF_46_02500A_1200x.jpg"
+    }
+  ],
+  "1-dry": [
+    {
+      "name": "Drunk Elephant Umbra Sheer Physical Daily Defense SPF 30",
+      "filterType": "Physical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 34,
+      "size": 3,
+      "description": "SPF 30 Physical sunscreen",
+      "link": "https://www.drunkelephant.com/collections/sun-protection/umbra-sheer-mineral-cream-spf-30pa-812343032804.html",
+      "unitPrice": 11.333333333333334,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://www.drunkelephant.com/dw/image/v2/BBSK_PRD/on/demandware.static/-/Sites-itemmaster_drunkelephant/default/dwd771b27e/products/images/2024/June/UmbraMineralSheer/Umbra-Sheer-Reform_PDP_1.jpg"
+    },
+    {
+      "name": "EltaMD UV Moisturizing Facial Sunscreen SPF 30",
+      "filterType": "Mixture",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 30,
+      "size": 4,
+      "description": "SPF 30 Mixture sunscreen",
+      "link": "https://www.amazon.com/Sunscreen-Broad-Spectrum-Moisturizing-Dermatologist-Recommended-Mineral-Based/dp/B000PHRIYE",
+      "unitPrice": 7.5,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://m.media-amazon.com/images/I/41zbU5YYpSL._SX522_.jpg"
+    },
+    {
+      "name": "Aveeno Protect + Hydrate Lotion Sunscreen SPF 30",
+      "filterType": "Chemical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 12.49,
+      "size": 3,
+      "description": "SPF 30 Chemical sunscreen",
+      "link": "https://www.aveeno.com/products/protect-hydrate-body-lotion-sunscreen-spf-30",
+      "unitPrice": 4.163333333333333,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://images.ctfassets.net/mgaihfszrtka/2Ny78fcbtm40EhazUHLjJP/c790c1ec603a28e887ce8449c7937134/ave_381371194612_us_p_h_sunscreen_spf30_body_ltn_3oz_00000-en-us"
+    },
+    {
+      "name": "Badger SPF 30 Unscented Sunscreen Cream",
+      "filterType": "Physical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 16.99,
+      "size": 2.9,
+      "description": "SPF 30 Physical sunscreen",
+      "link": "https://www.badgerbalm.com/products/clear-zinc-mineral-sunscreen-spf-30",
+      "unitPrice": 5.858620689655172,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "sensitive",
+        "dry"
+      ],
+      "image": "https://www.badgerbalm.com/cdn/shop/products/mineral-sunscreen-cream-SPF-30-unscented-Badger-R_512x512@2x.jpg"
+    },
+    {
+      "name": "Hawaiian Tropic Antioxidant Sunscreen Lotion 50",
+      "filterType": "Chemical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 11.99,
+      "size": 6,
+      "description": "SPF 50 Chemical sunscreen",
+      "link": "https://www.walmart.com/ip/Hawaiian-Tropic-Skin-Defense-Sunscreen-Lotion-SPF-50-6oz/549118419",
+      "unitPrice": 1.9983333333333333,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://i5.walmartimages.com/seo/Hawaiian-Tropic-Skin-Defense-Sunscreen-Lotion-SPF-50-6oz_f26492aa-683c-408a-93d7-bce42dd56a9d.43bdf5448f03e6a49335cbe07164425f.jpeg"
+    },
+    {
+      "name": "MDSolarSciences Mineral Moisture Defense SPF 50",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 39,
+      "size": 4,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://mdsolarsciences.com/products/mineral-moisture-defense-spf-50",
+      "unitPrice": 9.75,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "normal",
+        "sensitive",
+        "dry"
+      ],
+      "image": "https://mdsolarsciences.com/cdn/shop/files/MineralMoistureDefense3.5.png"
+    },
+    {
+      "name": "La Roche Posay Anthelios Melt-In-Sunscreen Milk SPF 60",
+      "filterType": "Chemical",
+      "spf": 60,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 35.99,
+      "size": 5,
+      "description": "SPF 60 Chemical sunscreen",
+      "link": "https://www.laroche-posay.us/our-products/sun/body-sunscreen/anthelios-melt-in-milk-sunscreen-spf-60-antheliosmeltinmilk.html",
+      "unitPrice": 7.198,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dw6a5a552e/img/antheliosmeltinmilk/ANTHMIM_1500x1500.jpg"
+    }
+  ],
+  "1-combination": [
+    {
+      "name": "Colorescience Sunforgettable Brush-On Sunscreen SPF 30",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Powder",
+      "tint": "Tinted",
+      "price": 65,
+      "size": 0.21,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.colorescience.com/products/sunforgettable-total-protection-sheer-matte-spf-30-sunscreen-brush",
+      "unitPrice": 309.5238095238095,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.colorescience.com/cdn/shop/files/3wY6pJ4k.png"
+    },
+    {
+      "name": "La Roche-Posay Anthelios Clear Skin Sunscreen",
+      "filterType": "Chemical",
+      "spf": 60,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 19.99,
+      "size": 1.7,
+      "description": "SPF 60 Chemical sunscreen",
+      "link": "https://www.laroche-posay.us/our-products/sun/face-sunscreen/anthelios-clear-skin-oil-free-sunscreen-spf-60-antheliosclearskin.html",
+      "unitPrice": 11.758823529411764,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dwc9800d72/product/March%202023%20packshot%20updates/3606000430488-1_Anthelios60_Clear-Skin_50ml.jpg"
+    },
+    {
+      "name": "Neutrogena Ultra Sheer Dry-Touch SPF 100+",
+      "filterType": "Chemical",
+      "spf": 100,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 8.99,
+      "size": 3,
+      "description": "SPF 100 Chemical sunscreen",
+      "link": "https://www.neutrogena.com/products/sun/ultra-sheer-dry-touch-sunscreen-broad-spectrum-spf-100/6887310",
+      "unitPrice": 2.9966666666666666,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "oily",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://images.ctfassets.net/bcjr30vxh6td/66RaZiM5TvEMWybwg8qpK0/cacb6d52bbb0563483acc2774f13a811/6811276_MAIN.avif"
+    },
+    {
+      "name": "EltaMD UV Clear Broad-Spectrum SPF 46 Facial Sunscreen",
+      "filterType": "Mixture",
+      "spf": 46,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 35,
+      "size": 1.7,
+      "description": "SPF 46 Mixture sunscreen",
+      "link": "https://eltamd.com/products/uv-clear-broad-spectrum-spf-46",
+      "unitPrice": 20.58823529411765,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://eltamd.com/cdn/shop/files/UV_Clear_SPF_46_02500A_1200x.jpg"
+    },
+    {
+      "name": "La Roche-Posay Anthelios Ultra-Light Mineral SPF 50",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 50,
+      "size": 1.7,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.target.com/p/la-roche-posay-anthelios-sunscreen-ultra-light-fluid-face-sunscreen-oxybenzone-free-sunscreen-lotion-spf-60-1-7-fl-oz/-/A-14225600",
+      "unitPrice": 29.411764705882355,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "normal",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://target.scene7.com/is/image/Target/GUEST_c24c8064-d5e4-44e7-b047-5de75b15d472"
+    }
+  ],
+  "1-sensitive": [
+    {
+      "name": "Blue Lizard Sensitive Mineral SPF 50 Sunscreen Lotion",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 12.99,
+      "size": 3,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://bluelizardsunscreen.com/products/sensitive-mineral-sunscreen-lotion-spf-50",
+      "unitPrice": 4.33,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "sensitive"
+      ],
+      "image": "https://bluelizardsunscreen.com/cdn/shop/files/ProdPage-Sensitive-3oz-Hero-Crop1.webp"
+    },
+    {
+      "name": "Badger SPF 30 Unscented Sunscreen Cream",
+      "filterType": "Physical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 16.99,
+      "size": 2.9,
+      "description": "SPF 30 Physical sunscreen",
+      "link": "https://www.badgerbalm.com/products/clear-zinc-mineral-sunscreen-spf-30",
+      "unitPrice": 5.858620689655172,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "sensitive",
+        "dry"
+      ],
+      "image": "https://www.badgerbalm.com/cdn/shop/products/mineral-sunscreen-cream-SPF-30-unscented-Badger-R_512x512@2x.jpg"
+    },
+    {
+      "name": "MDSolarSciences Mineral Moisture Defense SPF 50",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 39,
+      "size": 4,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://mdsolarsciences.com/products/mineral-moisture-defense-spf-50",
+      "unitPrice": 9.75,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "normal",
+        "sensitive",
+        "dry"
+      ],
+      "image": "https://mdsolarsciences.com/cdn/shop/files/MineralMoistureDefense3.5.png"
+    },
+    {
+      "name": "Neutrogena Ultra Sheer Dry-Touch SPF 100+",
+      "filterType": "Chemical",
+      "spf": 100,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 8.99,
+      "size": 3,
+      "description": "SPF 100 Chemical sunscreen",
+      "link": "https://www.neutrogena.com/products/sun/ultra-sheer-dry-touch-sunscreen-broad-spectrum-spf-100/6887310",
+      "unitPrice": 2.9966666666666666,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "oily",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://images.ctfassets.net/bcjr30vxh6td/66RaZiM5TvEMWybwg8qpK0/cacb6d52bbb0563483acc2774f13a811/6811276_MAIN.avif"
+    },
+    {
+      "name": "EltaMD UV Clear Broad-Spectrum SPF 46 Facial Sunscreen",
+      "filterType": "Mixture",
+      "spf": 46,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 35,
+      "size": 1.7,
+      "description": "SPF 46 Mixture sunscreen",
+      "link": "https://eltamd.com/products/uv-clear-broad-spectrum-spf-46",
+      "unitPrice": 20.58823529411765,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://eltamd.com/cdn/shop/files/UV_Clear_SPF_46_02500A_1200x.jpg"
+    },
+    {
+      "name": "La Roche-Posay Anthelios Ultra-Light Mineral SPF 50",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 50,
+      "size": 1.7,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.target.com/p/la-roche-posay-anthelios-sunscreen-ultra-light-fluid-face-sunscreen-oxybenzone-free-sunscreen-lotion-spf-60-1-7-fl-oz/-/A-14225600",
+      "unitPrice": 29.411764705882355,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "normal",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://target.scene7.com/is/image/Target/GUEST_c24c8064-d5e4-44e7-b047-5de75b15d472"
+    }
+  ],
+  "2-normal": [
+    {
+      "name": "Drunk Elephant Umbra Sheer Physical Daily Defense SPF 30",
+      "filterType": "Physical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 34,
+      "size": 3,
+      "description": "SPF 30 Physical sunscreen",
+      "link": "https://www.drunkelephant.com/collections/sun-protection/umbra-sheer-mineral-cream-spf-30pa-812343032804.html",
+      "unitPrice": 11.333333333333334,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://www.drunkelephant.com/dw/image/v2/BBSK_PRD/on/demandware.static/-/Sites-itemmaster_drunkelephant/default/dwd771b27e/products/images/2024/June/UmbraMineralSheer/Umbra-Sheer-Reform_PDP_1.jpg"
+    },
+    {
+      "name": "EltaMD UV Moisturizing Facial Sunscreen SPF 30",
+      "filterType": "Mixture",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 30,
+      "size": 4,
+      "description": "SPF 30 Mixture sunscreen",
+      "link": "https://www.amazon.com/Sunscreen-Broad-Spectrum-Moisturizing-Dermatologist-Recommended-Mineral-Based/dp/B000PHRIYE",
+      "unitPrice": 7.5,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://m.media-amazon.com/images/I/41zbU5YYpSL._SX522_.jpg"
+    },
+    {
+      "name": "Aveeno Protect + Hydrate Lotion Sunscreen SPF 30",
+      "filterType": "Chemical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 12.49,
+      "size": 3,
+      "description": "SPF 30 Chemical sunscreen",
+      "link": "https://www.aveeno.com/products/protect-hydrate-body-lotion-sunscreen-spf-30",
+      "unitPrice": 4.163333333333333,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://images.ctfassets.net/mgaihfszrtka/2Ny78fcbtm40EhazUHLjJP/c790c1ec603a28e887ce8449c7937134/ave_381371194612_us_p_h_sunscreen_spf30_body_ltn_3oz_00000-en-us"
+    },
+    {
+      "name": "Hawaiian Tropic Antioxidant Sunscreen Lotion 50",
+      "filterType": "Chemical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 11.99,
+      "size": 6,
+      "description": "SPF 50 Chemical sunscreen",
+      "link": "https://www.walmart.com/ip/Hawaiian-Tropic-Skin-Defense-Sunscreen-Lotion-SPF-50-6oz/549118419",
+      "unitPrice": 1.9983333333333333,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://i5.walmartimages.com/seo/Hawaiian-Tropic-Skin-Defense-Sunscreen-Lotion-SPF-50-6oz_f26492aa-683c-408a-93d7-bce42dd56a9d.43bdf5448f03e6a49335cbe07164425f.jpeg"
+    },
+    {
+      "name": "MDSolarSciences Mineral Moisture Defense SPF 50",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 39,
+      "size": 4,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://mdsolarsciences.com/products/mineral-moisture-defense-spf-50",
+      "unitPrice": 9.75,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "normal",
+        "sensitive",
+        "dry"
+      ],
+      "image": "https://mdsolarsciences.com/cdn/shop/files/MineralMoistureDefense3.5.png"
+    },
+    {
+      "name": "La Roche Posay Anthelios Melt-In-Sunscreen Milk SPF 60",
+      "filterType": "Chemical",
+      "spf": 60,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 35.99,
+      "size": 5,
+      "description": "SPF 60 Chemical sunscreen",
+      "link": "https://www.laroche-posay.us/our-products/sun/body-sunscreen/anthelios-melt-in-milk-sunscreen-spf-60-antheliosmeltinmilk.html",
+      "unitPrice": 7.198,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dw6a5a552e/img/antheliosmeltinmilk/ANTHMIM_1500x1500.jpg"
+    },
+    {
+      "name": "La Roche-Posay Anthelios Ultra-Light Mineral SPF 50",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 50,
+      "size": 1.7,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.target.com/p/la-roche-posay-anthelios-sunscreen-ultra-light-fluid-face-sunscreen-oxybenzone-free-sunscreen-lotion-spf-60-1-7-fl-oz/-/A-14225600",
+      "unitPrice": 29.411764705882355,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "normal",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://target.scene7.com/is/image/Target/GUEST_c24c8064-d5e4-44e7-b047-5de75b15d472"
+    }
+  ],
+  "2-oily": [
+    {
+      "name": "Colorescience Sunforgettable Brush-On Sunscreen SPF 30",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Powder",
+      "tint": "Tinted",
+      "price": 65,
+      "size": 0.21,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.colorescience.com/products/sunforgettable-total-protection-sheer-matte-spf-30-sunscreen-brush",
+      "unitPrice": 309.5238095238095,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.colorescience.com/cdn/shop/files/3wY6pJ4k.png"
+    },
+    {
+      "name": "Kiehl's Super Fluid UV Mineral Defense SPF 50+",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Tinted",
+      "price": 38,
+      "size": 1.7,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.kiehls.com/discontinued-products/super-fluid-daily-uv-mineral-defense/KHL416.html",
+      "unitPrice": 22.35294117647059,
+      "fitzpatrickScale": "II-IV",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.kiehls.com/dw/image/v2/AAFM_PRD/on/demandware.static/-/Sites-kiehls-master-catalog/default/dw46eb4415/nextgen/sun-care/sunscreen/dermatologist-solutions/super-fluid-uv-mineral-defense-spf-50/kiehls-sunscreen-super-fluid-uv-mineral-defense-broad-spectrum-spf50-50ml-000-3605970756093-front.jpg?sw=930&sh=930&sm=cut&sfrm=png&q=70"
+    },
+    {
+      "name": "La Roche-Posay Anthelios Clear Skin Sunscreen",
+      "filterType": "Chemical",
+      "spf": 60,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 19.99,
+      "size": 1.7,
+      "description": "SPF 60 Chemical sunscreen",
+      "link": "https://www.laroche-posay.us/our-products/sun/face-sunscreen/anthelios-clear-skin-oil-free-sunscreen-spf-60-antheliosclearskin.html",
+      "unitPrice": 11.758823529411764,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dwc9800d72/product/March%202023%20packshot%20updates/3606000430488-1_Anthelios60_Clear-Skin_50ml.jpg"
+    },
+    {
+      "name": "Neutrogena Ultra Sheer Dry-Touch SPF 100+",
+      "filterType": "Chemical",
+      "spf": 100,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 8.99,
+      "size": 3,
+      "description": "SPF 100 Chemical sunscreen",
+      "link": "https://www.neutrogena.com/products/sun/ultra-sheer-dry-touch-sunscreen-broad-spectrum-spf-100/6887310",
+      "unitPrice": 2.9966666666666666,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "oily",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://images.ctfassets.net/bcjr30vxh6td/66RaZiM5TvEMWybwg8qpK0/cacb6d52bbb0563483acc2774f13a811/6811276_MAIN.avif"
+    },
+    {
+      "name": "EltaMD UV Clear Broad-Spectrum SPF 46 Facial Sunscreen",
+      "filterType": "Mixture",
+      "spf": 46,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 35,
+      "size": 1.7,
+      "description": "SPF 46 Mixture sunscreen",
+      "link": "https://eltamd.com/products/uv-clear-broad-spectrum-spf-46",
+      "unitPrice": 20.58823529411765,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://eltamd.com/cdn/shop/files/UV_Clear_SPF_46_02500A_1200x.jpg"
+    }
+  ],
+  "2-dry": [
+    {
+      "name": "Drunk Elephant Umbra Sheer Physical Daily Defense SPF 30",
+      "filterType": "Physical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 34,
+      "size": 3,
+      "description": "SPF 30 Physical sunscreen",
+      "link": "https://www.drunkelephant.com/collections/sun-protection/umbra-sheer-mineral-cream-spf-30pa-812343032804.html",
+      "unitPrice": 11.333333333333334,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://www.drunkelephant.com/dw/image/v2/BBSK_PRD/on/demandware.static/-/Sites-itemmaster_drunkelephant/default/dwd771b27e/products/images/2024/June/UmbraMineralSheer/Umbra-Sheer-Reform_PDP_1.jpg"
+    },
+    {
+      "name": "EltaMD UV Moisturizing Facial Sunscreen SPF 30",
+      "filterType": "Mixture",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 30,
+      "size": 4,
+      "description": "SPF 30 Mixture sunscreen",
+      "link": "https://www.amazon.com/Sunscreen-Broad-Spectrum-Moisturizing-Dermatologist-Recommended-Mineral-Based/dp/B000PHRIYE",
+      "unitPrice": 7.5,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://m.media-amazon.com/images/I/41zbU5YYpSL._SX522_.jpg"
+    },
+    {
+      "name": "Aveeno Protect + Hydrate Lotion Sunscreen SPF 30",
+      "filterType": "Chemical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 12.49,
+      "size": 3,
+      "description": "SPF 30 Chemical sunscreen",
+      "link": "https://www.aveeno.com/products/protect-hydrate-body-lotion-sunscreen-spf-30",
+      "unitPrice": 4.163333333333333,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://images.ctfassets.net/mgaihfszrtka/2Ny78fcbtm40EhazUHLjJP/c790c1ec603a28e887ce8449c7937134/ave_381371194612_us_p_h_sunscreen_spf30_body_ltn_3oz_00000-en-us"
+    },
+    {
+      "name": "Badger SPF 30 Unscented Sunscreen Cream",
+      "filterType": "Physical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 16.99,
+      "size": 2.9,
+      "description": "SPF 30 Physical sunscreen",
+      "link": "https://www.badgerbalm.com/products/clear-zinc-mineral-sunscreen-spf-30",
+      "unitPrice": 5.858620689655172,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "sensitive",
+        "dry"
+      ],
+      "image": "https://www.badgerbalm.com/cdn/shop/products/mineral-sunscreen-cream-SPF-30-unscented-Badger-R_512x512@2x.jpg"
+    },
+    {
+      "name": "Hawaiian Tropic Antioxidant Sunscreen Lotion 50",
+      "filterType": "Chemical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 11.99,
+      "size": 6,
+      "description": "SPF 50 Chemical sunscreen",
+      "link": "https://www.walmart.com/ip/Hawaiian-Tropic-Skin-Defense-Sunscreen-Lotion-SPF-50-6oz/549118419",
+      "unitPrice": 1.9983333333333333,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://i5.walmartimages.com/seo/Hawaiian-Tropic-Skin-Defense-Sunscreen-Lotion-SPF-50-6oz_f26492aa-683c-408a-93d7-bce42dd56a9d.43bdf5448f03e6a49335cbe07164425f.jpeg"
+    },
+    {
+      "name": "MDSolarSciences Mineral Moisture Defense SPF 50",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 39,
+      "size": 4,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://mdsolarsciences.com/products/mineral-moisture-defense-spf-50",
+      "unitPrice": 9.75,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "normal",
+        "sensitive",
+        "dry"
+      ],
+      "image": "https://mdsolarsciences.com/cdn/shop/files/MineralMoistureDefense3.5.png"
+    },
+    {
+      "name": "La Roche Posay Anthelios Melt-In-Sunscreen Milk SPF 60",
+      "filterType": "Chemical",
+      "spf": 60,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 35.99,
+      "size": 5,
+      "description": "SPF 60 Chemical sunscreen",
+      "link": "https://www.laroche-posay.us/our-products/sun/body-sunscreen/anthelios-melt-in-milk-sunscreen-spf-60-antheliosmeltinmilk.html",
+      "unitPrice": 7.198,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dw6a5a552e/img/antheliosmeltinmilk/ANTHMIM_1500x1500.jpg"
+    }
+  ],
+  "2-combination": [
+    {
+      "name": "Colorescience Sunforgettable Brush-On Sunscreen SPF 30",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Powder",
+      "tint": "Tinted",
+      "price": 65,
+      "size": 0.21,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.colorescience.com/products/sunforgettable-total-protection-sheer-matte-spf-30-sunscreen-brush",
+      "unitPrice": 309.5238095238095,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.colorescience.com/cdn/shop/files/3wY6pJ4k.png"
+    },
+    {
+      "name": "Kiehl's Super Fluid UV Mineral Defense SPF 50+",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Tinted",
+      "price": 38,
+      "size": 1.7,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.kiehls.com/discontinued-products/super-fluid-daily-uv-mineral-defense/KHL416.html",
+      "unitPrice": 22.35294117647059,
+      "fitzpatrickScale": "II-IV",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.kiehls.com/dw/image/v2/AAFM_PRD/on/demandware.static/-/Sites-kiehls-master-catalog/default/dw46eb4415/nextgen/sun-care/sunscreen/dermatologist-solutions/super-fluid-uv-mineral-defense-spf-50/kiehls-sunscreen-super-fluid-uv-mineral-defense-broad-spectrum-spf50-50ml-000-3605970756093-front.jpg?sw=930&sh=930&sm=cut&sfrm=png&q=70"
+    },
+    {
+      "name": "La Roche-Posay Anthelios Clear Skin Sunscreen",
+      "filterType": "Chemical",
+      "spf": 60,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 19.99,
+      "size": 1.7,
+      "description": "SPF 60 Chemical sunscreen",
+      "link": "https://www.laroche-posay.us/our-products/sun/face-sunscreen/anthelios-clear-skin-oil-free-sunscreen-spf-60-antheliosclearskin.html",
+      "unitPrice": 11.758823529411764,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dwc9800d72/product/March%202023%20packshot%20updates/3606000430488-1_Anthelios60_Clear-Skin_50ml.jpg"
+    },
+    {
+      "name": "Neutrogena Ultra Sheer Dry-Touch SPF 100+",
+      "filterType": "Chemical",
+      "spf": 100,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 8.99,
+      "size": 3,
+      "description": "SPF 100 Chemical sunscreen",
+      "link": "https://www.neutrogena.com/products/sun/ultra-sheer-dry-touch-sunscreen-broad-spectrum-spf-100/6887310",
+      "unitPrice": 2.9966666666666666,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "oily",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://images.ctfassets.net/bcjr30vxh6td/66RaZiM5TvEMWybwg8qpK0/cacb6d52bbb0563483acc2774f13a811/6811276_MAIN.avif"
+    },
+    {
+      "name": "EltaMD UV Clear Broad-Spectrum SPF 46 Facial Sunscreen",
+      "filterType": "Mixture",
+      "spf": 46,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 35,
+      "size": 1.7,
+      "description": "SPF 46 Mixture sunscreen",
+      "link": "https://eltamd.com/products/uv-clear-broad-spectrum-spf-46",
+      "unitPrice": 20.58823529411765,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://eltamd.com/cdn/shop/files/UV_Clear_SPF_46_02500A_1200x.jpg"
+    },
+    {
+      "name": "La Roche-Posay Anthelios Ultra-Light Mineral SPF 50",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 50,
+      "size": 1.7,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.target.com/p/la-roche-posay-anthelios-sunscreen-ultra-light-fluid-face-sunscreen-oxybenzone-free-sunscreen-lotion-spf-60-1-7-fl-oz/-/A-14225600",
+      "unitPrice": 29.411764705882355,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "normal",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://target.scene7.com/is/image/Target/GUEST_c24c8064-d5e4-44e7-b047-5de75b15d472"
+    }
+  ],
+  "2-sensitive": [
+    {
+      "name": "Blue Lizard Sensitive Mineral SPF 50 Sunscreen Lotion",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 12.99,
+      "size": 3,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://bluelizardsunscreen.com/products/sensitive-mineral-sunscreen-lotion-spf-50",
+      "unitPrice": 4.33,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "sensitive"
+      ],
+      "image": "https://bluelizardsunscreen.com/cdn/shop/files/ProdPage-Sensitive-3oz-Hero-Crop1.webp"
+    },
+    {
+      "name": "Badger SPF 30 Unscented Sunscreen Cream",
+      "filterType": "Physical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 16.99,
+      "size": 2.9,
+      "description": "SPF 30 Physical sunscreen",
+      "link": "https://www.badgerbalm.com/products/clear-zinc-mineral-sunscreen-spf-30",
+      "unitPrice": 5.858620689655172,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "sensitive",
+        "dry"
+      ],
+      "image": "https://www.badgerbalm.com/cdn/shop/products/mineral-sunscreen-cream-SPF-30-unscented-Badger-R_512x512@2x.jpg"
+    },
+    {
+      "name": "MDSolarSciences Mineral Moisture Defense SPF 50",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 39,
+      "size": 4,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://mdsolarsciences.com/products/mineral-moisture-defense-spf-50",
+      "unitPrice": 9.75,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "normal",
+        "sensitive",
+        "dry"
+      ],
+      "image": "https://mdsolarsciences.com/cdn/shop/files/MineralMoistureDefense3.5.png"
+    },
+    {
+      "name": "Neutrogena Ultra Sheer Dry-Touch SPF 100+",
+      "filterType": "Chemical",
+      "spf": 100,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 8.99,
+      "size": 3,
+      "description": "SPF 100 Chemical sunscreen",
+      "link": "https://www.neutrogena.com/products/sun/ultra-sheer-dry-touch-sunscreen-broad-spectrum-spf-100/6887310",
+      "unitPrice": 2.9966666666666666,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "oily",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://images.ctfassets.net/bcjr30vxh6td/66RaZiM5TvEMWybwg8qpK0/cacb6d52bbb0563483acc2774f13a811/6811276_MAIN.avif"
+    },
+    {
+      "name": "EltaMD UV Clear Broad-Spectrum SPF 46 Facial Sunscreen",
+      "filterType": "Mixture",
+      "spf": 46,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 35,
+      "size": 1.7,
+      "description": "SPF 46 Mixture sunscreen",
+      "link": "https://eltamd.com/products/uv-clear-broad-spectrum-spf-46",
+      "unitPrice": 20.58823529411765,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://eltamd.com/cdn/shop/files/UV_Clear_SPF_46_02500A_1200x.jpg"
+    },
+    {
+      "name": "La Roche-Posay Anthelios Ultra-Light Mineral SPF 50",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 50,
+      "size": 1.7,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.target.com/p/la-roche-posay-anthelios-sunscreen-ultra-light-fluid-face-sunscreen-oxybenzone-free-sunscreen-lotion-spf-60-1-7-fl-oz/-/A-14225600",
+      "unitPrice": 29.411764705882355,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "normal",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://target.scene7.com/is/image/Target/GUEST_c24c8064-d5e4-44e7-b047-5de75b15d472"
+    }
+  ],
+  "3-normal": [
+    {
+      "name": "Drunk Elephant Umbra Sheer Physical Daily Defense SPF 30",
+      "filterType": "Physical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 34,
+      "size": 3,
+      "description": "SPF 30 Physical sunscreen",
+      "link": "https://www.drunkelephant.com/collections/sun-protection/umbra-sheer-mineral-cream-spf-30pa-812343032804.html",
+      "unitPrice": 11.333333333333334,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://www.drunkelephant.com/dw/image/v2/BBSK_PRD/on/demandware.static/-/Sites-itemmaster_drunkelephant/default/dwd771b27e/products/images/2024/June/UmbraMineralSheer/Umbra-Sheer-Reform_PDP_1.jpg"
+    },
+    {
+      "name": "EltaMD UV Moisturizing Facial Sunscreen SPF 30",
+      "filterType": "Mixture",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 30,
+      "size": 4,
+      "description": "SPF 30 Mixture sunscreen",
+      "link": "https://www.amazon.com/Sunscreen-Broad-Spectrum-Moisturizing-Dermatologist-Recommended-Mineral-Based/dp/B000PHRIYE",
+      "unitPrice": 7.5,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://m.media-amazon.com/images/I/41zbU5YYpSL._SX522_.jpg"
+    },
+    {
+      "name": "Aveeno Protect + Hydrate Lotion Sunscreen SPF 30",
+      "filterType": "Chemical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 12.49,
+      "size": 3,
+      "description": "SPF 30 Chemical sunscreen",
+      "link": "https://www.aveeno.com/products/protect-hydrate-body-lotion-sunscreen-spf-30",
+      "unitPrice": 4.163333333333333,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://images.ctfassets.net/mgaihfszrtka/2Ny78fcbtm40EhazUHLjJP/c790c1ec603a28e887ce8449c7937134/ave_381371194612_us_p_h_sunscreen_spf30_body_ltn_3oz_00000-en-us"
+    },
+    {
+      "name": "Hawaiian Tropic Antioxidant Sunscreen Lotion 50",
+      "filterType": "Chemical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 11.99,
+      "size": 6,
+      "description": "SPF 50 Chemical sunscreen",
+      "link": "https://www.walmart.com/ip/Hawaiian-Tropic-Skin-Defense-Sunscreen-Lotion-SPF-50-6oz/549118419",
+      "unitPrice": 1.9983333333333333,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://i5.walmartimages.com/seo/Hawaiian-Tropic-Skin-Defense-Sunscreen-Lotion-SPF-50-6oz_f26492aa-683c-408a-93d7-bce42dd56a9d.43bdf5448f03e6a49335cbe07164425f.jpeg"
+    },
+    {
+      "name": "MDSolarSciences Mineral Moisture Defense SPF 50",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 39,
+      "size": 4,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://mdsolarsciences.com/products/mineral-moisture-defense-spf-50",
+      "unitPrice": 9.75,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "normal",
+        "sensitive",
+        "dry"
+      ],
+      "image": "https://mdsolarsciences.com/cdn/shop/files/MineralMoistureDefense3.5.png"
+    },
+    {
+      "name": "La Roche Posay Anthelios Melt-In-Sunscreen Milk SPF 60",
+      "filterType": "Chemical",
+      "spf": 60,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 35.99,
+      "size": 5,
+      "description": "SPF 60 Chemical sunscreen",
+      "link": "https://www.laroche-posay.us/our-products/sun/body-sunscreen/anthelios-melt-in-milk-sunscreen-spf-60-antheliosmeltinmilk.html",
+      "unitPrice": 7.198,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dw6a5a552e/img/antheliosmeltinmilk/ANTHMIM_1500x1500.jpg"
+    },
+    {
+      "name": "La Roche-Posay Anthelios Ultra-Light Mineral SPF 50",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 50,
+      "size": 1.7,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.target.com/p/la-roche-posay-anthelios-sunscreen-ultra-light-fluid-face-sunscreen-oxybenzone-free-sunscreen-lotion-spf-60-1-7-fl-oz/-/A-14225600",
+      "unitPrice": 29.411764705882355,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "normal",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://target.scene7.com/is/image/Target/GUEST_c24c8064-d5e4-44e7-b047-5de75b15d472"
+    }
+  ],
+  "3-oily": [
+    {
+      "name": "Colorescience Sunforgettable Brush-On Sunscreen SPF 30",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Powder",
+      "tint": "Tinted",
+      "price": 65,
+      "size": 0.21,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.colorescience.com/products/sunforgettable-total-protection-sheer-matte-spf-30-sunscreen-brush",
+      "unitPrice": 309.5238095238095,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.colorescience.com/cdn/shop/files/3wY6pJ4k.png"
+    },
+    {
+      "name": "Kiehl's Super Fluid UV Mineral Defense SPF 50+",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Tinted",
+      "price": 38,
+      "size": 1.7,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.kiehls.com/discontinued-products/super-fluid-daily-uv-mineral-defense/KHL416.html",
+      "unitPrice": 22.35294117647059,
+      "fitzpatrickScale": "II-IV",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.kiehls.com/dw/image/v2/AAFM_PRD/on/demandware.static/-/Sites-kiehls-master-catalog/default/dw46eb4415/nextgen/sun-care/sunscreen/dermatologist-solutions/super-fluid-uv-mineral-defense-spf-50/kiehls-sunscreen-super-fluid-uv-mineral-defense-broad-spectrum-spf50-50ml-000-3605970756093-front.jpg?sw=930&sh=930&sm=cut&sfrm=png&q=70"
+    },
+    {
+      "name": "La Roche-Posay Anthelios Clear Skin Sunscreen",
+      "filterType": "Chemical",
+      "spf": 60,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 19.99,
+      "size": 1.7,
+      "description": "SPF 60 Chemical sunscreen",
+      "link": "https://www.laroche-posay.us/our-products/sun/face-sunscreen/anthelios-clear-skin-oil-free-sunscreen-spf-60-antheliosclearskin.html",
+      "unitPrice": 11.758823529411764,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dwc9800d72/product/March%202023%20packshot%20updates/3606000430488-1_Anthelios60_Clear-Skin_50ml.jpg"
+    },
+    {
+      "name": "Neutrogena Ultra Sheer Dry-Touch SPF 100+",
+      "filterType": "Chemical",
+      "spf": 100,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 8.99,
+      "size": 3,
+      "description": "SPF 100 Chemical sunscreen",
+      "link": "https://www.neutrogena.com/products/sun/ultra-sheer-dry-touch-sunscreen-broad-spectrum-spf-100/6887310",
+      "unitPrice": 2.9966666666666666,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "oily",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://images.ctfassets.net/bcjr30vxh6td/66RaZiM5TvEMWybwg8qpK0/cacb6d52bbb0563483acc2774f13a811/6811276_MAIN.avif"
+    },
+    {
+      "name": "EltaMD UV Clear Broad-Spectrum SPF 46 Facial Sunscreen",
+      "filterType": "Mixture",
+      "spf": 46,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 35,
+      "size": 1.7,
+      "description": "SPF 46 Mixture sunscreen",
+      "link": "https://eltamd.com/products/uv-clear-broad-spectrum-spf-46",
+      "unitPrice": 20.58823529411765,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://eltamd.com/cdn/shop/files/UV_Clear_SPF_46_02500A_1200x.jpg"
+    }
+  ],
+  "3-dry": [
+    {
+      "name": "Drunk Elephant Umbra Sheer Physical Daily Defense SPF 30",
+      "filterType": "Physical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 34,
+      "size": 3,
+      "description": "SPF 30 Physical sunscreen",
+      "link": "https://www.drunkelephant.com/collections/sun-protection/umbra-sheer-mineral-cream-spf-30pa-812343032804.html",
+      "unitPrice": 11.333333333333334,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://www.drunkelephant.com/dw/image/v2/BBSK_PRD/on/demandware.static/-/Sites-itemmaster_drunkelephant/default/dwd771b27e/products/images/2024/June/UmbraMineralSheer/Umbra-Sheer-Reform_PDP_1.jpg"
+    },
+    {
+      "name": "EltaMD UV Moisturizing Facial Sunscreen SPF 30",
+      "filterType": "Mixture",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 30,
+      "size": 4,
+      "description": "SPF 30 Mixture sunscreen",
+      "link": "https://www.amazon.com/Sunscreen-Broad-Spectrum-Moisturizing-Dermatologist-Recommended-Mineral-Based/dp/B000PHRIYE",
+      "unitPrice": 7.5,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://m.media-amazon.com/images/I/41zbU5YYpSL._SX522_.jpg"
+    },
+    {
+      "name": "Aveeno Protect + Hydrate Lotion Sunscreen SPF 30",
+      "filterType": "Chemical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 12.49,
+      "size": 3,
+      "description": "SPF 30 Chemical sunscreen",
+      "link": "https://www.aveeno.com/products/protect-hydrate-body-lotion-sunscreen-spf-30",
+      "unitPrice": 4.163333333333333,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://images.ctfassets.net/mgaihfszrtka/2Ny78fcbtm40EhazUHLjJP/c790c1ec603a28e887ce8449c7937134/ave_381371194612_us_p_h_sunscreen_spf30_body_ltn_3oz_00000-en-us"
+    },
+    {
+      "name": "Badger SPF 30 Unscented Sunscreen Cream",
+      "filterType": "Physical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 16.99,
+      "size": 2.9,
+      "description": "SPF 30 Physical sunscreen",
+      "link": "https://www.badgerbalm.com/products/clear-zinc-mineral-sunscreen-spf-30",
+      "unitPrice": 5.858620689655172,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "sensitive",
+        "dry"
+      ],
+      "image": "https://www.badgerbalm.com/cdn/shop/products/mineral-sunscreen-cream-SPF-30-unscented-Badger-R_512x512@2x.jpg"
+    },
+    {
+      "name": "Hawaiian Tropic Antioxidant Sunscreen Lotion 50",
+      "filterType": "Chemical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 11.99,
+      "size": 6,
+      "description": "SPF 50 Chemical sunscreen",
+      "link": "https://www.walmart.com/ip/Hawaiian-Tropic-Skin-Defense-Sunscreen-Lotion-SPF-50-6oz/549118419",
+      "unitPrice": 1.9983333333333333,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://i5.walmartimages.com/seo/Hawaiian-Tropic-Skin-Defense-Sunscreen-Lotion-SPF-50-6oz_f26492aa-683c-408a-93d7-bce42dd56a9d.43bdf5448f03e6a49335cbe07164425f.jpeg"
+    },
+    {
+      "name": "MDSolarSciences Mineral Moisture Defense SPF 50",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 39,
+      "size": 4,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://mdsolarsciences.com/products/mineral-moisture-defense-spf-50",
+      "unitPrice": 9.75,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "normal",
+        "sensitive",
+        "dry"
+      ],
+      "image": "https://mdsolarsciences.com/cdn/shop/files/MineralMoistureDefense3.5.png"
+    },
+    {
+      "name": "La Roche Posay Anthelios Melt-In-Sunscreen Milk SPF 60",
+      "filterType": "Chemical",
+      "spf": 60,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 35.99,
+      "size": 5,
+      "description": "SPF 60 Chemical sunscreen",
+      "link": "https://www.laroche-posay.us/our-products/sun/body-sunscreen/anthelios-melt-in-milk-sunscreen-spf-60-antheliosmeltinmilk.html",
+      "unitPrice": 7.198,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dw6a5a552e/img/antheliosmeltinmilk/ANTHMIM_1500x1500.jpg"
+    }
+  ],
+  "3-combination": [
+    {
+      "name": "Colorescience Sunforgettable Brush-On Sunscreen SPF 30",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Powder",
+      "tint": "Tinted",
+      "price": 65,
+      "size": 0.21,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.colorescience.com/products/sunforgettable-total-protection-sheer-matte-spf-30-sunscreen-brush",
+      "unitPrice": 309.5238095238095,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.colorescience.com/cdn/shop/files/3wY6pJ4k.png"
+    },
+    {
+      "name": "Kiehl's Super Fluid UV Mineral Defense SPF 50+",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Tinted",
+      "price": 38,
+      "size": 1.7,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.kiehls.com/discontinued-products/super-fluid-daily-uv-mineral-defense/KHL416.html",
+      "unitPrice": 22.35294117647059,
+      "fitzpatrickScale": "II-IV",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.kiehls.com/dw/image/v2/AAFM_PRD/on/demandware.static/-/Sites-kiehls-master-catalog/default/dw46eb4415/nextgen/sun-care/sunscreen/dermatologist-solutions/super-fluid-uv-mineral-defense-spf-50/kiehls-sunscreen-super-fluid-uv-mineral-defense-broad-spectrum-spf50-50ml-000-3605970756093-front.jpg?sw=930&sh=930&sm=cut&sfrm=png&q=70"
+    },
+    {
+      "name": "La Roche-Posay Anthelios Clear Skin Sunscreen",
+      "filterType": "Chemical",
+      "spf": 60,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 19.99,
+      "size": 1.7,
+      "description": "SPF 60 Chemical sunscreen",
+      "link": "https://www.laroche-posay.us/our-products/sun/face-sunscreen/anthelios-clear-skin-oil-free-sunscreen-spf-60-antheliosclearskin.html",
+      "unitPrice": 11.758823529411764,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dwc9800d72/product/March%202023%20packshot%20updates/3606000430488-1_Anthelios60_Clear-Skin_50ml.jpg"
+    },
+    {
+      "name": "Neutrogena Ultra Sheer Dry-Touch SPF 100+",
+      "filterType": "Chemical",
+      "spf": 100,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 8.99,
+      "size": 3,
+      "description": "SPF 100 Chemical sunscreen",
+      "link": "https://www.neutrogena.com/products/sun/ultra-sheer-dry-touch-sunscreen-broad-spectrum-spf-100/6887310",
+      "unitPrice": 2.9966666666666666,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "oily",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://images.ctfassets.net/bcjr30vxh6td/66RaZiM5TvEMWybwg8qpK0/cacb6d52bbb0563483acc2774f13a811/6811276_MAIN.avif"
+    },
+    {
+      "name": "EltaMD UV Clear Broad-Spectrum SPF 46 Facial Sunscreen",
+      "filterType": "Mixture",
+      "spf": 46,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 35,
+      "size": 1.7,
+      "description": "SPF 46 Mixture sunscreen",
+      "link": "https://eltamd.com/products/uv-clear-broad-spectrum-spf-46",
+      "unitPrice": 20.58823529411765,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://eltamd.com/cdn/shop/files/UV_Clear_SPF_46_02500A_1200x.jpg"
+    },
+    {
+      "name": "La Roche-Posay Anthelios Ultra-Light Mineral SPF 50",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 50,
+      "size": 1.7,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.target.com/p/la-roche-posay-anthelios-sunscreen-ultra-light-fluid-face-sunscreen-oxybenzone-free-sunscreen-lotion-spf-60-1-7-fl-oz/-/A-14225600",
+      "unitPrice": 29.411764705882355,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "normal",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://target.scene7.com/is/image/Target/GUEST_c24c8064-d5e4-44e7-b047-5de75b15d472"
+    }
+  ],
+  "3-sensitive": [
+    {
+      "name": "Blue Lizard Sensitive Mineral SPF 50 Sunscreen Lotion",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 12.99,
+      "size": 3,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://bluelizardsunscreen.com/products/sensitive-mineral-sunscreen-lotion-spf-50",
+      "unitPrice": 4.33,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "sensitive"
+      ],
+      "image": "https://bluelizardsunscreen.com/cdn/shop/files/ProdPage-Sensitive-3oz-Hero-Crop1.webp"
+    },
+    {
+      "name": "Badger SPF 30 Unscented Sunscreen Cream",
+      "filterType": "Physical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 16.99,
+      "size": 2.9,
+      "description": "SPF 30 Physical sunscreen",
+      "link": "https://www.badgerbalm.com/products/clear-zinc-mineral-sunscreen-spf-30",
+      "unitPrice": 5.858620689655172,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "sensitive",
+        "dry"
+      ],
+      "image": "https://www.badgerbalm.com/cdn/shop/products/mineral-sunscreen-cream-SPF-30-unscented-Badger-R_512x512@2x.jpg"
+    },
+    {
+      "name": "MDSolarSciences Mineral Moisture Defense SPF 50",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 39,
+      "size": 4,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://mdsolarsciences.com/products/mineral-moisture-defense-spf-50",
+      "unitPrice": 9.75,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "normal",
+        "sensitive",
+        "dry"
+      ],
+      "image": "https://mdsolarsciences.com/cdn/shop/files/MineralMoistureDefense3.5.png"
+    },
+    {
+      "name": "Neutrogena Ultra Sheer Dry-Touch SPF 100+",
+      "filterType": "Chemical",
+      "spf": 100,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 8.99,
+      "size": 3,
+      "description": "SPF 100 Chemical sunscreen",
+      "link": "https://www.neutrogena.com/products/sun/ultra-sheer-dry-touch-sunscreen-broad-spectrum-spf-100/6887310",
+      "unitPrice": 2.9966666666666666,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "oily",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://images.ctfassets.net/bcjr30vxh6td/66RaZiM5TvEMWybwg8qpK0/cacb6d52bbb0563483acc2774f13a811/6811276_MAIN.avif"
+    },
+    {
+      "name": "EltaMD UV Clear Broad-Spectrum SPF 46 Facial Sunscreen",
+      "filterType": "Mixture",
+      "spf": 46,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 35,
+      "size": 1.7,
+      "description": "SPF 46 Mixture sunscreen",
+      "link": "https://eltamd.com/products/uv-clear-broad-spectrum-spf-46",
+      "unitPrice": 20.58823529411765,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://eltamd.com/cdn/shop/files/UV_Clear_SPF_46_02500A_1200x.jpg"
+    },
+    {
+      "name": "La Roche-Posay Anthelios Ultra-Light Mineral SPF 50",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 50,
+      "size": 1.7,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.target.com/p/la-roche-posay-anthelios-sunscreen-ultra-light-fluid-face-sunscreen-oxybenzone-free-sunscreen-lotion-spf-60-1-7-fl-oz/-/A-14225600",
+      "unitPrice": 29.411764705882355,
+      "fitzpatrickScale": "I-III",
+      "skinTypes": [
+        "normal",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://target.scene7.com/is/image/Target/GUEST_c24c8064-d5e4-44e7-b047-5de75b15d472"
+    }
+  ],
+  "4-normal": [
+    {
+      "name": "Drunk Elephant Umbra Sheer Physical Daily Defense SPF 30",
+      "filterType": "Physical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 34,
+      "size": 3,
+      "description": "SPF 30 Physical sunscreen",
+      "link": "https://www.drunkelephant.com/collections/sun-protection/umbra-sheer-mineral-cream-spf-30pa-812343032804.html",
+      "unitPrice": 11.333333333333334,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://www.drunkelephant.com/dw/image/v2/BBSK_PRD/on/demandware.static/-/Sites-itemmaster_drunkelephant/default/dwd771b27e/products/images/2024/June/UmbraMineralSheer/Umbra-Sheer-Reform_PDP_1.jpg"
+    },
+    {
+      "name": "NYDG Chem-Free Active Defense",
+      "filterType": "Physical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 98,
+      "size": 4,
+      "description": "SPF 30 Physical sunscreen",
+      "link": "https://store.nydermatologygroup.com/products/chem-free-active-defense-spf30",
+      "unitPrice": 24.5,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://store.nydermatologygroup.com/cdn/shop/products/NYDGS_ChemFree_ActiveDefense_SPF30_1000.jpg"
+    },
+    {
+      "name": "Aveeno Positively Radiant Daily Moisturizer Sunscreen SPF 30",
+      "filterType": "Chemical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 19.49,
+      "size": 2.5,
+      "description": "SPF 30 Chemical sunscreen",
+      "link": "https://www.aveeno.com/products/positively-radiant-daily-face-moisturizer-broad-spectrum-spf-30",
+      "unitPrice": 7.795999999999999,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://images.ctfassets.net/mgaihfszrtka/3rVQrzgkxutNUHM5AWTRnT/11cef5b0ebfa1d9c8072a06b73b637ec/3oz_oob1-min-en-us"
+    },
+    {
+      "name": "EltaMD UV Moisturizing Facial Sunscreen SPF 30",
+      "filterType": "Mixture",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 30,
+      "size": 4,
+      "description": "SPF 30 Mixture sunscreen",
+      "link": "https://www.amazon.com/Sunscreen-Broad-Spectrum-Moisturizing-Dermatologist-Recommended-Mineral-Based/dp/B000PHRIYE",
+      "unitPrice": 7.5,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://m.media-amazon.com/images/I/41zbU5YYpSL._SX522_.jpg"
+    },
+    {
+      "name": "Murad Essential-C Day Moisture Sunscreen",
+      "filterType": "Chemical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 65,
+      "size": 1.7,
+      "description": "SPF 30 Chemical sunscreen",
+      "link": "https://www.target.com/p/murad-essential-c-moisturizer-spf-30-1-70-fl-oz-ulta-beauty/-/A-89133245",
+      "unitPrice": 38.23529411764706,
+      "fitzpatrickScale": "IV-V",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://target.scene7.com/is/image/Target/GUEST_ae33a606-41dd-46f7-8c87-ecf1c975dcad"
+    },
+    {
+      "name": "Glossier Invisible Shield Priming Sunscreen SPF 50",
+      "filterType": "Chemical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Transparent",
+      "price": 32,
+      "size": 1.7,
+      "description": "SPF 50 Chemical sunscreen",
+      "link": "https://www.sephora.com/product/glossier-invisible-shield-blurring-primer-spf-P511457",
+      "unitPrice": 18.823529411764707,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "dry",
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.sephora.com/productimages/sku/s2771434-main-zoom.jpg"
+    },
+    {
+      "name": "Kate Somerville UncompliKated",
+      "filterType": "Chemical",
+      "spf": 50,
+      "vehicle": "Spray",
+      "tint": "Untinted",
+      "price": 38,
+      "size": 3.4,
+      "description": "SPF 50 Chemical sunscreen",
+      "link": "https://www.katesomerville.com/products/anti-aging-products-uncomplikated-spf-makeup-setting-spray",
+      "unitPrice": 11.176470588235295,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "oily",
+        "normal"
+      ],
+      "image": "https://www.katesomerville.com/cdn/shop/files/10258_fr.jpg"
+    },
+    {
+      "name": "Murad City Skin",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Tinted",
+      "price": 68,
+      "size": 1.7,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.murad.com/products/city-skin-age-defense-spf-50",
+      "unitPrice": 40,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "sensitive",
+        "dry"
+      ],
+      "image": "https://www.murad.com/cdn/shop/files/City_Skin_Carousel_1_MURAD.png"
+    },
+    {
+      "name": "CeraVe Hydrating Sunscreen Broad Spectrum SPF 50",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 14.99,
+      "size": 2.5,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.cerave.com/sunscreen/face/hydrating-mineral-sunscreen-face-lotion-spf-50",
+      "unitPrice": 5.996,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/sunscreen/face/50-spf-face/50-spf-face_front.jpg"
+    },
+    {
+      "name": "La Roche Posay Anthelios Melt-In-Sunscreen Milk SPF 60",
+      "filterType": "Chemical",
+      "spf": 60,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 35.99,
+      "size": 5,
+      "description": "SPF 60 Chemical sunscreen",
+      "link": "https://www.laroche-posay.us/our-products/sun/body-sunscreen/anthelios-melt-in-milk-sunscreen-spf-60-antheliosmeltinmilk.html",
+      "unitPrice": 7.198,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dw6a5a552e/img/antheliosmeltinmilk/ANTHMIM_1500x1500.jpg"
+    }
+  ],
+  "4-oily": [
+    {
+      "name": "Mario Badescu Oil-Free Moisturizer SPF 30",
+      "filterType": "Chemical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 28,
+      "size": 2,
+      "description": "SPF 30 Chemical sunscreen",
+      "link": "https://www.mariobadescu.com/products/oil-free-moisturizer-spf-30",
+      "unitPrice": 14,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.mariobadescu.com/cdn/shop/files/cyj6ekduk29cjnjnptzj_5b773e8a-80c9-478b-947d-a62ae2cc1a79.jpg"
+    },
+    {
+      "name": "Glossier Invisible Shield Priming Sunscreen SPF 50",
+      "filterType": "Chemical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Transparent",
+      "price": 32,
+      "size": 1.7,
+      "description": "SPF 50 Chemical sunscreen",
+      "link": "https://www.sephora.com/product/glossier-invisible-shield-blurring-primer-spf-P511457",
+      "unitPrice": 18.823529411764707,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "dry",
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.sephora.com/productimages/sku/s2771434-main-zoom.jpg"
+    },
+    {
+      "name": "Supergoop! Unseen Sunscreen",
+      "filterType": "Chemical",
+      "spf": 40,
+      "vehicle": "Cream/lotion",
+      "tint": "Transparent",
+      "price": 34,
+      "size": 1.7,
+      "description": "SPF 40 Chemical sunscreen",
+      "link": "https://supergoop.com/products/mineral-unseen",
+      "unitPrice": 20,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://supergoop.com/cdn/shop/files/Unseen_Mineral_Alt_1_Update.jpg"
+    },
+    {
+      "name": "Julep No Excuses Invisible Sunscreen Gel",
+      "filterType": "Chemical",
+      "spf": 40,
+      "vehicle": "Cream/lotion",
+      "tint": "Transparent",
+      "price": 20,
+      "size": 1,
+      "description": "SPF 40 Chemical sunscreen",
+      "link": "https://www.skinsafeproducts.com/julep-beauty-no-excuses-broad-spectrum-invisible-sunscreen-gel-for-face-spf-40-1-fl-oz-30-ml",
+      "unitPrice": 20,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://cdn1.skinsafeproducts.com/photo/4753EAE57E381C/large_1676949677.pngpng"
+    },
+    {
+      "name": "Kate Somerville UncompliKated",
+      "filterType": "Chemical",
+      "spf": 50,
+      "vehicle": "Spray",
+      "tint": "Untinted",
+      "price": 38,
+      "size": 3.4,
+      "description": "SPF 50 Chemical sunscreen",
+      "link": "https://www.katesomerville.com/products/anti-aging-products-uncomplikated-spf-makeup-setting-spray",
+      "unitPrice": 11.176470588235295,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "oily",
+        "normal"
+      ],
+      "image": "https://www.katesomerville.com/cdn/shop/files/10258_fr.jpg"
+    },
+    {
+      "name": "Colorescience Sunforgettable Brush-On Sunscreen SPF 30",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Powder",
+      "tint": "Tinted",
+      "price": 65,
+      "size": 0.21,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.colorescience.com/products/sunforgettable-total-protection-sheer-matte-spf-30-sunscreen-brush",
+      "unitPrice": 309.5238095238095,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.colorescience.com/cdn/shop/files/3wY6pJ4k.png"
+    },
+    {
+      "name": "Kiehl's Super Fluid UV Mineral Defense SPF 50+",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Tinted",
+      "price": 38,
+      "size": 1.7,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.kiehls.com/discontinued-products/super-fluid-daily-uv-mineral-defense/KHL416.html",
+      "unitPrice": 22.35294117647059,
+      "fitzpatrickScale": "II-IV",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.kiehls.com/dw/image/v2/AAFM_PRD/on/demandware.static/-/Sites-kiehls-master-catalog/default/dw46eb4415/nextgen/sun-care/sunscreen/dermatologist-solutions/super-fluid-uv-mineral-defense-spf-50/kiehls-sunscreen-super-fluid-uv-mineral-defense-broad-spectrum-spf50-50ml-000-3605970756093-front.jpg?sw=930&sh=930&sm=cut&sfrm=png&q=70"
+    },
+    {
+      "name": "La Roche-Posay Anthelios Clear Skin Sunscreen",
+      "filterType": "Chemical",
+      "spf": 60,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 19.99,
+      "size": 1.7,
+      "description": "SPF 60 Chemical sunscreen",
+      "link": "https://www.laroche-posay.us/our-products/sun/face-sunscreen/anthelios-clear-skin-oil-free-sunscreen-spf-60-antheliosclearskin.html",
+      "unitPrice": 11.758823529411764,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dwc9800d72/product/March%202023%20packshot%20updates/3606000430488-1_Anthelios60_Clear-Skin_50ml.jpg"
+    },
+    {
+      "name": "EltaMD UV Clear Broad-Spectrum SPF 46 Facial Sunscreen",
+      "filterType": "Mixture",
+      "spf": 46,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 35,
+      "size": 1.7,
+      "description": "SPF 46 Mixture sunscreen",
+      "link": "https://eltamd.com/products/uv-clear-broad-spectrum-spf-46",
+      "unitPrice": 20.58823529411765,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://eltamd.com/cdn/shop/files/UV_Clear_SPF_46_02500A_1200x.jpg"
+    }
+  ],
+  "4-dry": [
+    {
+      "name": "Drunk Elephant Umbra Sheer Physical Daily Defense SPF 30",
+      "filterType": "Physical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 34,
+      "size": 3,
+      "description": "SPF 30 Physical sunscreen",
+      "link": "https://www.drunkelephant.com/collections/sun-protection/umbra-sheer-mineral-cream-spf-30pa-812343032804.html",
+      "unitPrice": 11.333333333333334,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://www.drunkelephant.com/dw/image/v2/BBSK_PRD/on/demandware.static/-/Sites-itemmaster_drunkelephant/default/dwd771b27e/products/images/2024/June/UmbraMineralSheer/Umbra-Sheer-Reform_PDP_1.jpg"
+    },
+    {
+      "name": "NYDG Chem-Free Active Defense",
+      "filterType": "Physical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 98,
+      "size": 4,
+      "description": "SPF 30 Physical sunscreen",
+      "link": "https://store.nydermatologygroup.com/products/chem-free-active-defense-spf30",
+      "unitPrice": 24.5,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://store.nydermatologygroup.com/cdn/shop/products/NYDGS_ChemFree_ActiveDefense_SPF30_1000.jpg"
+    },
+    {
+      "name": "Aveeno Positively Radiant Daily Moisturizer Sunscreen SPF 30",
+      "filterType": "Chemical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 19.49,
+      "size": 2.5,
+      "description": "SPF 30 Chemical sunscreen",
+      "link": "https://www.aveeno.com/products/positively-radiant-daily-face-moisturizer-broad-spectrum-spf-30",
+      "unitPrice": 7.795999999999999,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://images.ctfassets.net/mgaihfszrtka/3rVQrzgkxutNUHM5AWTRnT/11cef5b0ebfa1d9c8072a06b73b637ec/3oz_oob1-min-en-us"
+    },
+    {
+      "name": "EltaMD UV Moisturizing Facial Sunscreen SPF 30",
+      "filterType": "Mixture",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 30,
+      "size": 4,
+      "description": "SPF 30 Mixture sunscreen",
+      "link": "https://www.amazon.com/Sunscreen-Broad-Spectrum-Moisturizing-Dermatologist-Recommended-Mineral-Based/dp/B000PHRIYE",
+      "unitPrice": 7.5,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://m.media-amazon.com/images/I/41zbU5YYpSL._SX522_.jpg"
+    },
+    {
+      "name": "Murad Essential-C Day Moisture Sunscreen",
+      "filterType": "Chemical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 65,
+      "size": 1.7,
+      "description": "SPF 30 Chemical sunscreen",
+      "link": "https://www.target.com/p/murad-essential-c-moisturizer-spf-30-1-70-fl-oz-ulta-beauty/-/A-89133245",
+      "unitPrice": 38.23529411764706,
+      "fitzpatrickScale": "IV-V",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://target.scene7.com/is/image/Target/GUEST_ae33a606-41dd-46f7-8c87-ecf1c975dcad"
+    },
+    {
+      "name": "Glossier Invisible Shield Priming Sunscreen SPF 50",
+      "filterType": "Chemical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Transparent",
+      "price": 32,
+      "size": 1.7,
+      "description": "SPF 50 Chemical sunscreen",
+      "link": "https://www.sephora.com/product/glossier-invisible-shield-blurring-primer-spf-P511457",
+      "unitPrice": 18.823529411764707,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "dry",
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.sephora.com/productimages/sku/s2771434-main-zoom.jpg"
+    },
+    {
+      "name": "Murad City Skin",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Tinted",
+      "price": 68,
+      "size": 1.7,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.murad.com/products/city-skin-age-defense-spf-50",
+      "unitPrice": 40,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "sensitive",
+        "dry"
+      ],
+      "image": "https://www.murad.com/cdn/shop/files/City_Skin_Carousel_1_MURAD.png"
+    },
+    {
+      "name": "CeraVe Hydrating Sunscreen Broad Spectrum SPF 50",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 14.99,
+      "size": 2.5,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.cerave.com/sunscreen/face/hydrating-mineral-sunscreen-face-lotion-spf-50",
+      "unitPrice": 5.996,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/sunscreen/face/50-spf-face/50-spf-face_front.jpg"
+    },
+    {
+      "name": "La Roche Posay Anthelios Melt-In-Sunscreen Milk SPF 60",
+      "filterType": "Chemical",
+      "spf": 60,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 35.99,
+      "size": 5,
+      "description": "SPF 60 Chemical sunscreen",
+      "link": "https://www.laroche-posay.us/our-products/sun/body-sunscreen/anthelios-melt-in-milk-sunscreen-spf-60-antheliosmeltinmilk.html",
+      "unitPrice": 7.198,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dw6a5a552e/img/antheliosmeltinmilk/ANTHMIM_1500x1500.jpg"
+    }
+  ],
+  "4-combination": [
+    {
+      "name": "Mario Badescu Oil-Free Moisturizer SPF 30",
+      "filterType": "Chemical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 28,
+      "size": 2,
+      "description": "SPF 30 Chemical sunscreen",
+      "link": "https://www.mariobadescu.com/products/oil-free-moisturizer-spf-30",
+      "unitPrice": 14,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.mariobadescu.com/cdn/shop/files/cyj6ekduk29cjnjnptzj_5b773e8a-80c9-478b-947d-a62ae2cc1a79.jpg"
+    },
+    {
+      "name": "Glossier Invisible Shield Priming Sunscreen SPF 50",
+      "filterType": "Chemical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Transparent",
+      "price": 32,
+      "size": 1.7,
+      "description": "SPF 50 Chemical sunscreen",
+      "link": "https://www.sephora.com/product/glossier-invisible-shield-blurring-primer-spf-P511457",
+      "unitPrice": 18.823529411764707,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "dry",
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.sephora.com/productimages/sku/s2771434-main-zoom.jpg"
+    },
+    {
+      "name": "Supergoop! Unseen Sunscreen",
+      "filterType": "Chemical",
+      "spf": 40,
+      "vehicle": "Cream/lotion",
+      "tint": "Transparent",
+      "price": 34,
+      "size": 1.7,
+      "description": "SPF 40 Chemical sunscreen",
+      "link": "https://supergoop.com/products/mineral-unseen",
+      "unitPrice": 20,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://supergoop.com/cdn/shop/files/Unseen_Mineral_Alt_1_Update.jpg"
+    },
+    {
+      "name": "Julep No Excuses Invisible Sunscreen Gel",
+      "filterType": "Chemical",
+      "spf": 40,
+      "vehicle": "Cream/lotion",
+      "tint": "Transparent",
+      "price": 20,
+      "size": 1,
+      "description": "SPF 40 Chemical sunscreen",
+      "link": "https://www.skinsafeproducts.com/julep-beauty-no-excuses-broad-spectrum-invisible-sunscreen-gel-for-face-spf-40-1-fl-oz-30-ml",
+      "unitPrice": 20,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://cdn1.skinsafeproducts.com/photo/4753EAE57E381C/large_1676949677.pngpng"
+    },
+    {
+      "name": "Colorescience Sunforgettable Brush-On Sunscreen SPF 30",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Powder",
+      "tint": "Tinted",
+      "price": 65,
+      "size": 0.21,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.colorescience.com/products/sunforgettable-total-protection-sheer-matte-spf-30-sunscreen-brush",
+      "unitPrice": 309.5238095238095,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.colorescience.com/cdn/shop/files/3wY6pJ4k.png"
+    },
+    {
+      "name": "Kiehl's Super Fluid UV Mineral Defense SPF 50+",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Tinted",
+      "price": 38,
+      "size": 1.7,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.kiehls.com/discontinued-products/super-fluid-daily-uv-mineral-defense/KHL416.html",
+      "unitPrice": 22.35294117647059,
+      "fitzpatrickScale": "II-IV",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.kiehls.com/dw/image/v2/AAFM_PRD/on/demandware.static/-/Sites-kiehls-master-catalog/default/dw46eb4415/nextgen/sun-care/sunscreen/dermatologist-solutions/super-fluid-uv-mineral-defense-spf-50/kiehls-sunscreen-super-fluid-uv-mineral-defense-broad-spectrum-spf50-50ml-000-3605970756093-front.jpg?sw=930&sh=930&sm=cut&sfrm=png&q=70"
+    },
+    {
+      "name": "La Roche-Posay Anthelios Clear Skin Sunscreen",
+      "filterType": "Chemical",
+      "spf": 60,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 19.99,
+      "size": 1.7,
+      "description": "SPF 60 Chemical sunscreen",
+      "link": "https://www.laroche-posay.us/our-products/sun/face-sunscreen/anthelios-clear-skin-oil-free-sunscreen-spf-60-antheliosclearskin.html",
+      "unitPrice": 11.758823529411764,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dwc9800d72/product/March%202023%20packshot%20updates/3606000430488-1_Anthelios60_Clear-Skin_50ml.jpg"
+    },
+    {
+      "name": "EltaMD UV Clear Broad-Spectrum SPF 46 Facial Sunscreen",
+      "filterType": "Mixture",
+      "spf": 46,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 35,
+      "size": 1.7,
+      "description": "SPF 46 Mixture sunscreen",
+      "link": "https://eltamd.com/products/uv-clear-broad-spectrum-spf-46",
+      "unitPrice": 20.58823529411765,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://eltamd.com/cdn/shop/files/UV_Clear_SPF_46_02500A_1200x.jpg"
+    }
+  ],
+  "4-sensitive": [
+    {
+      "name": "Murad City Skin",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Tinted",
+      "price": 68,
+      "size": 1.7,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.murad.com/products/city-skin-age-defense-spf-50",
+      "unitPrice": 40,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "sensitive",
+        "dry"
+      ],
+      "image": "https://www.murad.com/cdn/shop/files/City_Skin_Carousel_1_MURAD.png"
+    },
+    {
+      "name": "EltaMD UV Clear Broad-Spectrum SPF 46 Facial Sunscreen",
+      "filterType": "Mixture",
+      "spf": 46,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 35,
+      "size": 1.7,
+      "description": "SPF 46 Mixture sunscreen",
+      "link": "https://eltamd.com/products/uv-clear-broad-spectrum-spf-46",
+      "unitPrice": 20.58823529411765,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://eltamd.com/cdn/shop/files/UV_Clear_SPF_46_02500A_1200x.jpg"
+    }
+  ],
+  "5-normal": [
+    {
+      "name": "Black Girl Sunscreen",
+      "filterType": "Chemical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 18.99,
+      "size": 3,
+      "description": "SPF 30 Chemical sunscreen",
+      "link": "https://blackgirlsunscreen.com/product/black-girl-sunscreen-spf-30",
+      "unitPrice": 6.329999999999999,
+      "fitzpatrickScale": "V-VI",
+      "skinTypes": [
+        "dry",
+        "normal"
+      ],
+      "image": "https://blackgirlsunscreen.com/wp-content/uploads/2017/08/Untitled-design-300x300.png"
+    },
+    {
+      "name": "Bolden Brightening Moisturizer SPF 30",
+      "filterType": "Chemical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 28,
+      "size": 2,
+      "description": "SPF 30 Chemical sunscreen",
+      "link": "https://www.boldenusa.com/products/spf-30-brightening-moisturizer",
+      "unitPrice": 14,
+      "fitzpatrickScale": "V-VI",
+      "skinTypes": [
+        "normal",
+        "combination"
+      ],
+      "image": "https://www.boldenusa.com/cdn/shop/files/Bolden_Sunscreen_Moisturizer_Elle_1200x.png"
+    },
+    {
+      "name": "Drunk Elephant Umbra Sheer Physical Daily Defense SPF 30",
+      "filterType": "Physical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 34,
+      "size": 3,
+      "description": "SPF 30 Physical sunscreen",
+      "link": "https://www.drunkelephant.com/collections/sun-protection/umbra-sheer-mineral-cream-spf-30pa-812343032804.html",
+      "unitPrice": 11.333333333333334,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://www.drunkelephant.com/dw/image/v2/BBSK_PRD/on/demandware.static/-/Sites-itemmaster_drunkelephant/default/dwd771b27e/products/images/2024/June/UmbraMineralSheer/Umbra-Sheer-Reform_PDP_1.jpg"
+    },
+    {
+      "name": "NYDG Chem-Free Active Defense",
+      "filterType": "Physical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 98,
+      "size": 4,
+      "description": "SPF 30 Physical sunscreen",
+      "link": "https://store.nydermatologygroup.com/products/chem-free-active-defense-spf30",
+      "unitPrice": 24.5,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://store.nydermatologygroup.com/cdn/shop/products/NYDGS_ChemFree_ActiveDefense_SPF30_1000.jpg"
+    },
+    {
+      "name": "Specific Beauty Active Radiance Day Broad Spectrum",
+      "filterType": "Chemical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 40,
+      "size": 1.7,
+      "description": "SPF 30 Chemical sunscreen",
+      "link": "https://www.refinery29.com/en-us/shop/product/active-radiance-day-moisture-broad-spectrum-spf-30-120002",
+      "unitPrice": 23.529411764705884,
+      "fitzpatrickScale": "V-VI",
+      "skinTypes": [
+        "normal",
+        "combination"
+      ],
+      "image": "https://s2.r29static.com/bin/shop/6be/x,85/1990252/image.webp"
+    },
+    {
+      "name": "Unsun Tinted Mineral Sunscreen",
+      "filterType": "Physical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Tinted",
+      "price": 29.99,
+      "size": 1.7,
+      "description": "SPF 30 Physical sunscreen",
+      "link": "https://bluemercury.com/products/unsun-cosmetics-mineral-tinted-face-sunscreen-lotion-spf-30",
+      "unitPrice": 17.641176470588235,
+      "fitzpatrickScale": "V-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://bluemercury.com/cdn/shop/files/Medium-866641000157-1_78b74757-557f-4960-be34-8b51e5b1735c.jpg"
+    },
+    {
+      "name": "Aveeno Positively Radiant Daily Moisturizer Sunscreen SPF 30",
+      "filterType": "Chemical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 19.49,
+      "size": 2.5,
+      "description": "SPF 30 Chemical sunscreen",
+      "link": "https://www.aveeno.com/products/positively-radiant-daily-face-moisturizer-broad-spectrum-spf-30",
+      "unitPrice": 7.795999999999999,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://images.ctfassets.net/mgaihfszrtka/3rVQrzgkxutNUHM5AWTRnT/11cef5b0ebfa1d9c8072a06b73b637ec/3oz_oob1-min-en-us"
+    },
+    {
+      "name": "EltaMD UV Moisturizing Facial Sunscreen SPF 30",
+      "filterType": "Mixture",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 30,
+      "size": 4,
+      "description": "SPF 30 Mixture sunscreen",
+      "link": "https://www.amazon.com/Sunscreen-Broad-Spectrum-Moisturizing-Dermatologist-Recommended-Mineral-Based/dp/B000PHRIYE",
+      "unitPrice": 7.5,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://m.media-amazon.com/images/I/41zbU5YYpSL._SX522_.jpg"
+    },
+    {
+      "name": "Murad Essential-C Day Moisture Sunscreen",
+      "filterType": "Chemical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 65,
+      "size": 1.7,
+      "description": "SPF 30 Chemical sunscreen",
+      "link": "https://www.target.com/p/murad-essential-c-moisturizer-spf-30-1-70-fl-oz-ulta-beauty/-/A-89133245",
+      "unitPrice": 38.23529411764706,
+      "fitzpatrickScale": "IV-V",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://target.scene7.com/is/image/Target/GUEST_ae33a606-41dd-46f7-8c87-ecf1c975dcad"
+    },
+    {
+      "name": "Glossier Invisible Shield Priming Sunscreen SPF 50",
+      "filterType": "Chemical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Transparent",
+      "price": 32,
+      "size": 1.7,
+      "description": "SPF 50 Chemical sunscreen",
+      "link": "https://www.sephora.com/product/glossier-invisible-shield-blurring-primer-spf-P511457",
+      "unitPrice": 18.823529411764707,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "dry",
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.sephora.com/productimages/sku/s2771434-main-zoom.jpg"
+    },
+    {
+      "name": "Kate Somerville UncompliKated",
+      "filterType": "Chemical",
+      "spf": 50,
+      "vehicle": "Spray",
+      "tint": "Untinted",
+      "price": 38,
+      "size": 3.4,
+      "description": "SPF 50 Chemical sunscreen",
+      "link": "https://www.katesomerville.com/products/anti-aging-products-uncomplikated-spf-makeup-setting-spray",
+      "unitPrice": 11.176470588235295,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "oily",
+        "normal"
+      ],
+      "image": "https://www.katesomerville.com/cdn/shop/files/10258_fr.jpg"
+    },
+    {
+      "name": "Murad City Skin",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Tinted",
+      "price": 68,
+      "size": 1.7,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.murad.com/products/city-skin-age-defense-spf-50",
+      "unitPrice": 40,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "sensitive",
+        "dry"
+      ],
+      "image": "https://www.murad.com/cdn/shop/files/City_Skin_Carousel_1_MURAD.png"
+    },
+    {
+      "name": "CeraVe Hydrating Sunscreen Broad Spectrum SPF 50",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 14.99,
+      "size": 2.5,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.cerave.com/sunscreen/face/hydrating-mineral-sunscreen-face-lotion-spf-50",
+      "unitPrice": 5.996,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/sunscreen/face/50-spf-face/50-spf-face_front.jpg"
+    },
+    {
+      "name": "La Roche Posay Anthelios Melt-In-Sunscreen Milk SPF 60",
+      "filterType": "Chemical",
+      "spf": 60,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 35.99,
+      "size": 5,
+      "description": "SPF 60 Chemical sunscreen",
+      "link": "https://www.laroche-posay.us/our-products/sun/body-sunscreen/anthelios-melt-in-milk-sunscreen-spf-60-antheliosmeltinmilk.html",
+      "unitPrice": 7.198,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dw6a5a552e/img/antheliosmeltinmilk/ANTHMIM_1500x1500.jpg"
+    }
+  ],
+  "5-oily": [
+    {
+      "name": "Mario Badescu Oil-Free Moisturizer SPF 30",
+      "filterType": "Chemical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 28,
+      "size": 2,
+      "description": "SPF 30 Chemical sunscreen",
+      "link": "https://www.mariobadescu.com/products/oil-free-moisturizer-spf-30",
+      "unitPrice": 14,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.mariobadescu.com/cdn/shop/files/cyj6ekduk29cjnjnptzj_5b773e8a-80c9-478b-947d-a62ae2cc1a79.jpg"
+    },
+    {
+      "name": "Glossier Invisible Shield Priming Sunscreen SPF 50",
+      "filterType": "Chemical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Transparent",
+      "price": 32,
+      "size": 1.7,
+      "description": "SPF 50 Chemical sunscreen",
+      "link": "https://www.sephora.com/product/glossier-invisible-shield-blurring-primer-spf-P511457",
+      "unitPrice": 18.823529411764707,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "dry",
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.sephora.com/productimages/sku/s2771434-main-zoom.jpg"
+    },
+    {
+      "name": "Supergoop! Unseen Sunscreen",
+      "filterType": "Chemical",
+      "spf": 40,
+      "vehicle": "Cream/lotion",
+      "tint": "Transparent",
+      "price": 34,
+      "size": 1.7,
+      "description": "SPF 40 Chemical sunscreen",
+      "link": "https://supergoop.com/products/mineral-unseen",
+      "unitPrice": 20,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://supergoop.com/cdn/shop/files/Unseen_Mineral_Alt_1_Update.jpg"
+    },
+    {
+      "name": "Julep No Excuses Invisible Sunscreen Gel",
+      "filterType": "Chemical",
+      "spf": 40,
+      "vehicle": "Cream/lotion",
+      "tint": "Transparent",
+      "price": 20,
+      "size": 1,
+      "description": "SPF 40 Chemical sunscreen",
+      "link": "https://www.skinsafeproducts.com/julep-beauty-no-excuses-broad-spectrum-invisible-sunscreen-gel-for-face-spf-40-1-fl-oz-30-ml",
+      "unitPrice": 20,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://cdn1.skinsafeproducts.com/photo/4753EAE57E381C/large_1676949677.pngpng"
+    },
+    {
+      "name": "Kate Somerville UncompliKated",
+      "filterType": "Chemical",
+      "spf": 50,
+      "vehicle": "Spray",
+      "tint": "Untinted",
+      "price": 38,
+      "size": 3.4,
+      "description": "SPF 50 Chemical sunscreen",
+      "link": "https://www.katesomerville.com/products/anti-aging-products-uncomplikated-spf-makeup-setting-spray",
+      "unitPrice": 11.176470588235295,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "oily",
+        "normal"
+      ],
+      "image": "https://www.katesomerville.com/cdn/shop/files/10258_fr.jpg"
+    },
+    {
+      "name": "Colorescience Sunforgettable Brush-On Sunscreen SPF 30",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Powder",
+      "tint": "Tinted",
+      "price": 65,
+      "size": 0.21,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.colorescience.com/products/sunforgettable-total-protection-sheer-matte-spf-30-sunscreen-brush",
+      "unitPrice": 309.5238095238095,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.colorescience.com/cdn/shop/files/3wY6pJ4k.png"
+    },
+    {
+      "name": "La Roche-Posay Anthelios Clear Skin Sunscreen",
+      "filterType": "Chemical",
+      "spf": 60,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 19.99,
+      "size": 1.7,
+      "description": "SPF 60 Chemical sunscreen",
+      "link": "https://www.laroche-posay.us/our-products/sun/face-sunscreen/anthelios-clear-skin-oil-free-sunscreen-spf-60-antheliosclearskin.html",
+      "unitPrice": 11.758823529411764,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dwc9800d72/product/March%202023%20packshot%20updates/3606000430488-1_Anthelios60_Clear-Skin_50ml.jpg"
+    },
+    {
+      "name": "EltaMD UV Clear Broad-Spectrum SPF 46 Facial Sunscreen",
+      "filterType": "Mixture",
+      "spf": 46,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 35,
+      "size": 1.7,
+      "description": "SPF 46 Mixture sunscreen",
+      "link": "https://eltamd.com/products/uv-clear-broad-spectrum-spf-46",
+      "unitPrice": 20.58823529411765,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://eltamd.com/cdn/shop/files/UV_Clear_SPF_46_02500A_1200x.jpg"
+    }
+  ],
+  "5-dry": [
+    {
+      "name": "Black Girl Sunscreen",
+      "filterType": "Chemical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 18.99,
+      "size": 3,
+      "description": "SPF 30 Chemical sunscreen",
+      "link": "https://blackgirlsunscreen.com/product/black-girl-sunscreen-spf-30",
+      "unitPrice": 6.329999999999999,
+      "fitzpatrickScale": "V-VI",
+      "skinTypes": [
+        "dry",
+        "normal"
+      ],
+      "image": "https://blackgirlsunscreen.com/wp-content/uploads/2017/08/Untitled-design-300x300.png"
+    },
+    {
+      "name": "Drunk Elephant Umbra Sheer Physical Daily Defense SPF 30",
+      "filterType": "Physical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 34,
+      "size": 3,
+      "description": "SPF 30 Physical sunscreen",
+      "link": "https://www.drunkelephant.com/collections/sun-protection/umbra-sheer-mineral-cream-spf-30pa-812343032804.html",
+      "unitPrice": 11.333333333333334,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://www.drunkelephant.com/dw/image/v2/BBSK_PRD/on/demandware.static/-/Sites-itemmaster_drunkelephant/default/dwd771b27e/products/images/2024/June/UmbraMineralSheer/Umbra-Sheer-Reform_PDP_1.jpg"
+    },
+    {
+      "name": "NYDG Chem-Free Active Defense",
+      "filterType": "Physical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 98,
+      "size": 4,
+      "description": "SPF 30 Physical sunscreen",
+      "link": "https://store.nydermatologygroup.com/products/chem-free-active-defense-spf30",
+      "unitPrice": 24.5,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://store.nydermatologygroup.com/cdn/shop/products/NYDGS_ChemFree_ActiveDefense_SPF30_1000.jpg"
+    },
+    {
+      "name": "Unsun Tinted Mineral Sunscreen",
+      "filterType": "Physical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Tinted",
+      "price": 29.99,
+      "size": 1.7,
+      "description": "SPF 30 Physical sunscreen",
+      "link": "https://bluemercury.com/products/unsun-cosmetics-mineral-tinted-face-sunscreen-lotion-spf-30",
+      "unitPrice": 17.641176470588235,
+      "fitzpatrickScale": "V-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://bluemercury.com/cdn/shop/files/Medium-866641000157-1_78b74757-557f-4960-be34-8b51e5b1735c.jpg"
+    },
+    {
+      "name": "Aveeno Positively Radiant Daily Moisturizer Sunscreen SPF 30",
+      "filterType": "Chemical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 19.49,
+      "size": 2.5,
+      "description": "SPF 30 Chemical sunscreen",
+      "link": "https://www.aveeno.com/products/positively-radiant-daily-face-moisturizer-broad-spectrum-spf-30",
+      "unitPrice": 7.795999999999999,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://images.ctfassets.net/mgaihfszrtka/3rVQrzgkxutNUHM5AWTRnT/11cef5b0ebfa1d9c8072a06b73b637ec/3oz_oob1-min-en-us"
+    },
+    {
+      "name": "EltaMD UV Moisturizing Facial Sunscreen SPF 30",
+      "filterType": "Mixture",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 30,
+      "size": 4,
+      "description": "SPF 30 Mixture sunscreen",
+      "link": "https://www.amazon.com/Sunscreen-Broad-Spectrum-Moisturizing-Dermatologist-Recommended-Mineral-Based/dp/B000PHRIYE",
+      "unitPrice": 7.5,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://m.media-amazon.com/images/I/41zbU5YYpSL._SX522_.jpg"
+    },
+    {
+      "name": "Murad Essential-C Day Moisture Sunscreen",
+      "filterType": "Chemical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 65,
+      "size": 1.7,
+      "description": "SPF 30 Chemical sunscreen",
+      "link": "https://www.target.com/p/murad-essential-c-moisturizer-spf-30-1-70-fl-oz-ulta-beauty/-/A-89133245",
+      "unitPrice": 38.23529411764706,
+      "fitzpatrickScale": "IV-V",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://target.scene7.com/is/image/Target/GUEST_ae33a606-41dd-46f7-8c87-ecf1c975dcad"
+    },
+    {
+      "name": "Glossier Invisible Shield Priming Sunscreen SPF 50",
+      "filterType": "Chemical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Transparent",
+      "price": 32,
+      "size": 1.7,
+      "description": "SPF 50 Chemical sunscreen",
+      "link": "https://www.sephora.com/product/glossier-invisible-shield-blurring-primer-spf-P511457",
+      "unitPrice": 18.823529411764707,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "dry",
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.sephora.com/productimages/sku/s2771434-main-zoom.jpg"
+    },
+    {
+      "name": "Murad City Skin",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Tinted",
+      "price": 68,
+      "size": 1.7,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.murad.com/products/city-skin-age-defense-spf-50",
+      "unitPrice": 40,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "sensitive",
+        "dry"
+      ],
+      "image": "https://www.murad.com/cdn/shop/files/City_Skin_Carousel_1_MURAD.png"
+    },
+    {
+      "name": "CeraVe Hydrating Sunscreen Broad Spectrum SPF 50",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 14.99,
+      "size": 2.5,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.cerave.com/sunscreen/face/hydrating-mineral-sunscreen-face-lotion-spf-50",
+      "unitPrice": 5.996,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/sunscreen/face/50-spf-face/50-spf-face_front.jpg"
+    },
+    {
+      "name": "La Roche Posay Anthelios Melt-In-Sunscreen Milk SPF 60",
+      "filterType": "Chemical",
+      "spf": 60,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 35.99,
+      "size": 5,
+      "description": "SPF 60 Chemical sunscreen",
+      "link": "https://www.laroche-posay.us/our-products/sun/body-sunscreen/anthelios-melt-in-milk-sunscreen-spf-60-antheliosmeltinmilk.html",
+      "unitPrice": 7.198,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dw6a5a552e/img/antheliosmeltinmilk/ANTHMIM_1500x1500.jpg"
+    }
+  ],
+  "5-combination": [
+    {
+      "name": "Mario Badescu Oil-Free Moisturizer SPF 30",
+      "filterType": "Chemical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 28,
+      "size": 2,
+      "description": "SPF 30 Chemical sunscreen",
+      "link": "https://www.mariobadescu.com/products/oil-free-moisturizer-spf-30",
+      "unitPrice": 14,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.mariobadescu.com/cdn/shop/files/cyj6ekduk29cjnjnptzj_5b773e8a-80c9-478b-947d-a62ae2cc1a79.jpg"
+    },
+    {
+      "name": "Bolden Brightening Moisturizer SPF 30",
+      "filterType": "Chemical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 28,
+      "size": 2,
+      "description": "SPF 30 Chemical sunscreen",
+      "link": "https://www.boldenusa.com/products/spf-30-brightening-moisturizer",
+      "unitPrice": 14,
+      "fitzpatrickScale": "V-VI",
+      "skinTypes": [
+        "normal",
+        "combination"
+      ],
+      "image": "https://www.boldenusa.com/cdn/shop/files/Bolden_Sunscreen_Moisturizer_Elle_1200x.png"
+    },
+    {
+      "name": "Specific Beauty Active Radiance Day Broad Spectrum",
+      "filterType": "Chemical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 40,
+      "size": 1.7,
+      "description": "SPF 30 Chemical sunscreen",
+      "link": "https://www.refinery29.com/en-us/shop/product/active-radiance-day-moisture-broad-spectrum-spf-30-120002",
+      "unitPrice": 23.529411764705884,
+      "fitzpatrickScale": "V-VI",
+      "skinTypes": [
+        "normal",
+        "combination"
+      ],
+      "image": "https://s2.r29static.com/bin/shop/6be/x,85/1990252/image.webp"
+    },
+    {
+      "name": "Glossier Invisible Shield Priming Sunscreen SPF 50",
+      "filterType": "Chemical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Transparent",
+      "price": 32,
+      "size": 1.7,
+      "description": "SPF 50 Chemical sunscreen",
+      "link": "https://www.sephora.com/product/glossier-invisible-shield-blurring-primer-spf-P511457",
+      "unitPrice": 18.823529411764707,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "dry",
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.sephora.com/productimages/sku/s2771434-main-zoom.jpg"
+    },
+    {
+      "name": "Supergoop! Unseen Sunscreen",
+      "filterType": "Chemical",
+      "spf": 40,
+      "vehicle": "Cream/lotion",
+      "tint": "Transparent",
+      "price": 34,
+      "size": 1.7,
+      "description": "SPF 40 Chemical sunscreen",
+      "link": "https://supergoop.com/products/mineral-unseen",
+      "unitPrice": 20,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://supergoop.com/cdn/shop/files/Unseen_Mineral_Alt_1_Update.jpg"
+    },
+    {
+      "name": "Julep No Excuses Invisible Sunscreen Gel",
+      "filterType": "Chemical",
+      "spf": 40,
+      "vehicle": "Cream/lotion",
+      "tint": "Transparent",
+      "price": 20,
+      "size": 1,
+      "description": "SPF 40 Chemical sunscreen",
+      "link": "https://www.skinsafeproducts.com/julep-beauty-no-excuses-broad-spectrum-invisible-sunscreen-gel-for-face-spf-40-1-fl-oz-30-ml",
+      "unitPrice": 20,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://cdn1.skinsafeproducts.com/photo/4753EAE57E381C/large_1676949677.pngpng"
+    },
+    {
+      "name": "Colorescience Sunforgettable Brush-On Sunscreen SPF 30",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Powder",
+      "tint": "Tinted",
+      "price": 65,
+      "size": 0.21,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.colorescience.com/products/sunforgettable-total-protection-sheer-matte-spf-30-sunscreen-brush",
+      "unitPrice": 309.5238095238095,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.colorescience.com/cdn/shop/files/3wY6pJ4k.png"
+    },
+    {
+      "name": "La Roche-Posay Anthelios Clear Skin Sunscreen",
+      "filterType": "Chemical",
+      "spf": 60,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 19.99,
+      "size": 1.7,
+      "description": "SPF 60 Chemical sunscreen",
+      "link": "https://www.laroche-posay.us/our-products/sun/face-sunscreen/anthelios-clear-skin-oil-free-sunscreen-spf-60-antheliosclearskin.html",
+      "unitPrice": 11.758823529411764,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dwc9800d72/product/March%202023%20packshot%20updates/3606000430488-1_Anthelios60_Clear-Skin_50ml.jpg"
+    },
+    {
+      "name": "EltaMD UV Clear Broad-Spectrum SPF 46 Facial Sunscreen",
+      "filterType": "Mixture",
+      "spf": 46,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 35,
+      "size": 1.7,
+      "description": "SPF 46 Mixture sunscreen",
+      "link": "https://eltamd.com/products/uv-clear-broad-spectrum-spf-46",
+      "unitPrice": 20.58823529411765,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://eltamd.com/cdn/shop/files/UV_Clear_SPF_46_02500A_1200x.jpg"
+    }
+  ],
+  "5-sensitive": [
+    {
+      "name": "Murad City Skin",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Tinted",
+      "price": 68,
+      "size": 1.7,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.murad.com/products/city-skin-age-defense-spf-50",
+      "unitPrice": 40,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "sensitive",
+        "dry"
+      ],
+      "image": "https://www.murad.com/cdn/shop/files/City_Skin_Carousel_1_MURAD.png"
+    },
+    {
+      "name": "EltaMD UV Clear Broad-Spectrum SPF 46 Facial Sunscreen",
+      "filterType": "Mixture",
+      "spf": 46,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 35,
+      "size": 1.7,
+      "description": "SPF 46 Mixture sunscreen",
+      "link": "https://eltamd.com/products/uv-clear-broad-spectrum-spf-46",
+      "unitPrice": 20.58823529411765,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://eltamd.com/cdn/shop/files/UV_Clear_SPF_46_02500A_1200x.jpg"
+    }
+  ],
+  "6-normal": [
+    {
+      "name": "Black Girl Sunscreen",
+      "filterType": "Chemical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 18.99,
+      "size": 3,
+      "description": "SPF 30 Chemical sunscreen",
+      "link": "https://blackgirlsunscreen.com/product/black-girl-sunscreen-spf-30",
+      "unitPrice": 6.329999999999999,
+      "fitzpatrickScale": "V-VI",
+      "skinTypes": [
+        "dry",
+        "normal"
+      ],
+      "image": "https://blackgirlsunscreen.com/wp-content/uploads/2017/08/Untitled-design-300x300.png"
+    },
+    {
+      "name": "Bolden Brightening Moisturizer SPF 30",
+      "filterType": "Chemical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 28,
+      "size": 2,
+      "description": "SPF 30 Chemical sunscreen",
+      "link": "https://www.boldenusa.com/products/spf-30-brightening-moisturizer",
+      "unitPrice": 14,
+      "fitzpatrickScale": "V-VI",
+      "skinTypes": [
+        "normal",
+        "combination"
+      ],
+      "image": "https://www.boldenusa.com/cdn/shop/files/Bolden_Sunscreen_Moisturizer_Elle_1200x.png"
+    },
+    {
+      "name": "Drunk Elephant Umbra Sheer Physical Daily Defense SPF 30",
+      "filterType": "Physical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 34,
+      "size": 3,
+      "description": "SPF 30 Physical sunscreen",
+      "link": "https://www.drunkelephant.com/collections/sun-protection/umbra-sheer-mineral-cream-spf-30pa-812343032804.html",
+      "unitPrice": 11.333333333333334,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://www.drunkelephant.com/dw/image/v2/BBSK_PRD/on/demandware.static/-/Sites-itemmaster_drunkelephant/default/dwd771b27e/products/images/2024/June/UmbraMineralSheer/Umbra-Sheer-Reform_PDP_1.jpg"
+    },
+    {
+      "name": "NYDG Chem-Free Active Defense",
+      "filterType": "Physical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 98,
+      "size": 4,
+      "description": "SPF 30 Physical sunscreen",
+      "link": "https://store.nydermatologygroup.com/products/chem-free-active-defense-spf30",
+      "unitPrice": 24.5,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://store.nydermatologygroup.com/cdn/shop/products/NYDGS_ChemFree_ActiveDefense_SPF30_1000.jpg"
+    },
+    {
+      "name": "Specific Beauty Active Radiance Day Broad Spectrum",
+      "filterType": "Chemical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 40,
+      "size": 1.7,
+      "description": "SPF 30 Chemical sunscreen",
+      "link": "https://www.refinery29.com/en-us/shop/product/active-radiance-day-moisture-broad-spectrum-spf-30-120002",
+      "unitPrice": 23.529411764705884,
+      "fitzpatrickScale": "V-VI",
+      "skinTypes": [
+        "normal",
+        "combination"
+      ],
+      "image": "https://s2.r29static.com/bin/shop/6be/x,85/1990252/image.webp"
+    },
+    {
+      "name": "Unsun Tinted Mineral Sunscreen",
+      "filterType": "Physical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Tinted",
+      "price": 29.99,
+      "size": 1.7,
+      "description": "SPF 30 Physical sunscreen",
+      "link": "https://bluemercury.com/products/unsun-cosmetics-mineral-tinted-face-sunscreen-lotion-spf-30",
+      "unitPrice": 17.641176470588235,
+      "fitzpatrickScale": "V-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://bluemercury.com/cdn/shop/files/Medium-866641000157-1_78b74757-557f-4960-be34-8b51e5b1735c.jpg"
+    },
+    {
+      "name": "Aveeno Positively Radiant Daily Moisturizer Sunscreen SPF 30",
+      "filterType": "Chemical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 19.49,
+      "size": 2.5,
+      "description": "SPF 30 Chemical sunscreen",
+      "link": "https://www.aveeno.com/products/positively-radiant-daily-face-moisturizer-broad-spectrum-spf-30",
+      "unitPrice": 7.795999999999999,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://images.ctfassets.net/mgaihfszrtka/3rVQrzgkxutNUHM5AWTRnT/11cef5b0ebfa1d9c8072a06b73b637ec/3oz_oob1-min-en-us"
+    },
+    {
+      "name": "EltaMD UV Moisturizing Facial Sunscreen SPF 30",
+      "filterType": "Mixture",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 30,
+      "size": 4,
+      "description": "SPF 30 Mixture sunscreen",
+      "link": "https://www.amazon.com/Sunscreen-Broad-Spectrum-Moisturizing-Dermatologist-Recommended-Mineral-Based/dp/B000PHRIYE",
+      "unitPrice": 7.5,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://m.media-amazon.com/images/I/41zbU5YYpSL._SX522_.jpg"
+    },
+    {
+      "name": "Glossier Invisible Shield Priming Sunscreen SPF 50",
+      "filterType": "Chemical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Transparent",
+      "price": 32,
+      "size": 1.7,
+      "description": "SPF 50 Chemical sunscreen",
+      "link": "https://www.sephora.com/product/glossier-invisible-shield-blurring-primer-spf-P511457",
+      "unitPrice": 18.823529411764707,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "dry",
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.sephora.com/productimages/sku/s2771434-main-zoom.jpg"
+    },
+    {
+      "name": "Kate Somerville UncompliKated",
+      "filterType": "Chemical",
+      "spf": 50,
+      "vehicle": "Spray",
+      "tint": "Untinted",
+      "price": 38,
+      "size": 3.4,
+      "description": "SPF 50 Chemical sunscreen",
+      "link": "https://www.katesomerville.com/products/anti-aging-products-uncomplikated-spf-makeup-setting-spray",
+      "unitPrice": 11.176470588235295,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "oily",
+        "normal"
+      ],
+      "image": "https://www.katesomerville.com/cdn/shop/files/10258_fr.jpg"
+    },
+    {
+      "name": "Murad City Skin",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Tinted",
+      "price": 68,
+      "size": 1.7,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.murad.com/products/city-skin-age-defense-spf-50",
+      "unitPrice": 40,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "sensitive",
+        "dry"
+      ],
+      "image": "https://www.murad.com/cdn/shop/files/City_Skin_Carousel_1_MURAD.png"
+    },
+    {
+      "name": "CeraVe Hydrating Sunscreen Broad Spectrum SPF 50",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 14.99,
+      "size": 2.5,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.cerave.com/sunscreen/face/hydrating-mineral-sunscreen-face-lotion-spf-50",
+      "unitPrice": 5.996,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/sunscreen/face/50-spf-face/50-spf-face_front.jpg"
+    },
+    {
+      "name": "La Roche Posay Anthelios Melt-In-Sunscreen Milk SPF 60",
+      "filterType": "Chemical",
+      "spf": 60,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 35.99,
+      "size": 5,
+      "description": "SPF 60 Chemical sunscreen",
+      "link": "https://www.laroche-posay.us/our-products/sun/body-sunscreen/anthelios-melt-in-milk-sunscreen-spf-60-antheliosmeltinmilk.html",
+      "unitPrice": 7.198,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dw6a5a552e/img/antheliosmeltinmilk/ANTHMIM_1500x1500.jpg"
+    }
+  ],
+  "6-oily": [
+    {
+      "name": "Mario Badescu Oil-Free Moisturizer SPF 30",
+      "filterType": "Chemical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 28,
+      "size": 2,
+      "description": "SPF 30 Chemical sunscreen",
+      "link": "https://www.mariobadescu.com/products/oil-free-moisturizer-spf-30",
+      "unitPrice": 14,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.mariobadescu.com/cdn/shop/files/cyj6ekduk29cjnjnptzj_5b773e8a-80c9-478b-947d-a62ae2cc1a79.jpg"
+    },
+    {
+      "name": "Glossier Invisible Shield Priming Sunscreen SPF 50",
+      "filterType": "Chemical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Transparent",
+      "price": 32,
+      "size": 1.7,
+      "description": "SPF 50 Chemical sunscreen",
+      "link": "https://www.sephora.com/product/glossier-invisible-shield-blurring-primer-spf-P511457",
+      "unitPrice": 18.823529411764707,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "dry",
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.sephora.com/productimages/sku/s2771434-main-zoom.jpg"
+    },
+    {
+      "name": "Supergoop! Unseen Sunscreen",
+      "filterType": "Chemical",
+      "spf": 40,
+      "vehicle": "Cream/lotion",
+      "tint": "Transparent",
+      "price": 34,
+      "size": 1.7,
+      "description": "SPF 40 Chemical sunscreen",
+      "link": "https://supergoop.com/products/mineral-unseen",
+      "unitPrice": 20,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://supergoop.com/cdn/shop/files/Unseen_Mineral_Alt_1_Update.jpg"
+    },
+    {
+      "name": "Julep No Excuses Invisible Sunscreen Gel",
+      "filterType": "Chemical",
+      "spf": 40,
+      "vehicle": "Cream/lotion",
+      "tint": "Transparent",
+      "price": 20,
+      "size": 1,
+      "description": "SPF 40 Chemical sunscreen",
+      "link": "https://www.skinsafeproducts.com/julep-beauty-no-excuses-broad-spectrum-invisible-sunscreen-gel-for-face-spf-40-1-fl-oz-30-ml",
+      "unitPrice": 20,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://cdn1.skinsafeproducts.com/photo/4753EAE57E381C/large_1676949677.pngpng"
+    },
+    {
+      "name": "Kate Somerville UncompliKated",
+      "filterType": "Chemical",
+      "spf": 50,
+      "vehicle": "Spray",
+      "tint": "Untinted",
+      "price": 38,
+      "size": 3.4,
+      "description": "SPF 50 Chemical sunscreen",
+      "link": "https://www.katesomerville.com/products/anti-aging-products-uncomplikated-spf-makeup-setting-spray",
+      "unitPrice": 11.176470588235295,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "oily",
+        "normal"
+      ],
+      "image": "https://www.katesomerville.com/cdn/shop/files/10258_fr.jpg"
+    },
+    {
+      "name": "Colorescience Sunforgettable Brush-On Sunscreen SPF 30",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Powder",
+      "tint": "Tinted",
+      "price": 65,
+      "size": 0.21,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.colorescience.com/products/sunforgettable-total-protection-sheer-matte-spf-30-sunscreen-brush",
+      "unitPrice": 309.5238095238095,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.colorescience.com/cdn/shop/files/3wY6pJ4k.png"
+    },
+    {
+      "name": "La Roche-Posay Anthelios Clear Skin Sunscreen",
+      "filterType": "Chemical",
+      "spf": 60,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 19.99,
+      "size": 1.7,
+      "description": "SPF 60 Chemical sunscreen",
+      "link": "https://www.laroche-posay.us/our-products/sun/face-sunscreen/anthelios-clear-skin-oil-free-sunscreen-spf-60-antheliosclearskin.html",
+      "unitPrice": 11.758823529411764,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dwc9800d72/product/March%202023%20packshot%20updates/3606000430488-1_Anthelios60_Clear-Skin_50ml.jpg"
+    },
+    {
+      "name": "EltaMD UV Clear Broad-Spectrum SPF 46 Facial Sunscreen",
+      "filterType": "Mixture",
+      "spf": 46,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 35,
+      "size": 1.7,
+      "description": "SPF 46 Mixture sunscreen",
+      "link": "https://eltamd.com/products/uv-clear-broad-spectrum-spf-46",
+      "unitPrice": 20.58823529411765,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://eltamd.com/cdn/shop/files/UV_Clear_SPF_46_02500A_1200x.jpg"
+    }
+  ],
+  "6-dry": [
+    {
+      "name": "Black Girl Sunscreen",
+      "filterType": "Chemical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 18.99,
+      "size": 3,
+      "description": "SPF 30 Chemical sunscreen",
+      "link": "https://blackgirlsunscreen.com/product/black-girl-sunscreen-spf-30",
+      "unitPrice": 6.329999999999999,
+      "fitzpatrickScale": "V-VI",
+      "skinTypes": [
+        "dry",
+        "normal"
+      ],
+      "image": "https://blackgirlsunscreen.com/wp-content/uploads/2017/08/Untitled-design-300x300.png"
+    },
+    {
+      "name": "Drunk Elephant Umbra Sheer Physical Daily Defense SPF 30",
+      "filterType": "Physical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 34,
+      "size": 3,
+      "description": "SPF 30 Physical sunscreen",
+      "link": "https://www.drunkelephant.com/collections/sun-protection/umbra-sheer-mineral-cream-spf-30pa-812343032804.html",
+      "unitPrice": 11.333333333333334,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://www.drunkelephant.com/dw/image/v2/BBSK_PRD/on/demandware.static/-/Sites-itemmaster_drunkelephant/default/dwd771b27e/products/images/2024/June/UmbraMineralSheer/Umbra-Sheer-Reform_PDP_1.jpg"
+    },
+    {
+      "name": "NYDG Chem-Free Active Defense",
+      "filterType": "Physical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 98,
+      "size": 4,
+      "description": "SPF 30 Physical sunscreen",
+      "link": "https://store.nydermatologygroup.com/products/chem-free-active-defense-spf30",
+      "unitPrice": 24.5,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://store.nydermatologygroup.com/cdn/shop/products/NYDGS_ChemFree_ActiveDefense_SPF30_1000.jpg"
+    },
+    {
+      "name": "Unsun Tinted Mineral Sunscreen",
+      "filterType": "Physical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Tinted",
+      "price": 29.99,
+      "size": 1.7,
+      "description": "SPF 30 Physical sunscreen",
+      "link": "https://bluemercury.com/products/unsun-cosmetics-mineral-tinted-face-sunscreen-lotion-spf-30",
+      "unitPrice": 17.641176470588235,
+      "fitzpatrickScale": "V-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://bluemercury.com/cdn/shop/files/Medium-866641000157-1_78b74757-557f-4960-be34-8b51e5b1735c.jpg"
+    },
+    {
+      "name": "Aveeno Positively Radiant Daily Moisturizer Sunscreen SPF 30",
+      "filterType": "Chemical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 19.49,
+      "size": 2.5,
+      "description": "SPF 30 Chemical sunscreen",
+      "link": "https://www.aveeno.com/products/positively-radiant-daily-face-moisturizer-broad-spectrum-spf-30",
+      "unitPrice": 7.795999999999999,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://images.ctfassets.net/mgaihfszrtka/3rVQrzgkxutNUHM5AWTRnT/11cef5b0ebfa1d9c8072a06b73b637ec/3oz_oob1-min-en-us"
+    },
+    {
+      "name": "EltaMD UV Moisturizing Facial Sunscreen SPF 30",
+      "filterType": "Mixture",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 30,
+      "size": 4,
+      "description": "SPF 30 Mixture sunscreen",
+      "link": "https://www.amazon.com/Sunscreen-Broad-Spectrum-Moisturizing-Dermatologist-Recommended-Mineral-Based/dp/B000PHRIYE",
+      "unitPrice": 7.5,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://m.media-amazon.com/images/I/41zbU5YYpSL._SX522_.jpg"
+    },
+    {
+      "name": "Glossier Invisible Shield Priming Sunscreen SPF 50",
+      "filterType": "Chemical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Transparent",
+      "price": 32,
+      "size": 1.7,
+      "description": "SPF 50 Chemical sunscreen",
+      "link": "https://www.sephora.com/product/glossier-invisible-shield-blurring-primer-spf-P511457",
+      "unitPrice": 18.823529411764707,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "dry",
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.sephora.com/productimages/sku/s2771434-main-zoom.jpg"
+    },
+    {
+      "name": "Murad City Skin",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Tinted",
+      "price": 68,
+      "size": 1.7,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.murad.com/products/city-skin-age-defense-spf-50",
+      "unitPrice": 40,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "sensitive",
+        "dry"
+      ],
+      "image": "https://www.murad.com/cdn/shop/files/City_Skin_Carousel_1_MURAD.png"
+    },
+    {
+      "name": "CeraVe Hydrating Sunscreen Broad Spectrum SPF 50",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 14.99,
+      "size": 2.5,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.cerave.com/sunscreen/face/hydrating-mineral-sunscreen-face-lotion-spf-50",
+      "unitPrice": 5.996,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/sunscreen/face/50-spf-face/50-spf-face_front.jpg"
+    },
+    {
+      "name": "La Roche Posay Anthelios Melt-In-Sunscreen Milk SPF 60",
+      "filterType": "Chemical",
+      "spf": 60,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 35.99,
+      "size": 5,
+      "description": "SPF 60 Chemical sunscreen",
+      "link": "https://www.laroche-posay.us/our-products/sun/body-sunscreen/anthelios-melt-in-milk-sunscreen-spf-60-antheliosmeltinmilk.html",
+      "unitPrice": 7.198,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "normal",
+        "dry"
+      ],
+      "image": "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dw6a5a552e/img/antheliosmeltinmilk/ANTHMIM_1500x1500.jpg"
+    }
+  ],
+  "6-combination": [
+    {
+      "name": "Mario Badescu Oil-Free Moisturizer SPF 30",
+      "filterType": "Chemical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 28,
+      "size": 2,
+      "description": "SPF 30 Chemical sunscreen",
+      "link": "https://www.mariobadescu.com/products/oil-free-moisturizer-spf-30",
+      "unitPrice": 14,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.mariobadescu.com/cdn/shop/files/cyj6ekduk29cjnjnptzj_5b773e8a-80c9-478b-947d-a62ae2cc1a79.jpg"
+    },
+    {
+      "name": "Bolden Brightening Moisturizer SPF 30",
+      "filterType": "Chemical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 28,
+      "size": 2,
+      "description": "SPF 30 Chemical sunscreen",
+      "link": "https://www.boldenusa.com/products/spf-30-brightening-moisturizer",
+      "unitPrice": 14,
+      "fitzpatrickScale": "V-VI",
+      "skinTypes": [
+        "normal",
+        "combination"
+      ],
+      "image": "https://www.boldenusa.com/cdn/shop/files/Bolden_Sunscreen_Moisturizer_Elle_1200x.png"
+    },
+    {
+      "name": "Specific Beauty Active Radiance Day Broad Spectrum",
+      "filterType": "Chemical",
+      "spf": 30,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 40,
+      "size": 1.7,
+      "description": "SPF 30 Chemical sunscreen",
+      "link": "https://www.refinery29.com/en-us/shop/product/active-radiance-day-moisture-broad-spectrum-spf-30-120002",
+      "unitPrice": 23.529411764705884,
+      "fitzpatrickScale": "V-VI",
+      "skinTypes": [
+        "normal",
+        "combination"
+      ],
+      "image": "https://s2.r29static.com/bin/shop/6be/x,85/1990252/image.webp"
+    },
+    {
+      "name": "Glossier Invisible Shield Priming Sunscreen SPF 50",
+      "filterType": "Chemical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Transparent",
+      "price": 32,
+      "size": 1.7,
+      "description": "SPF 50 Chemical sunscreen",
+      "link": "https://www.sephora.com/product/glossier-invisible-shield-blurring-primer-spf-P511457",
+      "unitPrice": 18.823529411764707,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "dry",
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.sephora.com/productimages/sku/s2771434-main-zoom.jpg"
+    },
+    {
+      "name": "Supergoop! Unseen Sunscreen",
+      "filterType": "Chemical",
+      "spf": 40,
+      "vehicle": "Cream/lotion",
+      "tint": "Transparent",
+      "price": 34,
+      "size": 1.7,
+      "description": "SPF 40 Chemical sunscreen",
+      "link": "https://supergoop.com/products/mineral-unseen",
+      "unitPrice": 20,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://supergoop.com/cdn/shop/files/Unseen_Mineral_Alt_1_Update.jpg"
+    },
+    {
+      "name": "Julep No Excuses Invisible Sunscreen Gel",
+      "filterType": "Chemical",
+      "spf": 40,
+      "vehicle": "Cream/lotion",
+      "tint": "Transparent",
+      "price": 20,
+      "size": 1,
+      "description": "SPF 40 Chemical sunscreen",
+      "link": "https://www.skinsafeproducts.com/julep-beauty-no-excuses-broad-spectrum-invisible-sunscreen-gel-for-face-spf-40-1-fl-oz-30-ml",
+      "unitPrice": 20,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://cdn1.skinsafeproducts.com/photo/4753EAE57E381C/large_1676949677.pngpng"
+    },
+    {
+      "name": "Colorescience Sunforgettable Brush-On Sunscreen SPF 30",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Powder",
+      "tint": "Tinted",
+      "price": 65,
+      "size": 0.21,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.colorescience.com/products/sunforgettable-total-protection-sheer-matte-spf-30-sunscreen-brush",
+      "unitPrice": 309.5238095238095,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.colorescience.com/cdn/shop/files/3wY6pJ4k.png"
+    },
+    {
+      "name": "La Roche-Posay Anthelios Clear Skin Sunscreen",
+      "filterType": "Chemical",
+      "spf": 60,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 19.99,
+      "size": 1.7,
+      "description": "SPF 60 Chemical sunscreen",
+      "link": "https://www.laroche-posay.us/our-products/sun/face-sunscreen/anthelios-clear-skin-oil-free-sunscreen-spf-60-antheliosclearskin.html",
+      "unitPrice": 11.758823529411764,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination"
+      ],
+      "image": "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dwc9800d72/product/March%202023%20packshot%20updates/3606000430488-1_Anthelios60_Clear-Skin_50ml.jpg"
+    },
+    {
+      "name": "EltaMD UV Clear Broad-Spectrum SPF 46 Facial Sunscreen",
+      "filterType": "Mixture",
+      "spf": 46,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 35,
+      "size": 1.7,
+      "description": "SPF 46 Mixture sunscreen",
+      "link": "https://eltamd.com/products/uv-clear-broad-spectrum-spf-46",
+      "unitPrice": 20.58823529411765,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://eltamd.com/cdn/shop/files/UV_Clear_SPF_46_02500A_1200x.jpg"
+    }
+  ],
+  "6-sensitive": [
+    {
+      "name": "Murad City Skin",
+      "filterType": "Physical",
+      "spf": 50,
+      "vehicle": "Cream/lotion",
+      "tint": "Tinted",
+      "price": 68,
+      "size": 1.7,
+      "description": "SPF 50 Physical sunscreen",
+      "link": "https://www.murad.com/products/city-skin-age-defense-spf-50",
+      "unitPrice": 40,
+      "fitzpatrickScale": "IV-VI",
+      "skinTypes": [
+        "normal",
+        "sensitive",
+        "dry"
+      ],
+      "image": "https://www.murad.com/cdn/shop/files/City_Skin_Carousel_1_MURAD.png"
+    },
+    {
+      "name": "EltaMD UV Clear Broad-Spectrum SPF 46 Facial Sunscreen",
+      "filterType": "Mixture",
+      "spf": 46,
+      "vehicle": "Cream/lotion",
+      "tint": "Untinted",
+      "price": 35,
+      "size": 1.7,
+      "description": "SPF 46 Mixture sunscreen",
+      "link": "https://eltamd.com/products/uv-clear-broad-spectrum-spf-46",
+      "unitPrice": 20.58823529411765,
+      "fitzpatrickScale": "I-VI",
+      "skinTypes": [
+        "oily",
+        "combination",
+        "sensitive"
+      ],
+      "image": "https://eltamd.com/cdn/shop/files/UV_Clear_SPF_46_02500A_1200x.jpg"
+    }
+  ]
+}
