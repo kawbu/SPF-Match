@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { StyleSheet, View, ScrollView, StatusBar } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient'
+import { useRouter } from 'expo-router'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 
 import { DaysRow }        from '../components/home/DaysRow'
@@ -23,6 +24,7 @@ export default function Index() {
   const [activePeriod, setActivePeriod] = useState<'Day' | 'Week' | 'Month' | 'All'>('Week')
   const [activeNav,    setActiveNav]    = useState('home')
   const insets = useSafeAreaInsets()
+  const router = useRouter()
 
   return (
     <>
@@ -59,7 +61,14 @@ export default function Index() {
         {/* ── Bottom navigation (5 tabs) ── */}
         <BottomNav
           active={activeNav}
-          onNavigate={setActiveNav}
+          onNavigate={(id) => {
+            if (id === 'journal') {
+              router.push('/journal')
+              return
+            }
+
+            setActiveNav(id)
+          }}
           bottomInset={insets.bottom}
         />
 
