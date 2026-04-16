@@ -15,7 +15,6 @@ import { QuestionCard } from '../components/journal/QuestionCard'
 import { CheckboxCard } from '../components/journal/CheckboxCard'
 import { ResultsSummary } from '../components/journal/ResultsSummary'
 import { BottomNav } from '../components/home/BottomNav'
-import { NAV_TABS } from '../components/home/constants'
 import { QUIZ_QUESTIONS } from '../constants/quiz'
 import { calculateFitzpatrickType, getSkinType } from '../utils/fitzpatrick'
 import type { QuizAnswers } from '../types/index'
@@ -175,10 +174,9 @@ export default function JournalScreen() {
           />
 
           <BottomNav
-            tabs={NAV_TABS}
-            activeTab="journal"
+            active="journal"
             bottomInset={insets.bottom}
-            onSelect={(id) => {
+            onNavigate={(id) => {
               if (id === 'home') router.replace('/')
             }}
           />
@@ -273,10 +271,9 @@ export default function JournalScreen() {
         </ScrollView>
 
         <BottomNav
-          tabs={NAV_TABS}
-          activeTab="journal"
+          active="journal"
           bottomInset={insets.bottom}
-          onSelect={(id) => {
+          onNavigate={(id) => {
             if (id === 'home') router.replace('/')
           }}
         />
