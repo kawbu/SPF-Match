@@ -15,21 +15,40 @@ interface BottomNavProps {
   active: string
   onNavigate: (id: string) => void
   bottomInset: number
+  theme?: 'sunset' | 'night'
 }
 
-export function BottomNav({ active, onNavigate, bottomInset }: BottomNavProps) {
+export function BottomNav({ active, onNavigate, bottomInset, theme = 'sunset' }: BottomNavProps) {
+  const isNightTheme = theme === 'night'
+
   return (
-    <View style={[styles.bottomNav, { bottom: Math.max(bottomInset - 16, 4) }]}>
+    <View
+      style={[
+        styles.bottomNav,
+        isNightTheme && styles.bottomNavNight,
+        { bottom: Math.max(bottomInset - 16, 4) },
+      ]}
+    >
       {NAV_TABS.map(({ id, Icon }) => (
         <TouchableOpacity
           key={id}
           activeOpacity={0.7}
-          style={[styles.navItem, active === id && styles.navItemActive]}
+          style={[
+            styles.navItem,
+            active === id && styles.navItemActive,
+            active === id && isNightTheme && styles.navItemActiveNight,
+          ]}
           onPress={() => onNavigate(id)}
         >
           <Icon
             size={active === id ? 35 : 29}
-            color={active === id ? '#FFFFFF' : 'rgba(255,255,255,0.88)'}
+            color={
+              active === id
+                ? '#FFFFFF'
+                : isNightTheme
+                  ? 'rgba(225,235,255,0.9)'
+                  : 'rgba(255,255,255,0.88)'
+            }
           />
         </TouchableOpacity>
       ))}
@@ -54,10 +73,18 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 6 },
     elevation: 8,
   },
+  bottomNavNight: {
+    backgroundColor: 'rgba(14,26,62,0.72)',
+    borderColor: 'rgba(162,188,255,0.58)',
+  },
   navItem:       { padding: 6, borderRadius: 20 },
   navItemActive: {
     backgroundColor: 'rgba(255,102,40,0.46)',
     borderWidth: 1,
     borderColor: 'rgba(255,226,200,0.72)',
+  },
+  navItemActiveNight: {
+    backgroundColor: 'rgba(88,132,255,0.45)',
+    borderColor: 'rgba(198,218,255,0.74)',
   },
 })

@@ -1,7 +1,7 @@
 import { LinearGradient } from 'expo-linear-gradient'
 import { Stack, useRouter } from 'expo-router'
 import AsyncStorage from '@react-native-async-storage/async-storage'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import {
   ScrollView,
   StatusBar,
@@ -17,6 +17,11 @@ import { ResultsSummary } from '../components/journal/ResultsSummary'
 import { BottomNav } from '../components/home/BottomNav'
 import { QUIZ_QUESTIONS } from '../constants/quiz'
 import { calculateFitzpatrickType, getSkinType } from '../utils/fitzpatrick'
+import {
+  getThemeOverridePreference,
+  isNightThemeActive,
+  type ThemeOverrideMode,
+} from '../utils/themePreference'
 import type { QuizAnswers } from '../types/index'
 
 const QUIZ_STATE_STORAGE_KEY = 'spfmatch-mobile:journal-quiz-state:v1'
@@ -33,6 +38,35 @@ export default function JournalScreen() {
   const [answers, setAnswers] = useState<QuizAnswers>({})
   const [showResults, setShowResults] = useState(false)
   const [isHydrated, setIsHydrated] = useState(false)
+  const [now, setNow] = useState(() => new Date())
+  const [themeOverride, setThemeOverride] = useState<ThemeOverrideMode>('auto')
+
+  useEffect(() => {
+    const timer = setInterval(() => setNow(new Date()), 60_000)
+    return () => clearInterval(timer)
+  }, [])
+
+  useEffect(() => {
+    getThemeOverridePreference().then(setThemeOverride)
+  }, [])
+
+  const isNightTheme = isNightThemeActive(themeOverride, now)
+  const theme = useMemo(
+    () => (isNightTheme
+      ? {
+          gradientColors: ['#0B1022', '#131C3D', '#1B244A'],
+          kickerColor: 'rgba(214,226,255,0.78)',
+          subtitleColor: 'rgba(224,232,255,0.82)',
+          loadingTextColor: 'rgba(205,216,250,0.66)',
+        }
+      : {
+          gradientColors: ['#8A2A1F', '#CF6A28', '#B3352B'],
+          kickerColor: 'rgba(255,255,255,0.8)',
+          subtitleColor: 'rgba(255,255,255,0.82)',
+          loadingTextColor: '#FFFFFF',
+        }),
+    [isNightTheme],
+  )
 
   useEffect(() => {
     async function hydrateQuizState() {
@@ -119,12 +153,12 @@ export default function JournalScreen() {
         <Stack.Screen options={{ headerShown: false }} />
         <StatusBar translucent barStyle="light-content" backgroundColor="transparent" />
         <LinearGradient
-          colors={['#8A2A1F', '#CF6A28', '#B3352B']}
+          colors={theme.gradientColors as [string, string, string]}
           start={{ x: 0.08, y: 0 }}
           end={{ x: 0.95, y: 1 }}
           style={[styles.container, styles.loadingContainer]}
         >
-          <Text style={styles.loadingText}>Loading saved quiz state...</Text>
+          <Text style={[styles.loadingText, { color: theme.loadingTextColor }]}>Loading saved quiz state...</Text>
         </LinearGradient>
       </>
     )
@@ -139,7 +173,7 @@ export default function JournalScreen() {
         <Stack.Screen options={{ headerShown: false }} />
         <StatusBar translucent barStyle="light-content" backgroundColor="transparent" />
         <LinearGradient
-          colors={['#8A2A1F', '#CF6A28', '#B3352B']}
+          colors={theme.gradientColors as [string, string, string]}
           start={{ x: 0.08, y: 0 }}
           end={{ x: 0.95, y: 1 }}
           style={styles.container}
@@ -153,9 +187,11 @@ export default function JournalScreen() {
           />
           <BottomNav
             active="journal"
+            theme={isNightTheme ? 'night' : 'sunset'}
             bottomInset={insets.bottom}
             onNavigate={(id) => {
               if (id === 'home') router.replace('/')
+              if (id === 'reminder') router.push('/reminder')
             }}
           />
         </LinearGradient>
@@ -169,7 +205,7 @@ export default function JournalScreen() {
       <StatusBar translucent barStyle="light-content" backgroundColor="transparent" />
 
       <LinearGradient
-        colors={['#8A2A1F', '#CF6A28', '#B3352B']}
+        colors={theme.gradientColors as [string, string, string]}
         start={{ x: 0.08, y: 0 }}
         end={{ x: 0.95, y: 1 }}
         style={styles.container}
@@ -188,9 +224,9 @@ export default function JournalScreen() {
             <Text style={styles.backButtonText}>Back to Home</Text>
           </TouchableOpacity>
 
-          <Text style={styles.kicker}>Questionnaire</Text>
+          <Text style={[styles.kicker, { color: theme.kickerColor }]}>Questionnaire</Text>
           <Text style={styles.title}>Find Your SPF Match</Text>
-          <Text style={styles.subtitle}>
+          <Text style={[styles.subtitle, { color: theme.subtitleColor }]}>
             Answer all {totalQuestions} questions to get personalized sunscreen recommendations based on your Fitzpatrick skin type, skin condition, and preferences.
           </Text>
 
@@ -250,9 +286,11 @@ export default function JournalScreen() {
 
         <BottomNav
           active="journal"
+          theme={isNightTheme ? 'night' : 'sunset'}
           bottomInset={insets.bottom}
           onNavigate={(id) => {
             if (id === 'home') router.replace('/')
+            if (id === 'reminder') router.push('/reminder')
           }}
         />
       </LinearGradient>

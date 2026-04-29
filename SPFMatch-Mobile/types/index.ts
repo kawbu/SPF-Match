@@ -35,3 +35,16 @@ export interface DailyCheckInEntry {
 }
 
 export type DailyCheckInDraft = Partial<Record<CheckInMetricId, string>>
+
+export type ReminderActivityLevel =
+  | 'mostly-indoors'
+  | 'commute-errands'
+  | 'outdoor-exercise'
+  | 'beach-pool'
+
+export interface UVReminderSettings {
+  enabled: boolean
+  uvIndex: number
+  activityLevel: ReminderActivityLevel
+  lastUpdatedAt: string
+}
