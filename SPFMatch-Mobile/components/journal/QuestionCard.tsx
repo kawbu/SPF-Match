@@ -3,6 +3,7 @@ import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 
 interface QuestionCardProps {
   title: string
+  description?: string
   options: string[]
   selectedOption: string | null
   onSelectOption: (option: string) => void
@@ -10,6 +11,7 @@ interface QuestionCardProps {
 
 export function QuestionCard({
   title,
+  description,
   options,
   selectedOption,
   onSelectOption,
@@ -17,6 +19,7 @@ export function QuestionCard({
   return (
     <View style={styles.card}>
       <Text style={styles.questionTitle}>{title}</Text>
+      {description ? <Text style={styles.questionDescription}>{description}</Text> : null}
       {options.map((option) => (
         <TouchableOpacity
           key={option}
@@ -61,6 +64,12 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
     fontSize: 16,
     fontWeight: '600',
+  },
+  questionDescription: {
+    color: 'rgba(255,255,255,0.68)',
+    fontSize: 12,
+    lineHeight: 18,
+    marginTop: -2,
     marginBottom: 8,
   },
   optionButton: {

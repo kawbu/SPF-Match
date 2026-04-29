@@ -38,58 +38,42 @@ export default function JournalScreen() {
     async function hydrateQuizState() {
       try {
         const rawState = await AsyncStorage.getItem(QUIZ_STATE_STORAGE_KEY)
-        if (!rawState) {
-          return
-        }
-
+        if (!rawState) return
         const parsed = JSON.parse(rawState) as PersistedQuizState
         if (parsed?.answers && typeof parsed.showResults === 'boolean') {
           setAnswers(parsed.answers)
           setShowResults(parsed.showResults)
         }
       } catch {
-        // Ignore corrupted/local storage errors and continue with fresh state
+        // ignore
       } finally {
         setIsHydrated(true)
       }
     }
-
     hydrateQuizState()
   }, [])
 
   useEffect(() => {
     if (!isHydrated) return
-
-    const stateToPersist: PersistedQuizState = {
-      answers,
-      showResults,
-    }
-
-    AsyncStorage.setItem(QUIZ_STATE_STORAGE_KEY, JSON.stringify(stateToPersist)).catch(() => {
-      // Ignore write failures
-    })
+    AsyncStorage.setItem(
+      QUIZ_STATE_STORAGE_KEY,
+      JSON.stringify({ answers, showResults }),
+    ).catch(() => {})
   }, [answers, showResults, isHydrated])
 
   const handleSelectOption = (questionId: string, option: string) => {
-    setAnswers((prev) => ({
-      ...prev,
-      [questionId]: option,
-    }))
+    setAnswers((prev) => ({ ...prev, [questionId]: option }))
   }
 
   const handleToggleCheckbox = (questionId: string, option: string) => {
     setAnswers((prev) => {
       const current = (prev[questionId] as string[]) || []
-
       if (option === 'Anything is fine') {
-        // Toggle "Anything is fine" exclusively
         return {
           ...prev,
           [questionId]: current.includes('Anything is fine') ? [] : ['Anything is fine'],
         }
       }
-
-      // Remove "Anything is fine" when picking a real option
       const withoutAnything = current.filter((v) => v !== 'Anything is fine')
       return {
         ...prev,
@@ -101,18 +85,14 @@ export default function JournalScreen() {
   }
 
   const handleGetMatch = () => {
-    // All radio questions (non-multiselect) must be answered
     const radioQuestions = QUIZ_QUESTIONS.filter((q) => !q.isMultiSelect)
     const allRadioAnswered = radioQuestions.every((q) => answers[q.id])
-    // Multi-select preference questions require at least one selection
     const multiQuestions = QUIZ_QUESTIONS.filter((q) => q.isMultiSelect)
     const allMultiAnswered = multiQuestions.every((q) => {
       const val = answers[q.id] as string[] | undefined
       return val && val.length > 0
     })
-    if (allRadioAnswered && allMultiAnswered) {
-      setShowResults(true)
-    }
+    if (allRadioAnswered && allMultiAnswered) setShowResults(true)
   }
 
   const handleRestart = () => {
@@ -122,7 +102,7 @@ export default function JournalScreen() {
 
   const answeredCount = (() => {
     const radioAnswered = QUIZ_QUESTIONS.filter(
-      (q) => !q.isMultiSelect && answers[q.id]
+      (q) => !q.isMultiSelect && answers[q.id],
     ).length
     const multiAnswered = QUIZ_QUESTIONS.filter((q) => {
       if (!q.isMultiSelect) return false
@@ -158,7 +138,6 @@ export default function JournalScreen() {
       <>
         <Stack.Screen options={{ headerShown: false }} />
         <StatusBar translucent barStyle="light-content" backgroundColor="transparent" />
-
         <LinearGradient
           colors={['#8A2A1F', '#CF6A28', '#B3352B']}
           start={{ x: 0.08, y: 0 }}
@@ -172,7 +151,6 @@ export default function JournalScreen() {
             onRetake={handleRestart}
             bottomInset={insets.bottom}
           />
-
           <BottomNav
             active="journal"
             bottomInset={insets.bottom}
@@ -245,7 +223,7 @@ export default function JournalScreen() {
                 selectedOption={(answers[question.id] as string) || null}
                 onSelectOption={(option) => handleSelectOption(question.id, option)}
               />
-            )
+            ),
           )}
 
           <TouchableOpacity
@@ -340,7 +318,6 @@ const styles = StyleSheet.create({
     color: 'rgba(255,255,255,0.7)',
     fontWeight: '500',
   },
-
   primaryButton: {
     borderRadius: 14,
     paddingVertical: 14,
@@ -359,19 +336,6 @@ const styles = StyleSheet.create({
   },
   primaryButtonTextDisabled: {
     opacity: 0.7,
-  },
-  secondaryButton: {
-    borderRadius: 14,
-    paddingVertical: 12,
-    alignItems: 'center',
-    backgroundColor: 'transparent',
-    borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.35)',
-  },
-  secondaryButtonText: {
-    color: '#FFFFFF',
-    fontSize: 14,
-    fontWeight: '600',
   },
   loadingContainer: {
     alignItems: 'center',

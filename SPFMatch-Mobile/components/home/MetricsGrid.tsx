@@ -1,58 +1,75 @@
-import React, { useState, useCallback } from 'react'
+import React, { useMemo, useState } from 'react'
 import {
-  StyleSheet, Text, View, TouchableOpacity,
   LayoutChangeEvent,
+  StyleSheet,
+  Text,
+  View,
 } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient'
 import Svg, {
-  Path, Defs,
+  Circle,
+  Defs,
   LinearGradient as SvgLinearGradient,
+  Path,
   Stop,
 } from 'react-native-svg'
 import {
-  ChevronRight, TrendingUp, TrendingDown, Activity, LucideIcon,
+  Activity,
+  TrendingDown,
+  TrendingUp,
+  type LucideIcon,
 } from 'lucide-react-native'
+import type { CheckInMetricId } from '../../types'
 
-// ── Mock data (max ~4 applications) ──────────────────────────────
-const MOCK_DAILY:   number[] = [1, 2, 2, 3, 4, 3, 2, 3, 4, 3, 2, 1]
-const MOCK_WEEKLY:  number[] = [2, 3, 4, 3, 4, 2, 3]
-const MOCK_MONTHLY: number[] = [
-  2, 1, 3, 2, 4, 3, 2, 3, 4, 3,
-  2, 3, 1, 2, 3, 4, 3, 2, 3, 4,
-  2, 3, 2, 1, 3, 2, 4, 3, 2, 2,
-]
+type MetricCard = {
+  id: CheckInMetricId
+  label: string
+  value: number
+  valueLabel: string
+  subtitle: string
+}
 
+interface MetricsGridProps {
+  chartData: number[]
+  chartLabels: string[]
+  metricCards: MetricCard[]
+}
 
-const METRICS: { label: string; Icon: LucideIcon; iconColor: string }[] = [
-  { label: 'Irritation', Icon: TrendingDown, iconColor: '#FDF0E6' },
-  { label: 'Breakouts',  Icon: Activity,     iconColor: '#FFFFFF' },
-  { label: 'Redness',    Icon: TrendingDown, iconColor: '#FFFFFF' },
-  { label: 'Oiliness',   Icon: TrendingUp,   iconColor: '#FFFFFF' },
-]
+const ICONS: Record<CheckInMetricId, { Icon: LucideIcon; iconColor: string }> = {
+  irritation: { Icon: TrendingDown, iconColor: '#FDF0E6' },
+  dryness: { Icon: TrendingDown, iconColor: '#FFFFFF' },
+  oiliness: { Icon: TrendingUp, iconColor: '#FFFFFF' },
+  breakouts: { Icon: Activity, iconColor: '#FFFFFF' },
+}
 
-type Period = 'Day' | 'Week' | 'Month' | 'All'
-
-// ── Catmull-Rom spline → SVG cubic bezier path ────────────────────
 function buildPaths(
   data: number[],
   width: number,
   height: number,
-): { line: string; area: string } {
-  if (data.length < 2 || width === 0) return { line: '', area: '' }
+): { line: string; area: string; dot?: { x: number; y: number } } {
+  if (data.length === 0 || width === 0) return { line: '', area: '' }
 
   const max = Math.max(...data, 1)
   const pad = height * 0.08
-  const pts = data.map((v, i) => ({
-    x: (i / (data.length - 1)) * width,
-    y: height - pad - (v / max) * (height - pad * 2),
+  const pts = data.map((value, index) => ({
+    x: data.length === 1 ? width / 2 : (index / (data.length - 1)) * width,
+    y: height - pad - (value / max) * (height - pad * 2),
   }))
 
+  if (pts.length === 1) {
+    return {
+      line: '',
+      area: '',
+      dot: pts[0],
+    }
+  }
+
   let line = `M ${pts[0].x} ${pts[0].y}`
-  for (let i = 0; i < pts.length - 1; i++) {
-    const p0 = pts[Math.max(i - 1, 0)]
-    const p1 = pts[i]
-    const p2 = pts[i + 1]
-    const p3 = pts[Math.min(i + 2, pts.length - 1)]
+  for (let index = 0; index < pts.length - 1; index += 1) {
+    const p0 = pts[Math.max(index - 1, 0)]
+    const p1 = pts[index]
+    const p2 = pts[index + 1]
+    const p3 = pts[Math.min(index + 2, pts.length - 1)]
     const cp1x = p1.x + (p2.x - p0.x) / 6
     const cp1y = p1.y + (p2.y - p0.y) / 6
     const cp2x = p2.x - (p3.x - p1.x) / 6
@@ -61,54 +78,58 @@ function buildPaths(
   }
 
   const last = pts[pts.length - 1]
-  const area  = `${line} L ${last.x} ${height} L ${pts[0].x} ${height} Z`
+  const area = `${line} L ${last.x} ${height} L ${pts[0].x} ${height} Z`
   return { line, area }
 }
 
-// ── Component ─────────────────────────────────────────────────────
-interface MetricsGridProps {
-  activePeriod: Period
+function buildDisplayedLabels(labels: string[]): string[] {
+  if (labels.length <= 6) return labels
+
+  const lastIndex = labels.length - 1
+  const visibleIndexes = new Set([
+    0,
+    Math.floor(lastIndex / 3),
+    Math.floor((lastIndex * 2) / 3),
+    lastIndex,
+  ])
+
+  return labels.map((label, index) => (visibleIndexes.has(index) ? label : ''))
 }
 
-export function MetricsGrid({ activePeriod }: MetricsGridProps) {
+export function MetricsGrid({ chartData, chartLabels, metricCards }: MetricsGridProps) {
   const [chartWidth, setChartWidth] = useState(0)
-  const CHART_H = 155
+  const chartHeight = 155
 
-  const getData = useCallback((): number[] => {
-    switch (activePeriod) {
-      case 'Day':   return MOCK_DAILY
-      case 'Week':  return MOCK_WEEKLY
-      case 'Month':
-      case 'All':   return MOCK_MONTHLY
-    }
-  }, [activePeriod])
-
-  const data   = getData()
-  const maxVal = Math.max(...data)
-  const { line: linePath, area: areaPath } = buildPaths(data, chartWidth, CHART_H)
-
-  const NUM_Y_TICKS = 5
-  const yTicks = Array.from({ length: NUM_Y_TICKS }, (_, i) =>
-    Math.round((maxVal * (NUM_Y_TICKS - 1 - i)) / (NUM_Y_TICKS - 1))
+  const maxVal = Math.max(...chartData, 4)
+  const yTicks = useMemo(
+    () => Array.from({ length: 5 }, (_, index) => Math.round((maxVal * (4 - index)) / 4)),
+    [maxVal],
   )
 
-  const NUM_X_TICKS = Math.min(data.length, 8)
-  const xTicks = data.length > 1
-    ? Array.from({ length: NUM_X_TICKS }, (_, i) =>
-        Math.round(1 + (i / (NUM_X_TICKS - 1)) * (data.length - 1))
-      )
-    : data.length === 1 ? [1] : []
+  const { line: linePath, area: areaPath, dot } = useMemo(
+    () => buildPaths(chartData, chartWidth, chartHeight),
+    [chartData, chartWidth],
+  )
 
-  const onLayout = (e: LayoutChangeEvent) =>
-    setChartWidth(e.nativeEvent.layout.width)
+  const displayedLabels = useMemo(() => buildDisplayedLabels(chartLabels), [chartLabels])
+
+  const onLayout = (event: LayoutChangeEvent) => {
+    setChartWidth(event.nativeEvent.layout.width)
+  }
+
+  const hasAnyValue = chartData.some((value) => value > 0)
 
   return (
     <View>
-      {/* ── Chart ── */}
+      <View style={styles.chartHeader}>
+        <Text style={styles.chartTitle}>Skin stress trend</Text>
+        <Text style={styles.chartSubtitle}>Combined score from daily check-ins</Text>
+      </View>
+
       <View style={styles.chartWrapper}>
         <View style={styles.chartYContainer}>
-          {yTicks.map((v, i) => (
-            <Text key={i} style={styles.chartYLabel}>{v}</Text>
+          {yTicks.map((value, index) => (
+            <Text key={index} style={styles.chartYLabel}>{value}</Text>
           ))}
         </View>
 
@@ -120,45 +141,54 @@ export function MetricsGrid({ activePeriod }: MetricsGridProps) {
             style={StyleSheet.absoluteFill}
           />
 
-          {chartWidth > 0 && data.length >= 2 && (
-            <Svg width={chartWidth} height={CHART_H} style={StyleSheet.absoluteFill}>
+          {chartWidth > 0 && hasAnyValue && chartData.length > 0 && (
+            <Svg width={chartWidth} height={chartHeight} style={StyleSheet.absoluteFill}>
               <Defs>
                 <SvgLinearGradient id="areaFill" x1="0" y1="0" x2="0" y2="1">
-                  <Stop offset="0%"   stopColor="#FFFFFF" stopOpacity={0.4} />
+                  <Stop offset="0%" stopColor="#FFFFFF" stopOpacity={0.4} />
                   <Stop offset="100%" stopColor="#FFFFFF" stopOpacity={0.02} />
                 </SvgLinearGradient>
               </Defs>
-              <Path d={areaPath} fill="url(#areaFill)" />
-              <Path d={linePath} fill="none" stroke="#FFFFFF" strokeWidth={2.5} />
+
+              {areaPath ? <Path d={areaPath} fill="url(#areaFill)" /> : null}
+              {linePath ? <Path d={linePath} fill="none" stroke="#FFFFFF" strokeWidth={2.5} /> : null}
+              {dot ? <Circle cx={dot.x} cy={dot.y} r={5} fill="#FFFFFF" /> : null}
             </Svg>
           )}
 
+          {!hasAnyValue && (
+            <View style={styles.emptyOverlay}>
+              <Text style={styles.emptyTitle}>No check-ins yet</Text>
+              <Text style={styles.emptyText}>Complete today’s questionnaire to start tracking trends.</Text>
+            </View>
+          )}
         </View>
       </View>
 
-      {/* ── X-axis label ── */}
       <View style={styles.belowChart}>
         <View style={styles.chartXContainer}>
-          {xTicks.map((v, i) => (
-            <Text key={i} style={styles.chartXLabel}>{v}</Text>
+          {displayedLabels.map((label, index) => (
+            <Text key={`${label}-${index}`} style={styles.chartXLabel}>{label}</Text>
           ))}
         </View>
       </View>
 
-      {/* ── 2×2 Metrics grid ── */}
       <View style={styles.metricsCard}>
         <View style={styles.metricsGrid}>
-          {METRICS.map(({ label, Icon, iconColor }) => (
-            <TouchableOpacity key={label} activeOpacity={0.7} style={styles.metricItem}>
-              <View style={styles.metricCircle}>
-                <Icon size={20} color={iconColor} strokeWidth={3} />
-              </View>
-              <View style={styles.metricLabelRow}>
+          {metricCards.map(({ id, label, value, valueLabel, subtitle }) => {
+            const { Icon, iconColor } = ICONS[id]
+
+            return (
+              <View key={label} style={styles.metricItem}>
+                <View style={styles.metricCircle}>
+                  <Icon size={20} color={iconColor} strokeWidth={3} />
+                </View>
                 <Text style={styles.metricLabel}>{label}</Text>
-                <ChevronRight size={11} color="#FFFFFF" />
+                <Text style={styles.metricValue}>{valueLabel}</Text>
+                <Text style={styles.metricSubtitle}>Score {value} · {subtitle}</Text>
               </View>
-            </TouchableOpacity>
-          ))}
+            )
+          })}
         </View>
       </View>
     </View>
@@ -166,7 +196,20 @@ export function MetricsGrid({ activePeriod }: MetricsGridProps) {
 }
 
 const styles = StyleSheet.create({
-  // ── Chart ─────────────────────────────────────────────────────────
+  chartHeader: {
+    marginHorizontal: 16,
+    marginBottom: 10,
+    gap: 2,
+  },
+  chartTitle: {
+    fontSize: 16,
+    fontWeight: '700',
+    color: '#FFFFFF',
+  },
+  chartSubtitle: {
+    fontSize: 12,
+    color: 'rgba(255,255,255,0.72)',
+  },
   chartWrapper: {
     flexDirection: 'row',
     marginHorizontal: 16,
@@ -174,7 +217,7 @@ const styles = StyleSheet.create({
     marginBottom: 4,
   },
   chartYContainer: {
-    width: 20,
+    width: 24,
     marginRight: 6,
     height: 165,
     justifyContent: 'space-between',
@@ -182,22 +225,44 @@ const styles = StyleSheet.create({
     paddingVertical: 2,
   },
   chartYLabel: {
-    fontSize: 10, fontWeight: '700',
+    fontSize: 10,
+    fontWeight: '700',
     color: 'rgba(255,199,199,0.57)',
     textAlign: 'right',
   },
   chartBox: {
-    flex: 1, height: 165,
-    borderWidth: 2, borderColor: '#FACB7A',
+    flex: 1,
+    height: 165,
+    borderWidth: 2,
+    borderColor: '#FACB7A',
     overflow: 'hidden',
+    borderRadius: 4,
+  },
+  emptyOverlay: {
+    ...StyleSheet.absoluteFillObject,
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingHorizontal: 24,
+  },
+  emptyTitle: {
+    color: '#FFFFFF',
+    fontSize: 14,
+    fontWeight: '700',
+  },
+  emptyText: {
+    color: 'rgba(255,255,255,0.62)',
+    fontSize: 12,
+    lineHeight: 18,
+    textAlign: 'center',
+    marginTop: 6,
   },
   belowChart: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    marginLeft: 26,
+    marginLeft: 30,
     marginRight: 16,
-    marginBottom: 10,
+    marginBottom: 14,
   },
   chartXContainer: {
     flex: 1,
@@ -205,30 +270,54 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   chartXLabel: {
-    fontSize: 10, fontWeight: '700',
+    fontSize: 10,
+    fontWeight: '700',
     color: 'rgba(255,199,199,0.57)',
   },
-  // ── Metrics ───────────────────────────────────────────────────────
   metricsCard: {
     marginHorizontal: 28,
     backgroundColor: 'rgba(255,255,255,0.1)',
-    borderRadius: 14, padding: 20,
+    borderRadius: 14,
+    padding: 20,
     shadowColor: '#FFFFFF',
     shadowOffset: { width: 0, height: 0 },
-    shadowOpacity: 0.1, shadowRadius: 24,
+    shadowOpacity: 0.1,
+    shadowRadius: 24,
   },
   metricsGrid: {
-    flexDirection: 'row', flexWrap: 'wrap',
-    justifyContent: 'space-around', rowGap: 24,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
+    rowGap: 22,
   },
   metricItem: {
-    width: '44%', alignItems: 'center', gap: 8,
+    width: '47%',
+    alignItems: 'center',
+    gap: 6,
   },
   metricCircle: {
-    width: 57, height: 57, borderRadius: 28.5,
-    borderWidth: 5, borderColor: 'rgba(254,254,254,0.76)',
-    alignItems: 'center', justifyContent: 'center',
+    width: 57,
+    height: 57,
+    borderRadius: 28.5,
+    borderWidth: 5,
+    borderColor: 'rgba(254,254,254,0.76)',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
-  metricLabelRow: { flexDirection: 'row', alignItems: 'center', gap: 4 },
-  metricLabel:    { fontSize: 14, color: '#FFFFFF' },
+  metricLabel: {
+    fontSize: 14,
+    color: '#FFFFFF',
+    fontWeight: '600',
+  },
+  metricValue: {
+    fontSize: 16,
+    color: '#FFFFFF',
+    fontWeight: '700',
+  },
+  metricSubtitle: {
+    fontSize: 11,
+    lineHeight: 16,
+    color: 'rgba(255,255,255,0.72)',
+    textAlign: 'center',
+  },
 })

@@ -1,14 +1,16 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import { Flame, Check, Activity } from 'lucide-react-native'
 
 interface StreakCardProps {
   streak: number
   record: number
   checkedIn: boolean
+  trackerLabel?: string
+  onCheckInPress?: () => void
 }
 
-export function StreakCard({ streak, record, checkedIn }: StreakCardProps) {
+export function StreakCard({ streak, record, checkedIn, trackerLabel = 'Skin Log', onCheckInPress }: StreakCardProps) {
   return (
     <View style={styles.streakCard}>
 
@@ -24,12 +26,18 @@ export function StreakCard({ streak, record, checkedIn }: StreakCardProps) {
         <Text style={styles.circleSubLabel}>Record: {record}</Text>
       </View>
 
-      {/* Center — Checked In */}
+      {/* Center — Check In (tappable) */}
       <View style={styles.streakCol}>
-        <View style={styles.streakCircle}>
+        <TouchableOpacity
+          activeOpacity={0.75}
+          onPress={onCheckInPress}
+          style={[styles.streakCircle, !checkedIn && styles.streakCircleActive]}
+          accessibilityRole="button"
+          accessibilityLabel="Open daily check-in"
+        >
           <Check size={32} color="rgba(255,255,255,0.88)" strokeWidth={3} />
-        </View>
-        <Text style={styles.circleSubLabel}>{checkedIn ? 'Checked In!' : 'Check In'}</Text>
+        </TouchableOpacity>
+        <Text style={styles.circleSubLabel}>{checkedIn ? 'Checked In!' : 'Due Today'}</Text>
       </View>
 
       {/* Right — Tracker */}
@@ -37,7 +45,7 @@ export function StreakCard({ streak, record, checkedIn }: StreakCardProps) {
         <View style={styles.streakCircle}>
           <Activity size={30} color="#FFFFFF" strokeWidth={2.5} />
         </View>
-        <Text style={styles.circleSubLabel}>Tracker</Text>
+        <Text style={styles.circleSubLabel}>{trackerLabel}</Text>
       </View>
 
     </View>
@@ -71,6 +79,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     gap: 2,
   },
+  streakCircleActive: {
+    borderColor: 'rgba(255,200,100,0.85)',
+    backgroundColor: 'rgba(255,200,100,0.12)',
+  },
   streakTopRow: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -88,5 +100,6 @@ const styles = StyleSheet.create({
     fontSize: 13, fontWeight: '500',
     color: 'rgba(255,255,255,0.75)',
     textAlign: 'center',
+    paddingHorizontal: 2,
   },
 })
