@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import {
-  Alert,
   KeyboardAvoidingView,
   Platform,
   ScrollView,
@@ -14,8 +13,12 @@ import {
 import { LinearGradient } from 'expo-linear-gradient'
 import { Stack, useRouter } from 'expo-router'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
-import * as Linking from 'expo-linking'
 import { supabase } from '../utils/supabaseClient'
+import {
+  getThemeOverridePreference,
+  isNightThemeActive,
+  type ThemeOverrideMode,
+} from '../utils/themePreference'
 
 export default function LoginScreen() {
   const insets = useSafeAreaInsets()
@@ -26,34 +29,84 @@ export default function LoginScreen() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSignUpMode, setIsSignUpMode] = useState(false)
   const [authError, setAuthError] = useState<string | null>(null)
+  const [themeOverride, setThemeOverride] = useState<ThemeOverrideMode>('auto')
+  const [now, setNow] = useState(() => new Date())
+
+  useEffect(() => {
+    const timer = setInterval(() => setNow(new Date()), 60_000)
+    return () => clearInterval(timer)
+  }, [])
+
+  useEffect(() => {
+    getThemeOverridePreference().then(setThemeOverride)
+  }, [])
+
+  const isNightTheme = isNightThemeActive(themeOverride, now)
+  const theme = useMemo(
+    () => (isNightTheme
+      ? {
+          gradientColors: ['#0B1022', '#131C3D', '#1B244A'],
+          kickerColor: 'rgba(214,226,255,0.78)',
+          subtitleColor: 'rgba(224,232,255,0.82)',
+          cardBg: 'rgba(120,140,210,0.18)',
+          cardBorder: 'rgba(176,198,255,0.36)',
+          inputBg: 'rgba(14,26,62,0.55)',
+          inputBorder: 'rgba(191,206,255,0.45)',
+          buttonBg: 'rgba(88,132,255,0.5)',
+          buttonBorder: 'rgba(198,218,255,0.78)',
+          helperTextColor: 'rgba(224,232,255,0.86)',
+          placeholderColor: 'rgba(215,225,255,0.5)',
+        }
+      : {
+          gradientColors: ['#CC2B2B', '#D97B22', '#C80000'],
+          kickerColor: 'rgba(255,255,255,0.72)',
+          subtitleColor: 'rgba(255,255,255,0.8)',
+          cardBg: 'rgba(255,255,255,0.16)',
+          cardBorder: 'rgba(255,255,255,0.34)',
+          inputBg: 'rgba(255,255,255,0.18)',
+          inputBorder: 'rgba(255,255,255,0.42)',
+          buttonBg: 'rgba(255,255,255,0.24)',
+          buttonBorder: 'rgba(255,255,255,0.65)',
+          helperTextColor: 'rgba(255,255,255,0.88)',
+          placeholderColor: 'rgba(255,255,255,0.66)',
+        }),
+    [isNightTheme],
+  )
 
   const handleLogin = async () => {
-    if (!email.trim() || !password.trim()) return
+    if (!email.trim() || password.length === 0) return
 
     setIsSubmitting(true)
     setAuthError(null)
     try {
-      if (isSignUpMode) {
-        const redirectTo = Linking.createURL('/auth/callback')
+      const normalizedEmail = email.trim()
 
+      if (isSignUpMode) {
         const { data, error } = await supabase.auth.signUp({
-          email: email.trim(),
+          email: normalizedEmail,
           password,
-          options: {
-            emailRedirectTo: redirectTo,
-          },
         })
 
         if (error) throw error
 
         if (!data.session) {
-          Alert.alert('Check your email', 'Your account was created. Confirm your email, then sign in.')
-          setIsSignUpMode(false)
-          return
+          const { error: signInAfterSignUpError } = await supabase.auth.signInWithPassword({
+            email: normalizedEmail,
+            password,
+          })
+
+          if (signInAfterSignUpError) {
+            if (signInAfterSignUpError.message.toLowerCase().includes('invalid login credentials')) {
+              setAuthError('That email already exists with a different password. Use the original password or reset it in Supabase Auth.')
+              return
+            }
+
+            throw signInAfterSignUpError
+          }
         }
       } else {
         const { error } = await supabase.auth.signInWithPassword({
-          email: email.trim(),
+          email: normalizedEmail,
           password,
         })
 
@@ -62,7 +115,13 @@ export default function LoginScreen() {
 
       router.replace('/')
     } catch (error) {
-      setAuthError(error instanceof Error ? error.message : 'Authentication failed.')
+      const message = error instanceof Error ? error.message : 'Authentication failed.'
+
+      if (message.toLowerCase().includes('invalid login credentials')) {
+        setAuthError('Invalid email or password. This usually means the account already exists with a different password, or this app is pointed at a different Supabase project.')
+      } else {
+        setAuthError(message)
+      }
     } finally {
       setIsSubmitting(false)
     }
@@ -73,7 +132,7 @@ export default function LoginScreen() {
       <Stack.Screen options={{ headerShown: false }} />
       <StatusBar translucent barStyle="light-content" backgroundColor="transparent" />
       <LinearGradient
-        colors={['#0B1022', '#131C3D', '#1B244A']}
+        colors={theme.gradientColors as [string, string, string]}
         start={{ x: 0.08, y: 0 }}
         end={{ x: 0.95, y: 1 }}
         style={styles.container}
@@ -87,25 +146,26 @@ export default function LoginScreen() {
             contentContainerStyle={[styles.content, { paddingTop: insets.top + 20, paddingBottom: insets.bottom + 24 }]}
           >
             <View style={styles.header}>
-              <Text style={styles.kicker}>Welcome back</Text>
+              <Text style={[styles.kicker, { color: theme.kickerColor }]}>Welcome back</Text>
               <Text style={styles.title}>{isSignUpMode ? 'Create your SPFMatch account' : 'Log in to SPFMatch'}</Text>
-              <Text style={styles.subtitle}>
+              <Text style={[styles.subtitle, { color: theme.subtitleColor }]}>
                 {isSignUpMode
                   ? 'Create an account to save check-ins and reminders to your Supabase profile.'
                   : 'Sign in to sync your check-ins and reminders across sessions.'}
               </Text>
             </View>
 
-            <View style={styles.card}>
+            <View style={[styles.card, { backgroundColor: theme.cardBg, borderColor: theme.cardBorder }]}>
               <Text style={styles.label}>Email</Text>
               <TextInput
                 value={email}
                 onChangeText={setEmail}
                 placeholder="you@example.com"
-                placeholderTextColor="rgba(215,225,255,0.5)"
+                placeholderTextColor={theme.placeholderColor}
                 autoCapitalize="none"
+                autoCorrect={false}
                 keyboardType="email-address"
-                style={styles.input}
+                style={[styles.input, { backgroundColor: theme.inputBg, borderColor: theme.inputBorder }]}
               />
 
               <Text style={[styles.label, { marginTop: 10 }]}>Password</Text>
@@ -113,15 +173,21 @@ export default function LoginScreen() {
                 value={password}
                 onChangeText={setPassword}
                 placeholder="••••••••"
-                placeholderTextColor="rgba(215,225,255,0.5)"
+                placeholderTextColor={theme.placeholderColor}
                 secureTextEntry
-                style={styles.input}
+                autoCapitalize="none"
+                autoCorrect={false}
+                style={[styles.input, { backgroundColor: theme.inputBg, borderColor: theme.inputBorder }]}
               />
 
               <TouchableOpacity
                 activeOpacity={0.85}
-                style={[styles.loginButton, (!email.trim() || !password.trim() || isSubmitting) && styles.loginButtonDisabled]}
-                disabled={!email.trim() || !password.trim() || isSubmitting}
+                style={[
+                  styles.loginButton,
+                  { backgroundColor: theme.buttonBg, borderColor: theme.buttonBorder },
+                  (!email.trim() || password.length === 0 || isSubmitting) && styles.loginButtonDisabled,
+                ]}
+                disabled={!email.trim() || password.length === 0 || isSubmitting}
                 onPress={handleLogin}
               >
                 <Text style={styles.loginButtonText}>
@@ -141,7 +207,7 @@ export default function LoginScreen() {
                   setAuthError(null)
                 }}
               >
-                <Text style={styles.toggleButtonText}>
+                <Text style={[styles.toggleButtonText, { color: theme.helperTextColor }]}>
                   {isSignUpMode ? 'Already have an account? Sign in' : 'Need an account? Create one'}
                 </Text>
               </TouchableOpacity>
