@@ -1,11 +1,27 @@
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import { CHECK_IN_STORAGE_KEY, METRIC_LABELS, getLevelLabel } from '../constants/checkIn'
+import { isSupabaseConfigured, supabase } from './supabaseClient'
 import type { CheckInMetricId, DailyCheckInEntry } from '../types'
 
 type Period = 'Day' | 'Week' | 'Month' | 'All'
 
 const DAY_MS = 24 * 60 * 60 * 1000
 const DAY_LABELS = ['M', 'T', 'W', 'T', 'F', 'S', 'S']
+const CHECK_IN_DEVICE_ID_KEY = 'spfmatch-mobile:check-in-device-id:v1'
+
+type SupabaseCheckInRow = {
+  id: string
+  device_id: string
+  user_id: string | null
+  check_in_date: string
+  irritation: number
+  dryness: number
+  oiliness: number
+  breakouts: number
+  notes: string | null
+  created_at: string
+  updated_at: string
+}
 
 type MetricSummary = {
   id: CheckInMetricId
@@ -82,11 +98,83 @@ function generateMockHistory(): DailyCheckInEntry[] {
     .sort((left, right) => left.date.localeCompare(right.date))
 }
 
-function sortEntries(entries: DailyCheckInEntry[]): DailyCheckInEntry[] {
-  return [...entries].sort((left, right) => left.date.localeCompare(right.date))
+function hasSupabaseConfig(): boolean {
+  return isSupabaseConfigured
 }
 
-export async function getCheckInHistory(): Promise<DailyCheckInEntry[]> {
+async function getOrCreateDeviceId(): Promise<string> {
+  const existing = await AsyncStorage.getItem(CHECK_IN_DEVICE_ID_KEY)
+  if (existing) return existing
+
+  const generated = `device-${Date.now()}-${Math.random().toString(36).slice(2, 10)}`
+  await AsyncStorage.setItem(CHECK_IN_DEVICE_ID_KEY, generated)
+  return generated
+}
+
+function rowToEntry(row: SupabaseCheckInRow): DailyCheckInEntry {
+  return {
+    date: row.check_in_date,
+    irritation: row.irritation,
+    dryness: row.dryness,
+    oiliness: row.oiliness,
+    breakouts: row.breakouts,
+    notes: row.notes ?? undefined,
+    createdAt: row.created_at,
+    updatedAt: row.updated_at,
+  }
+}
+
+async function getSupabaseHistory(): Promise<DailyCheckInEntry[]> {
+  const { data: authData, error: authError } = await supabase.auth.getUser()
+  if (authError) throw authError
+
+  const userId = authData.user?.id
+  if (!userId) {
+    throw new Error('No authenticated Supabase user found.')
+  }
+
+  const { data, error } = await supabase
+    .from('daily_check_ins')
+    .select('*')
+    .eq('user_id', userId)
+    .order('check_in_date', { ascending: true })
+
+  if (error) throw error
+  return ((data ?? []) as SupabaseCheckInRow[]).map(rowToEntry)
+}
+
+async function upsertSupabaseDailyCheckIn(
+  input: Omit<DailyCheckInEntry, 'date' | 'createdAt' | 'updatedAt'>,
+): Promise<void> {
+  const deviceId = await getOrCreateDeviceId()
+  const todayKey = toLocalDateKey(new Date())
+  const { data: authData, error: authError } = await supabase.auth.getUser()
+  if (authError) throw authError
+
+  const userId = authData.user?.id
+  if (!userId) {
+    throw new Error('No authenticated Supabase user found.')
+  }
+
+  const payload = {
+    device_id: deviceId,
+    user_id: userId,
+    check_in_date: todayKey,
+    irritation: input.irritation,
+    dryness: input.dryness,
+    oiliness: input.oiliness,
+    breakouts: input.breakouts,
+    notes: input.notes ?? null,
+  }
+
+  const { error } = await supabase
+    .from('daily_check_ins')
+    .upsert(payload, { onConflict: 'user_id,check_in_date' })
+
+  if (error) throw error
+}
+
+async function getLocalHistoryWithSeed(): Promise<DailyCheckInEntry[]> {
   const rawHistory = await AsyncStorage.getItem(CHECK_IN_STORAGE_KEY)
   if (!rawHistory) {
     const mockHistory = generateMockHistory()
@@ -104,9 +192,34 @@ export async function getCheckInHistory(): Promise<DailyCheckInEntry[]> {
   }
 }
 
+function sortEntries(entries: DailyCheckInEntry[]): DailyCheckInEntry[] {
+  return [...entries].sort((left, right) => left.date.localeCompare(right.date))
+}
+
+export async function getCheckInHistory(): Promise<DailyCheckInEntry[]> {
+  if (hasSupabaseConfig()) {
+    try {
+      return sortEntries(await getSupabaseHistory())
+    } catch {
+      // fall through to local cache when Supabase is unavailable/misconfigured
+    }
+  }
+
+  return getLocalHistoryWithSeed()
+}
+
 export async function saveDailyCheckIn(
   input: Omit<DailyCheckInEntry, 'date' | 'createdAt' | 'updatedAt'>,
 ): Promise<DailyCheckInEntry[]> {
+  if (hasSupabaseConfig()) {
+    try {
+      await upsertSupabaseDailyCheckIn(input)
+      return sortEntries(await getSupabaseHistory())
+    } catch {
+      // fall back to local write to avoid blocking user flow
+    }
+  }
+
   const currentHistory = await getCheckInHistory()
   const today = new Date()
   const todayKey = toLocalDateKey(today)

@@ -18,6 +18,11 @@ import {
   getLevelValue,
 } from '../../constants/checkIn'
 import { getCheckInHistory, getTodayCheckIn, saveDailyCheckIn } from '../../utils/checkInStorage'
+import {
+  getThemeOverridePreference,
+  isNightThemeActive,
+  type ThemeOverrideMode,
+} from '../../utils/themePreference'
 import type { CheckInMetricId, DailyCheckInDraft, DailyCheckInEntry } from '../../types'
 
 function entryToDraft(entry: DailyCheckInEntry): DailyCheckInDraft {
@@ -50,12 +55,22 @@ export function CheckInModal({ visible, onClose, onSaved }: CheckInModalProps) {
   const [isHydrated, setIsHydrated] = useState(false)
   const [isSaving, setIsSaving] = useState(false)
   const [isEditing, setIsEditing] = useState(false)
+  const [themeOverride, setThemeOverride] = useState<ThemeOverrideMode>('auto')
+  const [now, setNow] = useState(() => new Date())
+
+  useEffect(() => {
+    const timer = setInterval(() => setNow(new Date()), 60_000)
+    return () => clearInterval(timer)
+  }, [])
 
   // Load today's entry whenever modal opens
   useEffect(() => {
     if (!visible) return
 
     async function hydrate() {
+      const storedTheme = await getThemeOverridePreference()
+      setThemeOverride(storedTheme)
+
       const history = await getCheckInHistory()
       const entry = getTodayCheckIn(history)
       setTodayEntry(entry)
@@ -70,6 +85,39 @@ export function CheckInModal({ visible, onClose, onSaved }: CheckInModalProps) {
   const answeredCount = useMemo(
     () => CHECK_IN_QUESTIONS.filter((q) => answers[q.id]).length,
     [answers],
+  )
+  const isNightTheme = isNightThemeActive(themeOverride, now)
+  const theme = useMemo(
+    () => (isNightTheme
+      ? {
+          sheetBg: '#131C3D',
+          borderColor: 'rgba(176,198,255,0.32)',
+          kickerColor: 'rgba(214,226,255,0.78)',
+          loadingTextColor: 'rgba(224,232,255,0.8)',
+          panelBg: 'rgba(120,140,210,0.18)',
+          panelBorder: 'rgba(176,198,255,0.36)',
+          tileBg: 'rgba(88,132,255,0.2)',
+          tileBorder: 'rgba(176,198,255,0.36)',
+          progressBg: 'rgba(176,198,255,0.24)',
+          progressFill: 'rgba(210,225,255,0.9)',
+          subLabelColor: 'rgba(225,233,255,0.75)',
+          closeBg: 'rgba(120,140,210,0.32)',
+        }
+      : {
+          sheetBg: '#B3352B',
+          borderColor: 'rgba(255,255,255,0.15)',
+          kickerColor: 'rgba(255,255,255,0.72)',
+          loadingTextColor: 'rgba(255,255,255,0.72)',
+          panelBg: 'rgba(255,255,255,0.12)',
+          panelBorder: 'rgba(255,255,255,0.3)',
+          tileBg: 'rgba(255,255,255,0.08)',
+          tileBorder: 'rgba(255,255,255,0.14)',
+          progressBg: 'rgba(255,255,255,0.2)',
+          progressFill: 'rgba(255,255,255,0.75)',
+          subLabelColor: 'rgba(255,255,255,0.65)',
+          closeBg: 'rgba(255,255,255,0.15)',
+        }),
+    [isNightTheme],
   )
   const totalQuestions = CHECK_IN_QUESTIONS.length
   const showForm = todayEntry === null || isEditing
@@ -105,11 +153,19 @@ export function CheckInModal({ visible, onClose, onSaved }: CheckInModalProps) {
       presentationStyle="pageSheet"
       onRequestClose={onClose}
     >
-      <View style={[styles.sheet, { paddingBottom: Math.max(insets.bottom, 20) }]}>
+      <View
+        style={[
+          styles.sheet,
+          {
+            backgroundColor: theme.sheetBg,
+            paddingBottom: Math.max(insets.bottom, 20),
+          },
+        ]}
+      >
         {/* ── Header ── */}
-        <View style={styles.header}>
+        <View style={[styles.header, { borderBottomColor: theme.borderColor }]}> 
           <View style={styles.headerText}>
-            <Text style={styles.kicker}>Daily Check-In</Text>
+            <Text style={[styles.kicker, { color: theme.kickerColor }]}>Daily Check-In</Text>
             <Text style={styles.title}>
               {!isHydrated
                 ? 'Loading...'
@@ -119,7 +175,7 @@ export function CheckInModal({ visible, onClose, onSaved }: CheckInModalProps) {
             </Text>
           </View>
           <TouchableOpacity
-            style={styles.closeBtn}
+            style={[styles.closeBtn, { backgroundColor: theme.closeBg }]}
             onPress={onClose}
             activeOpacity={0.7}
             accessibilityRole="button"
@@ -131,7 +187,7 @@ export function CheckInModal({ visible, onClose, onSaved }: CheckInModalProps) {
 
         {!isHydrated ? (
           <View style={styles.loadingContainer}>
-            <Text style={styles.loadingText}>Loading today's check-in…</Text>
+            <Text style={[styles.loadingText, { color: theme.loadingTextColor }]}>Loading today's check-in…</Text>
           </View>
         ) : showForm ? (
           <ScrollView
@@ -139,10 +195,11 @@ export function CheckInModal({ visible, onClose, onSaved }: CheckInModalProps) {
             contentContainerStyle={styles.scrollContent}
           >
             {/* Progress */}
-            <View style={styles.progressBar}>
+            <View style={[styles.progressBar, { backgroundColor: theme.progressBg }]}> 
               <View
                 style={[
                   styles.progressFill,
+                  { backgroundColor: theme.progressFill },
                   { width: `${(answeredCount / totalQuestions) * 100}%` },
                 ]}
               />
@@ -198,18 +255,18 @@ export function CheckInModal({ visible, onClose, onSaved }: CheckInModalProps) {
             showsVerticalScrollIndicator={false}
             contentContainerStyle={styles.scrollContent}
           >
-            <View style={styles.summaryCard}>
+            <View style={[styles.summaryCard, { backgroundColor: theme.panelBg, borderColor: theme.panelBorder }]}> 
               <Text style={styles.summaryHeading}>Today's responses</Text>
-              <Text style={styles.summaryTimestamp}>
+              <Text style={[styles.summaryTimestamp, { color: theme.subLabelColor }]}> 
                 Saved at {formatUpdatedTime(todayEntry.updatedAt)}
               </Text>
 
               <View style={styles.summaryGrid}>
                 {(Object.keys(METRIC_LABELS) as CheckInMetricId[]).map((id) => (
-                  <View key={id} style={styles.summaryTile}>
-                    <Text style={styles.summaryLabel}>{METRIC_LABELS[id]}</Text>
+                  <View key={id} style={[styles.summaryTile, { backgroundColor: theme.tileBg, borderColor: theme.tileBorder }]}> 
+                    <Text style={[styles.summaryLabel, { color: theme.subLabelColor }]}>{METRIC_LABELS[id]}</Text>
                     <Text style={styles.summaryValue}>{getLevelLabel(todayEntry[id])}</Text>
-                    <Text style={styles.summaryScore}>Score {todayEntry[id]} / 4</Text>
+                    <Text style={[styles.summaryScore, { color: theme.subLabelColor }]}>Score {todayEntry[id]} / 4</Text>
                   </View>
                 ))}
               </View>

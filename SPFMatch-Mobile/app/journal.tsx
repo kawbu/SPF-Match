@@ -17,6 +17,7 @@ import { ResultsSummary } from '../components/journal/ResultsSummary'
 import { BottomNav } from '../components/home/BottomNav'
 import { QUIZ_QUESTIONS } from '../constants/quiz'
 import { calculateFitzpatrickType, getSkinType } from '../utils/fitzpatrick'
+import { supabase } from '../utils/supabaseClient'
 import {
   getThemeOverridePreference,
   isNightThemeActive,
@@ -40,6 +41,7 @@ export default function JournalScreen() {
   const [isHydrated, setIsHydrated] = useState(false)
   const [now, setNow] = useState(() => new Date())
   const [themeOverride, setThemeOverride] = useState<ThemeOverrideMode>('auto')
+  const [authChecked, setAuthChecked] = useState(false)
 
   useEffect(() => {
     const timer = setInterval(() => setNow(new Date()), 60_000)
@@ -49,6 +51,20 @@ export default function JournalScreen() {
   useEffect(() => {
     getThemeOverridePreference().then(setThemeOverride)
   }, [])
+
+  useEffect(() => {
+    supabase.auth.getSession()
+      .then(({ data }) => {
+        if (!data.session) {
+          router.replace('/landing')
+          return
+        }
+        setAuthChecked(true)
+      })
+      .catch(() => {
+        router.replace('/landing')
+      })
+  }, [router])
 
   const isNightTheme = isNightThemeActive(themeOverride, now)
   const theme = useMemo(
@@ -146,6 +162,23 @@ export default function JournalScreen() {
     return radioAnswered + multiAnswered
   })()
   const totalQuestions = QUIZ_QUESTIONS.length
+
+  if (!authChecked) {
+    return (
+      <>
+        <Stack.Screen options={{ headerShown: false }} />
+        <StatusBar translucent barStyle="light-content" backgroundColor="transparent" />
+        <LinearGradient
+          colors={theme.gradientColors as [string, string, string]}
+          start={{ x: 0.08, y: 0 }}
+          end={{ x: 0.95, y: 1 }}
+          style={[styles.container, styles.loadingContainer]}
+        >
+          <Text style={[styles.loadingText, { color: theme.loadingTextColor }]}>Loading...</Text>
+        </LinearGradient>
+      </>
+    )
+  }
 
   if (!isHydrated) {
     return (

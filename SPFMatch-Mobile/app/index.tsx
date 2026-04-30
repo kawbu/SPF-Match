@@ -12,6 +12,7 @@ import { MetricsGrid }   from '../components/home/MetricsGrid'
 import { BottomNav }     from '../components/home/BottomNav'
 import { CheckInModal }  from '../components/home/CheckInModal'
 import { buildHomeCheckInSummary, getCheckInHistory } from '../utils/checkInStorage'
+import { supabase } from '../utils/supabaseClient'
 import {
   getThemeOverridePreference,
   isNightThemeActive,
@@ -25,6 +26,8 @@ export default function Index() {
   const [checkIns, setCheckIns] = useState<DailyCheckInEntry[]>([])
   const [isHydrated, setIsHydrated] = useState(false)
   const [checkInModalVisible, setCheckInModalVisible] = useState(false)
+  const [authChecked, setAuthChecked] = useState(false)
+  const [isLoggingOut, setIsLoggingOut] = useState(false)
   const [themeOverride, setThemeOverride] = useState<ThemeOverrideMode>('auto')
   const [now, setNow] = useState(() => new Date())
   const insets = useSafeAreaInsets()
@@ -34,6 +37,20 @@ export default function Index() {
     const timer = setInterval(() => setNow(new Date()), 60_000)
     return () => clearInterval(timer)
   }, [])
+
+  useEffect(() => {
+    supabase.auth.getSession()
+      .then(({ data }) => {
+        if (!data.session) {
+          router.replace('/landing')
+          return
+        }
+        setAuthChecked(true)
+      })
+      .catch(() => {
+        router.replace('/landing')
+      })
+  }, [router])
 
   const loadCheckIns = useCallback(async () => {
     const history = await getCheckInHistory()
@@ -98,6 +115,32 @@ export default function Index() {
         }),
     [isNightTheme],
   )
+
+  const handleLogout = async () => {
+    setIsLoggingOut(true)
+    try {
+      await supabase.auth.signOut()
+      router.replace('/landing')
+    } finally {
+      setIsLoggingOut(false)
+    }
+  }
+
+  if (!authChecked) {
+    return (
+      <>
+        <StatusBar translucent barStyle="light-content" backgroundColor="transparent" />
+        <LinearGradient
+          colors={theme.gradientColors as [string, string, string]}
+          start={{ x: 0.08, y: 0 }}
+          end={{ x: 0.95, y: 1 }}
+          style={[styles.container, styles.loadingContainer]}
+        >
+          <Text style={[styles.loadingText, { color: theme.loadingTextColor }]}>Loading...</Text>
+        </LinearGradient>
+      </>
+    )
+  }
 
   return (
     <>
@@ -220,6 +263,17 @@ export default function Index() {
 
           {!isHydrated ? <Text style={[styles.loadingText, { color: theme.loadingTextColor }]}>Loading check-in history…</Text> : null}
 
+          <TouchableOpacity
+            activeOpacity={0.82}
+            style={styles.logoutButtonBottom}
+            onPress={handleLogout}
+            disabled={isLoggingOut}
+            accessibilityRole="button"
+            accessibilityLabel="Log out"
+          >
+            <Text style={styles.logoutButtonBottomText}>{isLoggingOut ? 'Logging out...' : 'Log out'}</Text>
+          </TouchableOpacity>
+
           <View style={{ height: 16 }} />
         </ScrollView>
 
@@ -292,6 +346,10 @@ const styles = StyleSheet.create({
     color: 'rgba(255,255,255,0.62)',
     fontSize: 12,
   },
+  loadingContainer: {
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   checkInBanner: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -352,5 +410,21 @@ const styles = StyleSheet.create({
     fontSize: 11,
     fontWeight: '700',
     letterSpacing: 0.6,
+  },
+  logoutButtonBottom: {
+    marginTop: 14,
+    marginHorizontal: 16,
+    borderRadius: 14,
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.45)',
+    backgroundColor: 'rgba(255,255,255,0.14)',
+    paddingVertical: 13,
+    alignItems: 'center',
+  },
+  logoutButtonBottomText: {
+    color: '#FFFFFF',
+    fontSize: 14,
+    fontWeight: '700',
+    letterSpacing: 0.3,
   },
 })

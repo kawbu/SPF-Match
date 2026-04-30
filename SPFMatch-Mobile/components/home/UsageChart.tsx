@@ -7,7 +7,7 @@ import Svg, {
   Stop,
 } from 'react-native-svg'
 import { Sparkles, RefreshCw } from 'lucide-react-native'
-import { supabase, UsageStats } from '../../utils/supabaseClient'
+import { isSupabaseConfigured, supabase, UsageStats } from '../../utils/supabaseClient'
 
 // ── Sample data seeded on first tap ───────────────────────────────
 const SAMPLE_DAILY:   number[] = [1, 1, 2, 3, 4, 5, 6, 5, 4, 3, 2, 1]
@@ -66,6 +66,8 @@ export function UsageChart({ activePeriod }: UsageChartProps) {
 
   // Fetch most-recent row on mount
   useEffect(() => {
+    if (!isSupabaseConfigured) return
+
     supabase
       .from('usage_stats')
       .select('*')
@@ -79,6 +81,11 @@ export function UsageChart({ activePeriod }: UsageChartProps) {
 
   // Insert sample row, then display it by returned ID
   async function handleSeed() {
+    if (!isSupabaseConfigured) {
+      setError('Supabase is not configured. Add EXPO_PUBLIC_SUPABASE_URL and EXPO_PUBLIC_SUPABASE_ANON_KEY.')
+      return
+    }
+
     setSeeding(true)
     setError(null)
     try {

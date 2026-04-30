@@ -15,6 +15,7 @@ import { LinearGradient } from 'expo-linear-gradient'
 import { Stack, useRouter } from 'expo-router'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { BottomNav } from '../components/home/BottomNav'
+import { supabase } from '../utils/supabaseClient'
 import {
   DEFAULT_UV_REMINDER_SETTINGS,
   ensureNotificationPermission,
@@ -63,6 +64,7 @@ export default function ReminderScreen() {
   const [detectedUvLabel, setDetectedUvLabel] = useState<string | null>(null)
   const [now, setNow] = useState(() => new Date())
   const [themeOverride, setThemeOverride] = useState<ThemeOverrideMode>('auto')
+  const [authChecked, setAuthChecked] = useState(false)
 
   const [enabled, setEnabled] = useState(DEFAULT_UV_REMINDER_SETTINGS.enabled)
   const [uvIndex, setUvIndex] = useState(DEFAULT_UV_REMINDER_SETTINGS.uvIndex)
@@ -95,6 +97,20 @@ export default function ReminderScreen() {
   useEffect(() => {
     getThemeOverridePreference().then(setThemeOverride)
   }, [])
+
+  useEffect(() => {
+    supabase.auth.getSession()
+      .then(({ data }) => {
+        if (!data.session) {
+          router.replace('/landing')
+          return
+        }
+        setAuthChecked(true)
+      })
+      .catch(() => {
+        router.replace('/landing')
+      })
+  }, [router])
 
   const isNightTheme = isNightThemeActive(themeOverride, now)
   const theme = useMemo(
@@ -246,6 +262,23 @@ export default function ReminderScreen() {
     } finally {
       setIsFetchingUV(false)
     }
+  }
+
+  if (!authChecked) {
+    return (
+      <>
+        <Stack.Screen options={{ headerShown: false }} />
+        <StatusBar translucent barStyle="light-content" backgroundColor="transparent" />
+        <LinearGradient
+          colors={theme.gradientColors as [string, string, string]}
+          start={{ x: 0.08, y: 0 }}
+          end={{ x: 0.95, y: 1 }}
+          style={[styles.container, styles.loadingContainer]}
+        >
+          <Text style={styles.loadingText}>Loading...</Text>
+        </LinearGradient>
+      </>
+    )
   }
 
   return (
@@ -423,6 +456,15 @@ export default function ReminderScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+  },
+  loadingContainer: {
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  loadingText: {
+    color: '#FFFFFF',
+    fontSize: 15,
+    fontWeight: '600',
   },
   content: {
     paddingHorizontal: 18,

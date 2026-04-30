@@ -27,6 +27,9 @@ export default function RootLayout() {
   }, [])
 
   return (
-    <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: 'transparent' } }} />
+    <Stack
+      initialRouteName="landing"
+      screenOptions={{ headerShown: false, contentStyle: { backgroundColor: 'transparent' } }}
+    />
   )
 }

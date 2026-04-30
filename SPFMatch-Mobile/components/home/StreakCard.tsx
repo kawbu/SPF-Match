@@ -10,7 +10,13 @@ interface StreakCardProps {
   onCheckInPress?: () => void
 }
 
-export function StreakCard({ streak, record, checkedIn, trackerLabel = 'Skin Log', onCheckInPress }: StreakCardProps) {
+export function StreakCard({
+  streak,
+  record,
+  checkedIn,
+  trackerLabel = 'Skin Log',
+  onCheckInPress,
+}: StreakCardProps) {
   return (
     <View style={styles.streakCard}>
 
@@ -18,7 +24,7 @@ export function StreakCard({ streak, record, checkedIn, trackerLabel = 'Skin Log
       <View style={styles.streakCol}>
         <View style={styles.streakCircle}>
           <View style={styles.streakTopRow}>
-            <Flame size={13} color="rgba(255,93,0,0.85)" />
+            <Flame size={13} color="#FFFFFF" />
             <Text style={styles.streakLabelInside}> Streak</Text>
           </View>
           <Text style={styles.streakValue}>{streak}</Text>
