@@ -1,3 +1,6 @@
+/**
+ * Shared domain types for SPFMatch Mobile features.
+ */
 export interface SunscreenProduct {
   name: string
   filterType: string

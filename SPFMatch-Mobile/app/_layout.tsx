@@ -1,3 +1,6 @@
+/**
+ * SPFMatch Mobile router layout and global notification channel setup.
+ */
 import { Stack } from 'expo-router'
 import { useEffect } from 'react'
 import * as Notifications from 'expo-notifications'
@@ -22,7 +25,7 @@ export default function RootLayout() {
       vibrationPattern: [0, 250],
       lightColor: '#FF7A33',
     }).catch(() => {
-      // non-blocking
+      // Channel registration should never block screen rendering.
     })
   }, [])
 

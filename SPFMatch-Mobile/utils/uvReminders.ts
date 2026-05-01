@@ -1,3 +1,6 @@
+/**
+ * UV reminder settings persistence and local notification scheduling.
+ */
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import * as Notifications from 'expo-notifications'
 import { Platform } from 'react-native'

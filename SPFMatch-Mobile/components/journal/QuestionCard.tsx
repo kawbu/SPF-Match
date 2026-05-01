@@ -1,3 +1,6 @@
+/**
+ * Single-select question card used by quiz and check-in flows.
+ */
 import React from 'react'
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 

@@ -1,3 +1,7 @@
+/**
+ * Legacy usage chart component retained for optional Supabase-backed demos.
+ * Provenance: adapted from an earlier SPFMatch prototype.
+ */
 import React, { useState, useEffect, useCallback } from 'react'
 import { StyleSheet, Text, View, TouchableOpacity, LayoutChangeEvent } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient'
@@ -9,7 +13,7 @@ import Svg, {
 import { Sparkles, RefreshCw } from 'lucide-react-native'
 import { isSupabaseConfigured, supabase, UsageStats } from '../../utils/supabaseClient'
 
-// ── Sample data seeded on first tap ───────────────────────────────
+// Seed values provide deterministic data when no remote usage history exists.
 const SAMPLE_DAILY:   number[] = [1, 1, 2, 3, 4, 5, 6, 5, 4, 3, 2, 1]
 const SAMPLE_WEEKLY:  number[] = [4, 5, 6, 5, 4, 2, 2]
 const SAMPLE_MONTHLY: number[] = [
@@ -19,7 +23,7 @@ const SAMPLE_MONTHLY: number[] = [
 
 type Period = 'Day' | 'Week' | 'Month' | 'All'
 
-// ── Catmull-Rom spline → SVG cubic bezier path ────────────────────
+// Catmull-Rom interpolation keeps trend lines smooth across sparse points.
 function buildPaths(
   data: number[],
   width: number,
@@ -52,7 +56,6 @@ function buildPaths(
   return { line, area }
 }
 
-// ── Component ─────────────────────────────────────────────────────
 interface UsageChartProps {
   activePeriod: Period
 }
@@ -64,7 +67,7 @@ export function UsageChart({ activePeriod }: UsageChartProps) {
   const [chartWidth, setChartWidth] = useState(0)
   const CHART_H = 155
 
-  // Fetch most-recent row on mount
+  // One row is sufficient because each record stores complete period arrays.
   useEffect(() => {
     if (!isSupabaseConfigured) return
 
@@ -79,7 +82,7 @@ export function UsageChart({ activePeriod }: UsageChartProps) {
       })
   }, [])
 
-  // Insert sample row, then display it by returned ID
+  // Seeding gives first-time users a visible chart state during setup/testing.
   async function handleSeed() {
     if (!isSupabaseConfigured) {
       setError('Supabase is not configured. Add EXPO_PUBLIC_SUPABASE_URL and EXPO_PUBLIC_SUPABASE_ANON_KEY.')
@@ -107,7 +110,7 @@ export function UsageChart({ activePeriod }: UsageChartProps) {
     }
   }
 
-  // Pick the right array based on the active period
+  // Keep period mapping centralized to avoid view-level branching.
   const getData = useCallback((): number[] => {
     if (!stats) return []
     switch (activePeriod) {
@@ -139,7 +142,6 @@ export function UsageChart({ activePeriod }: UsageChartProps) {
 
   return (
     <View>
-      {/* ── Chart ── */}
       <View style={styles.chartWrapper}>
         <View style={styles.chartYContainer}>
           {yTicks.map((v, i) => (
@@ -148,7 +150,6 @@ export function UsageChart({ activePeriod }: UsageChartProps) {
         </View>
 
         <View style={styles.chartBox} onLayout={onLayout}>
-          {/* Background gradient — matches original */}
           <LinearGradient
             colors={['rgba(255,255,255,0.237)', 'rgba(183,183,183,0.1975)']}
             start={{ x: 0, y: 0 }}
@@ -156,7 +157,6 @@ export function UsageChart({ activePeriod }: UsageChartProps) {
             style={StyleSheet.absoluteFill}
           />
 
-          {/* SVG smooth curve from Supabase data */}
           {chartWidth > 0 && data.length >= 2 && (
             <Svg width={chartWidth} height={CHART_H} style={StyleSheet.absoluteFill}>
               <Defs>
@@ -170,7 +170,6 @@ export function UsageChart({ activePeriod }: UsageChartProps) {
             </Svg>
           )}
 
-          {/* Empty state */}
           {data.length === 0 && (
             <View style={styles.emptyOverlay}>
               <Text style={styles.emptyText}>Tap Seed to load data</Text>
@@ -179,7 +178,6 @@ export function UsageChart({ activePeriod }: UsageChartProps) {
         </View>
       </View>
 
-      {/* ── X-axis + Seed button ── */}
       <View style={styles.belowChart}>
         <View style={styles.chartXContainer}>
           {xTicks.map((v, i) => (
@@ -208,7 +206,6 @@ export function UsageChart({ activePeriod }: UsageChartProps) {
 }
 
 const styles = StyleSheet.create({
-  // ── Chart ─────────────────────────────────────────────────────────
   chartWrapper: {
     flexDirection: 'row',
     marginHorizontal: 16,

@@ -1,3 +1,6 @@
+/**
+ * Home dashboard chart and metric cards derived from check-in history.
+ */
 import React, { useMemo, useState } from 'react'
 import {
   LayoutChangeEvent,

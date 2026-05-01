@@ -1,3 +1,6 @@
+/**
+ * SPFMatch Mobile journal quiz flow and recommendation results screen.
+ */
 import { LinearGradient } from 'expo-linear-gradient'
 import { Stack, useRouter } from 'expo-router'
 import AsyncStorage from '@react-native-async-storage/async-storage'
@@ -95,7 +98,7 @@ export default function JournalScreen() {
           setShowResults(parsed.showResults)
         }
       } catch {
-        // ignore
+        // Corrupt local draft state should not block starting a fresh quiz.
       } finally {
         setIsHydrated(true)
       }

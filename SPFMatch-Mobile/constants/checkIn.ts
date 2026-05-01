@@ -1,3 +1,6 @@
+/**
+ * Daily check-in labels, prompts, and mapping helpers.
+ */
 import type { CheckInMetricId } from '../types'
 
 export const CHECK_IN_STORAGE_KEY = 'spfmatch-mobile:daily-check-ins:v1'
@@ -46,10 +49,12 @@ export const METRIC_LABELS: Record<CheckInMetricId, string> = {
   breakouts: 'Breakouts',
 }
 
+/** Maps a user-visible severity label to its stored numeric value. */
 export function getLevelValue(label: string): number {
   return CHECK_IN_LEVELS.find((level) => level.label === label)?.value ?? 0
 }
 
+/** Maps a stored numeric severity value back to its user-facing label. */
 export function getLevelLabel(value: number): string {
   return CHECK_IN_LEVELS.find((level) => level.value === value)?.label ?? 'None'
 }

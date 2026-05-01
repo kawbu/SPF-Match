@@ -1,3 +1,6 @@
+/**
+ * Read/write and aggregation helpers for daily skin check-in history.
+ */
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import { CHECK_IN_STORAGE_KEY, METRIC_LABELS, getLevelLabel } from '../constants/checkIn'
 import { isSupabaseConfigured, supabase } from './supabaseClient'

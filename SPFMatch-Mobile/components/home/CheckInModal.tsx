@@ -1,3 +1,6 @@
+/**
+ * Modal workflow for creating or updating a daily skin check-in entry.
+ */
 import React, { useEffect, useMemo, useState } from 'react'
 import {
   Modal,
@@ -63,7 +66,7 @@ export function CheckInModal({ visible, onClose, onSaved }: CheckInModalProps) {
     return () => clearInterval(timer)
   }, [])
 
-  // Load today's entry whenever modal opens
+  // Re-hydrate on each open so edited entries are reflected immediately.
   useEffect(() => {
     if (!visible) return
 
@@ -162,7 +165,6 @@ export function CheckInModal({ visible, onClose, onSaved }: CheckInModalProps) {
           },
         ]}
       >
-        {/* ── Header ── */}
         <View style={[styles.header, { borderBottomColor: theme.borderColor }]}> 
           <View style={styles.headerText}>
             <Text style={[styles.kicker, { color: theme.kickerColor }]}>Daily Check-In</Text>
@@ -194,7 +196,6 @@ export function CheckInModal({ visible, onClose, onSaved }: CheckInModalProps) {
             showsVerticalScrollIndicator={false}
             contentContainerStyle={styles.scrollContent}
           >
-            {/* Progress */}
             <View style={[styles.progressBar, { backgroundColor: theme.progressBg }]}> 
               <View
                 style={[

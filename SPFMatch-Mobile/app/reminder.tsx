@@ -1,3 +1,6 @@
+/**
+ * SPFMatch Mobile UV reminder preferences, permission, and scheduling screen.
+ */
 import React, { useEffect, useMemo, useState } from 'react'
 import {
   Alert,

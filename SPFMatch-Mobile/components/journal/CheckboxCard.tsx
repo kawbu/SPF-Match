@@ -1,3 +1,6 @@
+/**
+ * Multi-select checkbox card for preference-style quiz prompts.
+ */
 import React from 'react'
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 

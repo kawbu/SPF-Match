@@ -1,3 +1,6 @@
+/**
+ * Persistent bottom tab navigation for primary mobile routes.
+ */
 import React from 'react'
 import { StyleSheet, View, TouchableOpacity } from 'react-native'
 import {
@@ -57,7 +60,6 @@ export function BottomNav({ active, onNavigate, bottomInset, theme = 'sunset' }:
 }
 
 const styles = StyleSheet.create({
-  // ── Bottom nav ────────────────────────────────────────────────────
   bottomNav: {
     position: 'absolute',
     left: 28, right: 28, bottom: 0,

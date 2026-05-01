@@ -1,3 +1,6 @@
+/**
+ * Fitzpatrick scoring and recommendation preference utilities.
+ */
 import { QUIZ_QUESTIONS, FITZPATRICK_THRESHOLDS } from '../constants/quiz'
 import type { QuizAnswers, FitzpatrickType, SkinType, SunscreenProduct } from '../types/index'
 
@@ -11,7 +14,7 @@ export function calculateFitzpatrickType(
 ): FitzpatrickType {
   let totalScore = 0
 
-  // Calculate score from first 10 questions (exclude skinType question)
+  // The final question stores skin type labels, not numeric Fitzpatrick points.
   for (let i = 0; i < QUIZ_QUESTIONS.length - 1; i++) {
     const question = QUIZ_QUESTIONS[i]
     const answer = answers[question.id]
@@ -24,7 +27,7 @@ export function calculateFitzpatrickType(
     }
   }
 
-  // Determine Fitzpatrick type based on score thresholds
+  // Threshold map is intentionally ordered from lower to higher sensitivity.
   if (totalScore <= FITZPATRICK_THRESHOLDS[1]) return 1
   if (totalScore <= FITZPATRICK_THRESHOLDS[2]) return 2
   if (totalScore <= FITZPATRICK_THRESHOLDS[3]) return 3

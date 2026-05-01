@@ -1,3 +1,6 @@
+/**
+ * Segmented control for selecting chart aggregation period.
+ */
 import React from 'react'
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 
@@ -29,7 +32,6 @@ export function PeriodSelector({ active, onChange }: PeriodSelectorProps) {
 }
 
 const styles = StyleSheet.create({
-  // ── Period selector ───────────────────────────────────────────────
   periodRow: {
     flexDirection: 'row',
     marginHorizontal: 22,

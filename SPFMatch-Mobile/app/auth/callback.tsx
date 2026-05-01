@@ -1,3 +1,6 @@
+/**
+ * Handles deep-link auth callbacks and exchanges provider tokens for a session.
+ */
 import React, { useEffect, useState } from 'react'
 import { StatusBar, StyleSheet, Text, View } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient'

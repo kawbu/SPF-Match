@@ -1,3 +1,6 @@
+/**
+ * SPFMatch Mobile home screen with daily check-in summary and quick actions.
+ */
 import React, { useCallback, useEffect, useMemo, useState } from 'react'
 import { StyleSheet, View, ScrollView, StatusBar, Text, TouchableOpacity } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient'
@@ -186,7 +189,6 @@ export default function Index() {
             ) : null}
           </View>
 
-          {/* ── Check-in CTA banner ── */}
           {!homeSummary.checkedInToday ? (
             <TouchableOpacity
               activeOpacity={0.82}
@@ -236,10 +238,8 @@ export default function Index() {
             </TouchableOpacity>
           )}
 
-          {/* ── Day-of-week row (just below notch) ── */}
           <DaysRow days={homeSummary.days} />
 
-          {/* ── Streak card: 3 equal circles ── */}
           <StreakCard
             streak={homeSummary.streak}
             record={homeSummary.record}
@@ -248,13 +248,10 @@ export default function Index() {
             onCheckInPress={() => setCheckInModalVisible(true)}
           />
 
-          {/* ── Period selector ── */}
           <PeriodSelector active={activePeriod} onChange={setActivePeriod} />
 
-          {/* ── Divider (below period selector) ── */}
           <View style={[styles.divider, { backgroundColor: theme.dividerColor }]} />
 
-          {/* ── Chart + Metrics 2×2 grid ── */}
           <MetricsGrid
             chartData={homeSummary.chartData}
             chartLabels={homeSummary.chartLabels}
@@ -277,7 +274,6 @@ export default function Index() {
           <View style={{ height: 16 }} />
         </ScrollView>
 
-        {/* ── Bottom navigation (5 tabs) ── */}
         <BottomNav
           active="home"
           theme={isNightTheme ? 'night' : 'sunset'}

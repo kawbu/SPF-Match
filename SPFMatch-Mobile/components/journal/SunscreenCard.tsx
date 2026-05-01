@@ -1,3 +1,6 @@
+/**
+ * Product recommendation card with metadata and outbound purchase link.
+ */
 import React, { useState } from 'react'
 import {
   Image,
@@ -25,7 +28,6 @@ export function SunscreenCard({ product, index }: SunscreenCardProps) {
 
   return (
     <View style={styles.card}>
-      {/* Header row: index + name */}
       <View style={styles.header}>
         <View style={styles.indexBadge}>
           <Text style={styles.indexText}>{index + 1}</Text>
@@ -35,7 +37,6 @@ export function SunscreenCard({ product, index }: SunscreenCardProps) {
         </Text>
       </View>
 
-      {/* Product image */}
       {product.image && !imageError ? (
         <Image
           source={{ uri: product.image }}
@@ -49,7 +50,6 @@ export function SunscreenCard({ product, index }: SunscreenCardProps) {
         </View>
       )}
 
-      {/* Tags row */}
       <View style={styles.tagsRow}>
         <View style={styles.tag}>
           <Text style={styles.tagLabel}>SPF</Text>
@@ -71,7 +71,6 @@ export function SunscreenCard({ product, index }: SunscreenCardProps) {
         </View>
       </View>
 
-      {/* Price row */}
       <View style={styles.priceRow}>
         <View style={styles.priceItem}>
           <Text style={styles.priceLabel}>Price</Text>
@@ -89,7 +88,6 @@ export function SunscreenCard({ product, index }: SunscreenCardProps) {
         )}
       </View>
 
-      {/* Skin type badges */}
       {product.skinTypes && product.skinTypes.length > 0 && (
         <View style={styles.skinTypesRow}>
           <Text style={styles.skinTypesLabel}>Works for: </Text>
@@ -103,7 +101,6 @@ export function SunscreenCard({ product, index }: SunscreenCardProps) {
         </View>
       )}
 
-      {/* Purchase button */}
       {product.link ? (
         <TouchableOpacity
           activeOpacity={0.8}

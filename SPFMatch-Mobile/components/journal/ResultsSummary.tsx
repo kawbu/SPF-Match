@@ -1,3 +1,6 @@
+/**
+ * Quiz result summary and recommendation list presentation.
+ */
 import React, { useMemo } from 'react'
 import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import { FITZPATRICK_INFO, SKIN_TYPE_INFO } from '../../constants/quiz'
@@ -5,7 +8,7 @@ import { normalizePreferences, filterByPreferences } from '../../utils/fitzpatri
 import type { FitzpatrickType, SkinType, SunscreenProduct, QuizAnswers } from '../../types/index'
 import { SunscreenCard } from './SunscreenCard'
 
-// Load bundled database
+// Data provenance: generated from the upstream SPFMatch sunscreen dataset pipeline.
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const sunscreenDatabase: Record<string, SunscreenProduct[]> = require('../../assets/data/sunscreen-database.json')
 
@@ -50,7 +53,6 @@ export function ResultsSummary({
       showsVerticalScrollIndicator={false}
       contentContainerStyle={styles.content}
     >
-      {/* ── Skin profile cards ── */}
       <Text style={styles.sectionHeader}>Your Skin Profile</Text>
 
       <View style={styles.profileRow}>
@@ -71,7 +73,6 @@ export function ResultsSummary({
 
       <View style={styles.divider} />
 
-      {/* ── Recommendations ── */}
       <View style={styles.recHeader}>
         <Text style={styles.sectionHeader}>Recommended Sunscreens</Text>
         <Text style={styles.recCount}>

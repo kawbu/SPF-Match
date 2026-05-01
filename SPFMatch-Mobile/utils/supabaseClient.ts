@@ -1,3 +1,6 @@
+/**
+ * Shared Supabase client configuration for mobile auth and data access.
+ */
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import { createClient } from '@supabase/supabase-js'
 

@@ -1,3 +1,6 @@
+/**
+ * Compact weekday activity indicator for the check-in streak view.
+ */
 import React from 'react'
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 
@@ -28,7 +31,6 @@ export function DaysRow({ days, onToggle }: DaysRowProps) {
 }
 
 const styles = StyleSheet.create({
-  // ── Days ──────────────────────────────────────────────────────────
   daysRow: {
     flexDirection: 'row',
     justifyContent: 'space-around',

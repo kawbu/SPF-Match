@@ -1,3 +1,6 @@
+/**
+ * SPFMatch Mobile landing screen with auth gate and entry navigation.
+ */
 import React, { useEffect, useMemo, useState } from 'react'
 import { StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient'

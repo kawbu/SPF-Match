@@ -1,3 +1,6 @@
+/**
+ * Streak/record summary card with a prominent check-in action.
+ */
 import React from 'react'
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import { Flame, Check, Activity } from 'lucide-react-native'
@@ -19,8 +22,6 @@ export function StreakCard({
 }: StreakCardProps) {
   return (
     <View style={styles.streakCard}>
-
-      {/* Left — Streak */}
       <View style={styles.streakCol}>
         <View style={styles.streakCircle}>
           <View style={styles.streakTopRow}>
@@ -32,7 +33,6 @@ export function StreakCard({
         <Text style={styles.circleSubLabel}>Record: {record}</Text>
       </View>
 
-      {/* Center — Check In (tappable) */}
       <View style={styles.streakCol}>
         <TouchableOpacity
           activeOpacity={0.75}
@@ -46,7 +46,6 @@ export function StreakCard({
         <Text style={styles.circleSubLabel}>{checkedIn ? 'Checked In!' : 'Due Today'}</Text>
       </View>
 
-      {/* Right — Tracker */}
       <View style={styles.streakCol}>
         <View style={styles.streakCircle}>
           <Activity size={30} color="#FFFFFF" strokeWidth={2.5} />
@@ -59,7 +58,6 @@ export function StreakCard({
 }
 
 const styles = StyleSheet.create({
-  // ── Streak card ───────────────────────────────────────────────────
   streakCard: {
     flexDirection: 'row',
     justifyContent: 'space-around',

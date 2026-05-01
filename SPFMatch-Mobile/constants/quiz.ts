@@ -1,3 +1,6 @@
+/**
+ * Quiz definition and scoring metadata used by the mobile Fitzpatrick workflow.
+ */
 export interface QuizQuestion {
   id: string
   question: string

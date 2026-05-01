@@ -1,3 +1,6 @@
+/**
+ * Persists and resolves theme override behavior for day/night UI variants.
+ */
 import AsyncStorage from '@react-native-async-storage/async-storage'
 
 export type ThemeOverrideMode = 'auto' | 'day' | 'night'
@@ -11,7 +14,7 @@ export async function getThemeOverridePreference(): Promise<ThemeOverrideMode> {
       return stored
     }
   } catch {
-    // non-blocking
+    // Missing storage should not block rendering; default to auto mode.
   }
 
   return 'auto'
@@ -21,7 +24,7 @@ export async function setThemeOverridePreference(mode: ThemeOverrideMode): Promi
   try {
     await AsyncStorage.setItem(THEME_PREFERENCE_STORAGE_KEY, mode)
   } catch {
-    // non-blocking
+    // Preference write failures are safe to ignore and retry later.
   }
 }
 
