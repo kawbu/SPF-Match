@@ -16,6 +16,7 @@
     "@radix-ui/react-slot": "^1.2.3",
     "@tailwindcss/postcss": "^4.1.16",
     "class-variance-authority": "^0.7.1",
+    "expo": "^55.0.18",
     "framer-motion": "^12.23.24",
     "lucide-react": "^0.487.0",
     "react": "^19.2.0",
@@ -24,6 +25,7 @@
     "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
+    "@react-native-community/cli": "latest",
     "@eslint/js": "^9.36.0",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
@@ -36,6 +38,7 @@
     "globals": "^16.4.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.16",
+    "typescript": "~5.9.2",
     "vite": "^7.1.7"
   }
 }
