@@ -1,12 +1,18 @@
 # SPFMatch Mobile
 
-SPFMatch Mobile is the Expo/React Native client for the SPFMatch project.
+SPFMatch Mobile is the Expo/React Native app for SPFMatch.
+
+It helps users:
+- take a skin-profile quiz,
+- get UV-aware sunscreen reminder timing,
+- log daily check-ins,
+- and view sunscreen recommendations.
 
 ## Repository
 
 This project is intended to be versioned in Git and hosted on GitHub for transport, review, and deployment workflows.
 
-## Install Notes (Quick Start)
+## Quick Start
 
 ### Prerequisites
 
@@ -29,9 +35,33 @@ This project is intended to be versioned in Git and hosted on GitHub for transpo
    - Android: `npm run android`
    - Web: `npm run web`
 
-## Environment Notes
+## Environment Setup
 
-The app uses Supabase for authentication and data sync. If environment variables are not configured, the app falls back to safe placeholders and local cache behavior where applicable.
+This app uses Supabase for authentication and cloud data.
+
+Create a `.env` file in `SPFMatch-Mobile/` with:
+
+- `EXPO_PUBLIC_SUPABASE_URL`
+- `EXPO_PUBLIC_SUPABASE_ANON_KEY`
+
+Example:
+
+```env
+EXPO_PUBLIC_SUPABASE_URL=https://your-project-ref.supabase.co
+EXPO_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+```
+
+If these are not set, the app falls back to safe placeholders and local-cache behavior where possible.
+
+## Documentation
+
+- Documentation plan: [DOCUMENTATION-PLAN.md](DOCUMENTATION-PLAN.md)
+- Brief documentation plan: [DOCUMENTATION-PLAN-BRIEF.md](DOCUMENTATION-PLAN-BRIEF.md)
+- Contribution guide: [CONTRIBUTING.md](CONTRIBUTING.md)
+
+Planned final docs shipped with the code deliverable:
+- `docs/USER.md`
+- `docs/ADMIN.md`
 
 ## Team Style and Documentation Standards
 
@@ -42,8 +72,6 @@ This repository follows the team’s consistency expectations:
 - Avoid obvious comments that restate syntax.
 - Keep code, comments, test data, and identifiers professional and public-safe.
 - Prefer concise function-level documentation for non-trivial behavior.
-
-For contribution details, see CONTRIBUTING.md.
 
 ## Prior-System / External-Origin Code and Data
 
